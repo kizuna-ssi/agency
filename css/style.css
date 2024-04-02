@@ -381,6 +381,7 @@ footer .pr {display: block;}
 	padding: 10px 5px;			/*上下、左右へのボックス内の余白。基本的に数行下の「.ta1 th, .ta1 td」のpaddingと揃えておけばOKです。*/
 	background: #666;			/*背景色*/
 	color: #fff;				/*文字色*/
+	text-align: left;
 }
 
 /*ta1テーブルブロック設定*/
@@ -573,6 +574,7 @@ main {
 /*テーブル１行目に入った見出し部分（※caption）*/
 .ta1 caption {
 	padding: 5px 15px;		/*上下、左右へのボックス内の余白*/
+	text-align: left;
 }
 
 /*th（左側）、td（右側）の共通設定*/
