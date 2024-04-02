@@ -82,3 +82,17 @@ userBirthdayDay.addEventListener('change', calculateAge);
 
 // Initialize age calculation on page load
 calculateAge();
+
+
+setInterval(function(){
+    var y = new Date().getFullYear();
+    var m = new Date().getMonth() + 1;
+    var d = new Date().getDate();
+    var w = new Date().getDay();
+    var wd = ["日","月","火","水","木","金","土"];
+    var youbi = wd[w];
+    var h = new Date().getHours();
+    var min = new Date().getMinutes();
+    var s = new Date().getSeconds();
+    $("#datedisplay").html(y + "年" + m + "月" + d + "日" );
+},1000);
