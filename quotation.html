@@ -35,7 +35,7 @@
     <p><br><span style="font-size: 1.5em; font-weight: bold; color: #0D955A;">保険金額固定コース</span></p>
       <table class="ta1">
         <caption>
-          被保険者となる方の生年月日と性別、ご希望の保険金額と払込回数を選択し、見積結果をクリック
+          被保険者となる方の生年月日と性別、ご希望の保険金額と払込回数を選択してください
         </caption>
     <tr>
       <th>生年月日</th>
@@ -70,41 +70,30 @@
     </tr>
    </table>
 
-         <div style="display:none"><input id="premium" type="text" readonly=""></div>
-         <div id="product" type="text" readonly="" style="font-size: 180%; color: #e58882; font-weight: bold;"></div>
 
-        <table class="ta1">
+
+        <table class="ta1">                 
+         <caption>見積り結果</caption>
           <tr>
-            <th>保険種類</th>
-            <td>定期保険</td>
-            <th>商品名</th>
-            <td>きずなの死亡保険</td>
-          </tr>
-          <tr>
-            <th>責任開始日</th>
-            <td><div id="ageDisplay2"></div></td>
-            <th>契約年齢</th>
-            <td><div id="ageDisplay1"></div></td>
-          </tr>
-          <tr>
-            <th>生年月日</th>
-            <td><div id="birthdayLabel"></div></td>
-            <th>性別</th>
-            <td><div id="genderLabel"></div></td>
-          </tr>
-          <tr>
-            <th>保険金額</th>
-            <td><div id="amountLabel"></div></td>
-            <th>払込回数</th>
-            <td><div id="timesLabel"></div></td>
+           <th>保険料</th>
+           <td>
+            <div style="display:none"><input id="premium" type="text" readonly=""></div>
+            <div id="product" type="text" readonly="" style="font-weight: bold;"></div></td>
+            <th>保険種類</th><td>定期保険</td>
+            <th>商品名</th><td>きずなの死亡保険</td>
+            <th>責任開始日</th><td><div id="ageDisplay2"></div></td>
+            <th>契約年齢</th><td><div id="ageDisplay1"></div></td>
+            <th>生年月日</th><td><div id="birthdayLabel"></div></td>
+            <th>性別</th><td><div id="genderLabel"></div></td>
+            <th>保険金額</th><td><div id="amountLabel"></div></td>
+            <th>払込回数</th><td><div id="timesLabel"></div></td>
           </tr>
         </table>
-
-          
+   
         <br>
         <p style="font-size: 0.8rem; text-indent: -2em; padding-left: 4em; margin: auto;">
-          ※1 責任開始日は、申込受付完了が月初～15日の場合は<span style="font-weight: bold; color: #e58882;">翌月の1日</span>、
-          16日～月末の場合は<span style="font-weight: bold; color: #e58882;">翌々月の1日</span>となります。<br>
+          ※1 責任開始日は、申込受付完了が月初～15日の場合は<span style="font-weight: bold;">翌月の1日</span>、
+          16日～月末の場合は<span style="font-weight: bold;">翌々月の1日</span>となります。<br>
           表示された責任開始日は、本日（<span id="datedisplay"></span>）時点を申込受付完了とした場合の日付となります。
         </p>
         <p style="font-size: 0.8rem; text-indent: -2em; padding-left: 4em; margin: auto;">
