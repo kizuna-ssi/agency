@@ -29,71 +29,52 @@
 <main>
 
 <section>
-    <div class="no-print">  
-      <h2>QUOTATION<span>お見積り</span></h2>
-    </div>
+ <h2>見積り</h2>
 
   <form class="form">
-    <div class="center">
-      <p><br><span style="font-size: 1.5em; font-weight: bold; color: #0D955A;">保険金額固定コース</span></p>
-    </div> 
-   
-    <div class="no-print">
+    <p><br><span style="font-size: 1.5em; font-weight: bold; color: #0D955A;">保険金額固定コース</span></p>
       <table class="ta1">
         <caption>
-          被保険者となる方の生年月日と性別、<br class="br-sp">
-          ご希望の保険金額と払込回数を選択し、<br class="br-sp">
-          見積結果をクリック
+          被保険者となる方の生年月日と性別、ご希望の保険金額と払込回数を選択し、見積結果をクリック
         </caption>
     <tr>
-      <th>生年<br class="br-sp">月日</th>
+      <th>生年月日</th>
        <td>
-      <div class="form-select-wrap">
          <select class="birthday-year" style="width: 90px;" onchange="calculate()"></select>年
          <select class="birthday-month" style="width: 50px;" onchange="calculate()"></select>月
-         <select class="birthday-day" style="width: 50px;" onchange="calculate()"></select>日
-      </div>      
+         <select class="birthday-day" style="width: 50px;" onchange="calculate()"></select>日     
       </td>
     </tr>
     <tr>
       <th>性別</th>
       <td>
-        <div class="radio01">
         <input type="radio" id="male" name="gender" onchange="calculate()" value="1"><label for="male">男性</label>
         <input type="radio" id="female" name="gender" onchange="calculate()" value="2"><label for="female">女性</label>
-        </div>
       </td>
     </tr>
     <tr>
-      <th>保険<br class="br-sp">金額</th>
+      <th>保険金額</th>
       <td>
-        <div class="radio01">
         <input type="radio" id="50" name="amount" onchange="calculate()" value="0"><label for="50">50万円</label>
         <input type="radio" id="100" name="amount" onchange="calculate()" value="1"><label for="100">100万円</label>
         <input type="radio" id="200" name="amount" onchange="calculate()" value="2"><label for="200">200万円</label>
        <input type="radio" id="300" name="amount" onchange="calculate()" value="3"><label for="300">300万円</label>
-        </div>
      </td>
     </tr>
     <tr>
-      <th>払込<br class="br-sp">回数</th>
+      <th>払込回数</th>
       <td>
-        <div class="radio01">
         <input type="radio" id="month" name="times" onchange="calculate()" value="1"><label for="month">月払</label>
         <input type="radio" id="year" name="times" onchange="calculate()" value="2"><label for="year">年払</label>
-        </div>
       </td>
     </tr>
    </table>
-    </div>
 
     <div class="ac-box">
       <input id="ac-1" name="accordion-1" type="checkbox" />
       <label for="ac-1"> 見積結果 </label>
       <div class="open">
         <div class="quotation">
-
-
 
          <div class="c3" style="justify-content: center;">
            <span style="font-weight: bold; margin: auto 1px auto 1px;">保険料 ：　</span>
@@ -103,32 +84,32 @@
 
          <hr><br>
 
-        <table class="ta2">
+        <table>
           <tr>
-            <th>保険<br class="br-sp">種類</th>
+            <th>保険種類</th>
             <td>定期保険</td>
-            <th>商品<br class="br-sp">名</th>
+            <th>商品名</th>
             <td>きずなの死亡保険</td>
           </tr>
           <tr>
-            <th>責任<br class="br-sp">開始日</th>
+            <th>責任開始日</th>
             <td><div id="ageDisplay2"></div></td>
             <th>契約<br class="br-sp">年齢</th>
             <td><div id="ageDisplay1"></div></td>
           </tr>
         </table>
                  
-          <table class="ta2">
+          <table>
           <tr>
-            <th>生年<br class="br-sp">月日</th>
+            <th>生年月日</th>
             <td><div id="birthdayLabel"></div></td>
             <th>性別</th>
             <td><div id="genderLabel"></div></td>
           </tr>
           <tr>
-            <th>保険<br class="br-sp">金額</th>
+            <th>保険金額</th>
             <td><div id="amountLabel"></div></td>
-            <th>払込<br class="br-sp">回数</th>
+            <th>払込回数</th>
             <td><div id="timesLabel"></div></td>
           </tr>
         </table>
@@ -152,7 +133,6 @@
         </p>
         <br>
             
-        <div class="no-print">  
         <p class="formbottom">
           <a href="javascript:void(0)" onclick="window.print();return false;" class="btns" style="width: 50%; min-width: 250px;">
             見積結果を印刷する</a>
@@ -161,24 +141,13 @@
           <a href="" target="_blank" class="btns" style="width: 50%; min-width: 250px;">
             一覧で見る（PDF）</a>
         </p>
-        </div>
         
       </div>
-      </div>
+     </div>
   </div>
     
  </form>
 
-
-       <div class="no-screen">
-         <p style="text-align: center;">
-          <span style="font-size: 130%; font-weight: bold;">株式会社きずな少額短期保険</span><br>
-          <span style="font-size: 120%;">TEL：052-228-1335</span><br>
-          <span style="font-size: 90%;">受付時間：10:00〜16:00</span><br>
-          <span style="font-size: 80%;">（土・日・祝・年末年始を除く）</span>
-        </p>
-       </div>
-  
 </section>
   
 </main>
