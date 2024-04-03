@@ -782,7 +782,6 @@ margin: auto;
 
 .ac-box label{
 font-size: 14px;
-font-weight: bold;
 text-align: center;
 background: #111;
 margin: auto;
@@ -792,7 +791,6 @@ display: block;
 height: 30px;
 border-radius: 1px;
 cursor: pointer;
-color: #fff;
 transition: all 0.5s;
 }
 
@@ -800,10 +798,6 @@ transition: all 0.5s;
 background: #666666;
 -webkit-transition: all .3s;
 transition: all .3s;
-}
-
-.ac-box label .a{
-color: #fff;
 }
 
 .ac-box input{
