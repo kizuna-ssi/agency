@@ -598,7 +598,7 @@ main {
 /*その他
 ---------------------------------------------------------------------------*/
 .ws {width: 48%;display: inline;}
-
+.wl {width: 68%;display: inline;}
 
 /*　※注意！　下の閉じカッコ　}　はこのブロックに必要なので、削除しないで下さい。　*/
 
@@ -687,7 +687,14 @@ main {
 }
 
 .ws{
-	background-color:#e5e5e5;
+	background-color:#fff;
+	border: 1px solid #666666;
+	height:40px;
+	padding:10px;
+}
+
+.wl{
+	background-color:#fff;
 	border: 1px solid #666666;
 	height:40px;
 	padding:10px;
