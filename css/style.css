@@ -703,60 +703,74 @@ main {
 	color: #666666;
 }
 
-label.btn span {
-  font-size: 1.5em ;
+.CheckboxInput {
+  padding: 12px 8px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
-label input[type="checkbox"] ~ i.fa.fa-square-o{
-    color: #c8c8c8;
-    display: inline;
-}
-label input[type="checkbox"] ~ i.fa.fa-check-square-o{
-    display: none;
-}
-label input[type="checkbox"]:checked ~ i.fa.fa-square-o{
-    display: none;
-}
-label input[type="checkbox"]:checked ~ i.fa.fa-check-square-o{
-    color: #7AA3CC;
-    display: inline;
-}
-label:hover input[type="checkbox"] ~ i.fa {
-    color: #7AA3CC;
+.CheckboxInput-Input {
+  margin: 0;
+  width: 0;
+  opacity: 0;
 }
 
-div[data-toggle="buttons"] label.active{
-    color: #7AA3CC;
+.CheckboxInput:hover{
+  background: rgba(0,0,0,.05) !important;
 }
 
-div[data-toggle="buttons"] label {
-display: inline-block;
-padding: 6px 12px;
-margin-bottom: 0;
-font-size: 14px;
-font-weight: normal;
-line-height: 2em;
-text-align: left;
-white-space: nowrap;
-vertical-align: top;
-cursor: pointer;
-background-color: none;
-border: 0px solid 
-#c8c8c8;
-border-radius: 3px;
-color: #c8c8c8;
--webkit-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
--o-user-select: none;
-user-select: none;
+.CheckboxInput-Input:focus + .CheckboxInput-DummyInput{
+  border: dashed 2px #333333;
 }
 
-div[data-toggle="buttons"] label:hover {
-color: #7AA3CC;
+.CheckboxInput-Input:checked + .CheckboxInput-DummyInput {
+  background: #333333;
 }
 
-div[data-toggle="buttons"] label:active, div[data-toggle="buttons"] label.active {
--webkit-box-shadow: none;
-box-shadow: none;
+.CheckboxInput-Input:checked + .CheckboxInput-DummyInput::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40%;
+  height: 4px;
+  border-radius: 2px;
+  transform: translate(-6px, 5px) rotateZ(-135deg);
+  transform-origin: 2px 2px;
+  background: #FFFFFF;
+}
+
+.CheckboxInput-Input:checked + .CheckboxInput-DummyInput::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 76%;
+  height: 4px;
+  border-radius: 2px;
+  transform: translate(-6px, 5px) rotateZ(-45deg);
+  transform-origin: 2px 2px;
+  background: #FFFFFF;
+}
+
+.CheckboxInput-DummyInput {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: solid 2px transparent;
+  background: rgba(0,0,0, .1);
+  border-radius: 4px;
+}
+
+.CheckboxInput-LabelText {
+  margin-left: 12px;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
 }
