@@ -126,7 +126,7 @@ header #logo {
 #menubar_hdr {
 	position: fixed;z-index: 101;
 	cursor: pointer;
-	left: 10px;			/*左からの配置場所指定*/
+	right: 10px;			/*左からの配置場所指定*/
 	top: 3px;			/*上からの配置場所指定*/
 	padding: 10px 8px;	/*ブロック内の余白*/
 	width: 40px;		/*幅（３本バーが出ている場合の幅になります）*/
