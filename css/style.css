@@ -666,3 +666,20 @@ main {
 .form1{
 	float: left;	
 }
+
+/*selectブロック*/
+.select1{
+   display: flex;
+   max-width: 300px;
+   align-items: center;
+}
+
+.select1 > select{
+   padding: 8px 4px;
+   margin: 10px 5px 5px 5px;
+   border: 1px solid #e58882;
+   border-radius: 4px;
+   font-size: 17px;
+   color: #e58882;
+   text-align: center;
+}
