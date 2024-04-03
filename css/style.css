@@ -652,7 +652,7 @@ main {
 }
 
 .radio01 input[type="radio"]:checked + label {
-	background-color: #e58882;
+	background-color: #666666;
 	color: #fff;
 }
 
