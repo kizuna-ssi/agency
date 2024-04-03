@@ -785,7 +785,7 @@ max-width: 800px;
 font-size: 14px;
 font-weight: bold;
 text-align: center;
-background: #666666;
+background: #111;
 margin: auto;
 line-height: 30px;
 position: relative;
@@ -798,7 +798,7 @@ transition: all 0.5s;
 }
 
 .ac-box label:hover{
-background: #e58882;
+background: #666666;
 -webkit-transition: all .3s;
 transition: all .3s;
 }
@@ -818,10 +818,8 @@ transition: 0.5s;
 .ac-box input:checked ~ .open{
 height: auto;
 width: 100%;
-max-width: 800px;
 margin: auto;
-padding: 4%;
-background: #ffff;
-border: 3px solid #e58882;
+background: #f7f7f7;
+border: 0px solid #111;
 opacity: 1;
 }
