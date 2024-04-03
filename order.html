@@ -169,5 +169,17 @@
 <!--ページの上部へ戻るボタン-->
 <div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
 
+<script>
+  function onSubmit(token) {
+    var form = document.getElementById('order_form');
+    if(form.reportValidity()) {
+      form.submit();
+    }
+  }
+</script>
+
+<script src="js/recruitcode.js"></script>
+<script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script>
+
 </body>
 </html>
