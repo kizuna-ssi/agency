@@ -685,3 +685,10 @@ main {
    color: #666666;
    text-align: center;
 }
+
+.ws{
+	background-color:#fff;
+	border: none;
+	height:40px;
+	padding:10px;
+}
