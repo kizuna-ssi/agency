@@ -625,16 +625,16 @@ main {
 
 
 /*radioブロック*/
-.radio01{
+.radio1{
 	float: left;	
 	width: 100%;	
 }
 
-.radio01 input{
+.radio1 input{
 	display: none;
 }
 
-.radio01 label{
+.radio1 label{
 	display: block;
 	float: left;
 	cursor: pointer;
@@ -649,15 +649,20 @@ main {
 	transition: .2s;
 }
 
-.radio01 label:first-of-type{
+.radio1 label:first-of-type{
 }
 
-.radio01 label:last-of-type{
+.radio1 label:last-of-type{
 	border-right: 0px;
 }
 
-.radio01 input[type="radio"]:checked + label {
+.radio1 input[type="radio"]:checked + label {
 	background-color: #666666;
 	color: #fff;
 }
 
+
+/*formブロック*/
+.form1{
+	float: left;	
+}
