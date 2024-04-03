@@ -94,5 +94,13 @@ setInterval(function(){
     var h = new Date().getHours();
     var min = new Date().getMinutes();
     var s = new Date().getSeconds();
-    $("#datedisplay").html(y + "年" + m + "月" + d + "日" );
+    
+    // 日付を表示する要素のIDを配列で持つ
+    var dateDisplayIds = ["datedisplay1", "datedisplay2", "datedisplay3", "datedisplay4"];
+    
+    // 各要素に日付を表示する
+    dateDisplayIds.forEach(function(id) {
+        $("#" + id).html(y + "年" + m + "月" + d + "日" );
+    });
+    
 },1000);
