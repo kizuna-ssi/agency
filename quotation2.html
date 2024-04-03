@@ -28,13 +28,13 @@
 <main>
 
 <section>
- <h2>見積り<span style="font-size: 0.7em; font-weight: bold; color: #0D955A;">＜保険金額固定コース＞</span></h2>
+ <h2>見積り<span style="font-size: 0.7em; font-weight: bold; color: #ED6C00;">＜保険料定額コース＞</span></h2>
 
   <form class="form1">
    <div class="no-print">
    <table class="ta1">    
     <caption>
-     被保険者となる方の生年月日と性別、ご希望の保険金額と払込回数を選択してください
+     被保険者となる方の生年月日と性別、ご希望の保険料を選択してください
     </caption>
     <tr>
       <th>生年月日</th>
@@ -56,24 +56,19 @@
       </td>
     </tr>
     <tr>
-      <th>保険金額</th>
+      <th>保険料</th>
       <td>
-       <div class="radio1">
-        <input type="radio" id="50" name="amount" onchange="calculate()" value="0"><label for="50">50万円</label>
-        <input type="radio" id="100" name="amount" onchange="calculate()" value="1"><label for="100">100万円</label>
-        <input type="radio" id="200" name="amount" onchange="calculate()" value="2"><label for="200">200万円</label>
-       <input type="radio" id="300" name="amount" onchange="calculate()" value="3"><label for="300">300万円</label>
-       </div>
+        <div class="radio1">
+          <input type="radio" id="1000" name="premium" onchange="calculate()" value="1"><label for="1000">1,000円/月</label>
+          <input type="radio" id="2000" name="premium" onchange="calculate()" value="2"><label for="2000">2,000円/月</label>
+          <input type="radio" id="3000" name="premium" onchange="calculate()" value="3"><label for="3000">3,000円/月</label>
+          <input type="radio" id="5000" name="premium" onchange="calculate()" value="4"><label for="5000">5,000円/月</label>
+          <input type="radio" id="10000" name="premium" onchange="calculate()" value="5"><label for="10000">10,000円/年</label>
+          <input type="radio" id="20000" name="premium" onchange="calculate()" value="6"><label for="20000">20,000円/年</label>
+          <input type="radio" id="30000" name="premium" onchange="calculate()" value="7"><label for="30000">30,000円/年</label>
+          <input type="radio" id="50000" name="premium" onchange="calculate()" value="8"><label for="50000">50,000円/年</label>
+        </div>
      </td>
-    </tr>
-    <tr>
-      <th>払込回数</th>
-      <td>
-       <div class="radio1">
-        <input type="radio" id="month" name="times" onchange="calculate()" value="1"><label for="month">月払</label>
-        <input type="radio" id="year" name="times" onchange="calculate()" value="2"><label for="year">年払</label>
-       </div>
-      </td>
     </tr>
    </table>
    </div>
@@ -91,7 +86,7 @@
      <th>性別</th><td><div id="genderLabel"></div></td>
     </tr>
     <tr>
-     <th>保険金額</th><td><div id="amountLabel"></div></td>
+     <th>保険料</th><td><div id="premiumLabel"></div></td>
      <th>払込回数</th><td><div id="timesLabel"></div></td>
     </tr>
     </table><br>
@@ -100,8 +95,8 @@
    <table class="ta1">                      
     <caption>■ 見積結果</caption>      
     <tr>   
-     <th>保険料</th>
-     <td><div style="display:none"><input id="premium" type="text" readonly=""></div>
+     <th>保険金額</th>
+     <td><div style="display:none"><input id="amount" type="text" readonly=""></div>
          <div id="product" type="text" readonly="" style="font-weight: bold;"></div></td>     
     </tr>
     <tr>
@@ -186,7 +181,7 @@
 <div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div></div>
 
 <script src="js/calculate_age.js"></script>
-<script src="js/premium.js"></script>
+<script src="js/amount.js"></script>
 
 </body>
 </html>
