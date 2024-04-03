@@ -679,24 +679,26 @@ main {
 .select1 > select{
    padding: 8px 4px;
    margin: 10px 5px 5px 5px;
-   border: 0px solid #666666;
+   border: 1px solid #ccc;
    border-radius: 4px;
    font-size: 17px;
    color: #666666;
    text-align: center;
-   background-color:#ccc;	
+   background-color:#fff;	
 }
 
 .ws{
-	background-color:#ccc;
-	border: 0px solid #666666;
+	background-color:#fff;
+	border: 1px solid #ccc;
 	height:40px;
 	padding:10px;
+	color: #666666;
 }
 
 .wl{
-	background-color:#ccc;
-	border: 0px solid #666666;
+	background-color:#fff;
+	border: 1px solid #ccc;
 	height:40px;
 	padding:10px;
+	color: #666666;
 }
