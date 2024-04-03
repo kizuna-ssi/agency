@@ -670,7 +670,7 @@ main {
 /*selectブロック*/
 .select1{
    display: flex;
-   max-width: 300px;
+   width: 100%;
    align-items: center;
 }
 
