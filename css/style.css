@@ -793,6 +793,7 @@ border-radius: 1px;
 cursor: pointer;
 transition: all 0.5s;
 color: #fff;
+padding-left: 15px;
 }
 
 .ac-box label:hover{
