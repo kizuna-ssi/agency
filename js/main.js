@@ -119,3 +119,15 @@ $(function() {
 $(function(){
         $('#nav1').load('nav1.html');
         });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var currentUrl = window.location.href;
+    var navLinks = document.querySelectorAll('nav ul li a');
+    
+    for (var i = 0; i < navLinks.length; i++) {
+        if (navLinks[i].href === currentUrl) {
+            navLinks[i].parentNode.classList.add('current');
+        }
+    }
+});
+
