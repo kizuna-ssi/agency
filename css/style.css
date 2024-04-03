@@ -190,7 +190,7 @@ header #logo {
 
 /*メニュー１個あたりの設定*/
 #menubar.db a {
-	color: #fff;	/*文字色*/
+	color: #666666;	/*文字色*/
 }
 
 /*現在表示中のメニュー設定（current）*/
