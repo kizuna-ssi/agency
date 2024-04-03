@@ -96,7 +96,7 @@
         <p style="font-size: 0.8rem; text-indent: -2em; padding-left: 4em; margin: auto;">
           ※1 責任開始日は、申込受付完了が月初～15日の場合は<span style="font-weight: bold;">翌月の1日</span>、
           16日～月末の場合は<span style="font-weight: bold;">翌々月の1日</span>となります。<br>
-          本日（<span id="datedisplay"></span>）時点を申込受付完了とした場合、責任開始日は<span id="ageDisplay2">となります。</span>）
+          本日（<span id="datedisplay"></span>）を申込受付完了とした場合、責任開始日は<span id="ageDisplay2" style="font-weight: bold;"></span>となります。
         </p>
         <p style="font-size: 0.8rem; text-indent: -2em; padding-left: 4em; margin: auto;">
           ※3 表示された保険料は初年度の保険料です。次年度以降の保険料は、更新日時点の年齢を基準に計算されます。
@@ -105,7 +105,17 @@
           ※4 引受不可と表示された場合、選択された条件でのお申し込みはできません。
         </p>
         <br>
-        
+
+        <p class="formbottom">
+          <a href="javascript:void(0)" onclick="window.print();return false;" class="btns" style="width: 50%; min-width: 250px;">
+            見積結果を印刷する</a>
+        </p>
+        <p class="formbottom">
+          <a href="" target="_blank" class="btns" style="width: 50%; min-width: 250px;">
+            一覧で見る（PDF）</a>
+        </p>
+
+   <div class="no-screen">
     <table class="ta1">
     <tr>       
      <th>保険種類</th><td>定期保険</td>     
@@ -126,15 +136,8 @@
      <th>払込回数</th><td><div id="timesLabel"></div></td>
     </tr>
    </table>
-            
-        <p class="formbottom">
-          <a href="javascript:void(0)" onclick="window.print();return false;" class="btns" style="width: 50%; min-width: 250px;">
-            見積結果を印刷する</a>
-        </p>
-        <p class="formbottom">
-          <a href="" target="_blank" class="btns" style="width: 50%; min-width: 250px;">
-            一覧で見る（PDF）</a>
-        </p>
+   </div>
+
   
  </form>
 
