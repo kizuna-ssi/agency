@@ -34,8 +34,7 @@
   <form class="form1">
    <table class="ta1">    
     <caption>
-     被保険者となる方の生年月日と性別、<br>
-     ご希望の保険金額と払込回数を選択してください
+     被保険者となる方の生年月日と性別、ご希望の保険金額と払込回数を選択してください
     </caption>
     <tr>
       <th>生年月日</th>
@@ -43,7 +42,7 @@
         <div class="select1">
          <select class="birthday-year" style="width: 90px;" onchange="calculate()"></select>年
          <select class="birthday-month" style="width: 50px;" onchange="calculate()"></select>月
-         <select class="birthday-day" style="width: 50px;" onchange="calculate()"></select>日　（契約年齢：<span class="ageDisplay1"></span> 歳）
+         <select class="birthday-day" style="width: 50px;" onchange="calculate()"></select>日
         </div>
       </td>
     </tr>
@@ -86,10 +85,7 @@
          <div id="product" type="text" readonly="" style="font-weight: bold;"></div></td>     
     </tr>
     <tr>
-     <th>契約年齢</th><td><span id="ageDisplay1"></span> 歳</td>
-    </tr>
-    <tr>
-     <th>責任開始日</th><td><div id="ageDisplay2"></div></td>
+     <th>契約年齢</th><td><span id="ageDisplay1"></span> 歳（責任開始日：<span id="ageDisplay2"></span>）時点の年齢）</td>
     </tr>
    </table>
 
