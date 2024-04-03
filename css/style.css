@@ -688,7 +688,7 @@ main {
 
 .ws{
 	background-color:#e5e5e5;
-	border: none;
+	border: 1px solid #666666;
 	height:40px;
 	padding:10px;
 }
