@@ -115,3 +115,7 @@ $(function() {
 	$('main h2').wrapInner('<span class="uline">');
 });
 
+//　ナビの読み込み
+$(function(){
+        $('#nav1').load('nav1.html');
+        });
