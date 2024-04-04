@@ -827,7 +827,10 @@ main {
 }
 	
 .application_print p{
-	padding: 20px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
 	font-size: 0.8em;
 }
 
@@ -835,4 +838,12 @@ main {
 	padding-top: 0px;
 	padding-bottom: 0px;
 	font-size: 0.8em;
+}
+
+.application_print .ta2{
+	font-size: 0.8em;
+	border: 0px solid #666666;
+	padding: 0px;
+	margin: auto;
+
 }
