@@ -861,6 +861,7 @@ main {
 	padding: 1px;
 	border-left: 1px solid #666666;
 	border-right: 1px solid #666666;
+	vertical-align: middle;
 }
 
 .application_print .ta2 td{
@@ -868,4 +869,5 @@ main {
 	padding: 1px;
 	border-left: 1px solid #666666;
 	border-right: 1px solid #666666;
+	vertical-align: middle;
 }
