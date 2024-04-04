@@ -858,7 +858,7 @@ main {
 
 .application_print .ta2 th{
 	background-color: #ccc;
-	padding: 1px;
+	padding: 2px;
 	border-left: 1px solid #666666;
 	border-right: 1px solid #666666;
 	vertical-align: middle;
@@ -866,7 +866,7 @@ main {
 
 .application_print .ta2 td{
 	text-align: center;
-	padding: 1px;
+	padding: 2px;
 	border-left: 1px solid #666666;
 	border-right: 1px solid #666666;
 	vertical-align: middle;
