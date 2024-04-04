@@ -826,3 +826,13 @@ main {
 	text-align:right;
 }
 	
+.application_print p{
+	padding: 20px;
+	font-size: 0.8em;
+}
+
+.application_print ul{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-size: 0.8em;
+}
