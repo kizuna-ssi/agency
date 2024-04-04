@@ -677,7 +677,7 @@ main {
 
 .select1 > select{
    padding: 8px 4px;
-   margin: 10px 5px 5px 5px;
+   margin: 5px;
    border: 1px solid #ccc;
    border-radius: 4px;
    font-size: 17px;
@@ -687,19 +687,19 @@ main {
 }
 
 .ws{
-	background-color:#fff;
-	border: 1px solid #ccc;
-	height:40px;
-	padding:10px;
-	color: #666666;
+   background-color:#fff;
+   border: 1px solid #ccc;
+   height:40px;
+   padding:10px;
+   color: #666666;
 }
 
 .wl{
-	background-color:#fff;
-	border: 1px solid #ccc;
-	height:40px;
-	padding:10px;
-	color: #666666;
+   background-color:#fff;
+   border: 1px solid #ccc;
+   height:40px;
+   padding:10px;
+   color: #666666;
 }
 
 .CheckboxInput {
