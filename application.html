@@ -128,9 +128,13 @@
      <caption>保険契約者<span style="font-size: 0.7em;">（保険料を負担される方）</span></caption>
      <tr>
       <th>氏名</th>
-      <td><input id="contractor_name" type="text" name="氏名" size="30" class="ws" autocomplete="off" style="width: 100%;"></td>
+      <td colspan="2">
+        <input id="contractor_name" type="text" name="氏名" size="30" class="ws" autocomplete="off" style="width: 100%;">
+      </td>
       <th>フリガナ</th>
-      <td><input id="contractor_furigana" type="text" name="フリガナ" size="30" class="ws" autocomplete="off" style="width: 100%;"></td>
+      <td colspan="2">
+        <input id="contractor_furigana" type="text" name="フリガナ" size="30" class="ws" autocomplete="off" style="width: 100%;">
+      </td>
      </tr>
      <tr>
       <th>性別</th>
@@ -144,7 +148,7 @@
        </div>
       </td>
       <th>生年月日</th>
-       <td>
+       <td colspan="3">
         <div class="select1">　西暦
          <select id="contractor_birth_year"  style="width: 90px;">
           <option value="-">　</option>          
@@ -261,23 +265,25 @@
       <tr>
        <th style="border-left: 1px solid #ccc;">郵便番号</th>
        <td>
-        <input id="contractor_postal_code" type="text" class="p-postal-code ws" size="8" maxlength="8">
+        <input id="contractor_postal_code" type="text" class="p-postal-code ws" size="8" maxlength="8" style="width: 100%;">
        </td>
-       <td>
+       <td colspan="4">
          ◀ ハイフンありで入力してください。▼ 住所は建物名・部屋番号まで入力してください。
        </td>
       </tr>
       <tr>
        <th style="border-left: 1px solid #ccc;">住所</th>
-       <td colspan="2">
+       <td colspan="5">
         <input id="contractor_address" type="text" class="p-region p-locality p-street-address p-extended-address ws" style="width: 100%;">
       </tr>
       <tr>
        <th>電話番号</th>
-       <td style="width:150px;"><input id="contractor_tel" type="text" name="電話番号" size="30" class="ws" autocomplete="off"></td>
+       <td colspan="2">
+         <input id="contractor_tel" type="text" name="電話番号" size="30" class="ws" autocomplete="off" style="width: 100%;">
+       </td>
        <th>メール</th>
-       <td>
-         <input id="contractor_email" type="text" name="メール" size="30" class="ws" autocomplete="off">
+       <td colspan="2">
+         <input id="contractor_email" type="text" name="メール" size="30" class="ws" autocomplete="off" style="width: 100%;">
        </td>
       </tr>              
     </table>
