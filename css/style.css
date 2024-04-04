@@ -775,49 +775,54 @@ main {
 }
 
 .ac-box{
-width: auto;
-margin: auto;
+	width: auto;
+	margin: auto;
 }
 
 .ac-box label{
-font-size: 14px;
-text-align: left;
-background: #111;
-margin: 10px;
-line-height: 30px;
-position: relative;
-display: block;
-height: 30px;
-border-radius: 1px;
-cursor: pointer;
-transition: all 0.5s;
-color: #fff;
-padding-left: 15px;
+	font-size: 14px;
+	text-align: left;
+	background: #111;
+	margin: 10px;
+	line-height: 30px;
+	position: relative;
+	display: block;
+	height: 30px;
+	border-radius: 1px;
+	cursor: pointer;
+	transition: all 0.5s;
+	color: #fff;
+	padding-left: 15px;
 }
 
 .ac-box label:hover{
-background: #666666;
--webkit-transition: all .3s;
-transition: all .3s;
+	background: #666666;
+	-webkit-transition: all .3s;
+	transition: all .3s;
 }
 
 .ac-box input{
-display: none;
+	display: none;
 }
 
 .ac-box .open{
-height: 0px;
-padding: 0px;
-overflow: hidden;
-opacity: 0;
-transition: 0.5s;
+	height: 0px;
+	padding: 0px;
+	overflow: hidden;
+	opacity: 0;
+	transition: 0.5s;
 }
 
 .ac-box input:checked ~ .open{
-height: auto;
-width: 100%;
-margin: auto;
-background: #f7f7f7;
-border: 0px solid #111;
-opacity: 1;
+	height: auto;
+	width: 100%;
+	margin: auto;
+	background: #f7f7f7;
+	border: 0px solid #111;
+	opacity: 1;
 }
+
+.application th{
+	text-align:rigth;
+}
+	
