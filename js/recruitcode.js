@@ -25,10 +25,10 @@ $(document).ready(function(){
             $('input[name="募集人名"]').val('該当なし');
             $('input[name="代理店名"]').val('該当なし');
             // 該当がない場合は2つ目のテーブルを非表示にする
-            $('.ta2').hide();
+            $('.hide1').hide();
           } else {
             // 該当がある場合は2つ目のテーブルを表示する
-            $('.ta2').show();
+            $('.hide1').show();
           }
         }
       });
