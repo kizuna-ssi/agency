@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $('input[name="募集人コード"]').on('input', function(){
-    var recruitCode = $(this).val(); // 入力された値を取得
+    var recruitCode = '"' + $(this).val(); // 入力された値の前に " を付ける
     if (recruitCode) { // 値が存在するかどうかをチェック
       $.ajax({
         url: 'csv/data.csv',
