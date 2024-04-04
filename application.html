@@ -464,7 +464,7 @@
        <th>職業</th>
        <td colspan="2">
         <div class="select1">
-         <select id="insured_job">
+         <select id="insured_job" style="width: 100%;">
          <option value="">　</option>
          <option value="会社員">会社員</option>
          <option value="会社役員">会社役員</option>
@@ -478,7 +478,7 @@
         </div>
        </td>
        <td colspan="3">
-        <input type="text" name="その他" size="30" class="ws" autocomplete="off" placeholder="「その他」の場合はここに入力してください">
+        <input type="text" name="その他" size="30" class="ws" autocomplete="off" placeholder="「その他」の場合はここに入力してください" style="width: 100%;">
        </td>
       </tr>
       <tr>
@@ -490,7 +490,7 @@
        <th colspan="2">保険契約者から見た続柄</th>
        <td colspan="2">
         <div class="select1">
-         <select id="insured_relationship">
+         <select id="insured_relationship" style="width: 100%;">
          <option value="">　</option>                    
          <option value="本人">本人</option>
          <option value="配偶者">配偶者</option>
@@ -502,7 +502,7 @@
          </select>
        </td>
        <td colspan="2">
-         <input type="text" name="その他" size="30" class="ws" autocomplete="off" placeholder="「その他」の場合はここに入力してください">
+         <input type="text" name="その他" size="30" class="ws" autocomplete="off" placeholder="「その他」の場合はここに入力してください" style="width: 100%;">
        </td>
       </tr>
      </table>  
@@ -512,19 +512,19 @@
        <caption>保険金受取人<span style="font-size: 0.7em;">（被保険者の三親等以内の親族）</span></caption>
       <tr>
        <th>氏名</th>
-       <td>
-         <input id="beneficiary_name" type="text" name="氏名" size="30" class="ws" autocomplete="off">
+       <td colspan="2">
+         <input id="beneficiary_name" type="text" name="氏名" size="30" class="ws" autocomplete="off" style="width: 100%;">
        </td>
        <th>フリガナ</th>
-        <td>
-          <input id="beneficiary_furigana" type="text" name="フリガナ" size="30" class="ws" autocomplete="off">
-        </td>
+       <td colspan="2">
+         <input id="beneficiary_furigana" type="text" name="フリガナ" size="30" class="ws" autocomplete="off" style="width: 100%;">
+       </td>
        </tr>
        <tr>
-        <th>被保険者から見た続柄</th>
-        <td>
+        <th colspan="2">被保険者から見た続柄</th>
+        <td colspan="2">
          <div class="select1">
-           <select id="beneficiary_relationship">
+           <select id="beneficiary_relationship" style="width: 100%;">
            <option value="">　</option>
            <option value="配偶者">配偶者</option>
            <option value=""子>子</option>
@@ -535,8 +535,8 @@
            </select>
          </div>
         </td>
-        <td>
-          <input type="text" name="その他" size="30" class="ws" autocomplete="off" placeholder="「その他」の場合はここに入力してください">
+        <td colspan="2">
+         <input type="text" name="その他" size="30" class="ws" autocomplete="off" placeholder="「その他」の場合はここに入力してください" style="width: 100%;">
         </td>
        </tr>
       </table>   
