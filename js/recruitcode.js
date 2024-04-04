@@ -15,15 +15,15 @@ $(document).ready(function(){
               return part.replace(/^"(.*)"$/, '$1');
             });
             if (parts[0] === recruitCode) {
-              $('span[name="募集人名"]').val(parts[1]);
-              $('span[name="代理店名"]').val(parts[3]);
+              $('input[name="募集人名"]').val(parts[1]);
+              $('input[name="代理店名"]').val(parts[3]);
               found = true;
               break;
             }
           }
           if (!found) {
-            $('span[name="募集人名"]').val('該当なし');
-            $('span[name="代理店名"]').val('該当なし');
+            $('input[name="募集人名"]').val('該当なし');
+            $('input[name="代理店名"]').val('該当なし');
           }
         }
       });
