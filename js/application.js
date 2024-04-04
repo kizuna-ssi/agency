@@ -89,7 +89,7 @@ categorySelect1.addEventListener('input', () => {
 
 $(document).ready(function(){
     // フォームの要素が変更された時の処理
-    $('.form input, .form select').change(function(){
+    $('.form1 input, .form1 select').change(function(){
         // フォームの各要素の値を取得
         var applicationDateYear = $('#application_date_year').val();
         var applicationDateMonth = $('#application_date_month').val();
