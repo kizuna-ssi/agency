@@ -391,7 +391,7 @@ footer .pr {display: block;}
 	border-top: 1px solid #ccc;	/*テーブルの一番上の線。幅、線種、色*/
 	table-layout: fixed;
 	width: 100%;
-	margin: 0 auto 30px;		/*最後の「30px」がテーブルの下に空けるスペースです*/
+	margin-bottom: 30px;		/*「30px」がテーブルの下に空けるスペースです*/
 }
 
 /*tr（１行分）タグ設定*/
