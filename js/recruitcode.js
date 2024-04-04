@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $('input[name="募集人コード"]').on('input', function(){
-    var recruitCode = '"' + $(this).val(); // 入力された値の前に " を付ける
+    var recruitCode = $(this).val(); // 入力された値を取得
     if (recruitCode) { // 値が存在するかどうかをチェック
       $.ajax({
         url: 'csv/data.csv',
@@ -24,6 +24,11 @@ $(document).ready(function(){
           if (!found) {
             $('input[name="募集人名"]').val('該当なし');
             $('input[name="代理店名"]').val('該当なし');
+            // 該当がない場合は2つ目のテーブルを非表示にする
+            $('.ta2').hide();
+          } else {
+            // 該当がある場合は2つ目のテーブルを表示する
+            $('.ta2').show();
           }
         }
       });
