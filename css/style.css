@@ -825,7 +825,11 @@ main {
 .application th{
 	text-align:right;
 }
-	
+
+.application_print{
+	background-color: #fff;
+}
+
 .application_print p{
 	padding-top: 1px;
 	padding-bottom: 1px;
