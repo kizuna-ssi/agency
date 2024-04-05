@@ -1,5 +1,5 @@
 @media screen {
-  .no-screen {
+.no-screen {
     display: none;
   }
 }
@@ -9,7 +9,7 @@
      -webkit-print-color-adjust: exact;
  }
 	
-  .no-print{
+.no-print{
     display: none;
   }
 	
@@ -19,7 +19,7 @@
 
 main{
     padding-top: 0px;
-  }
+}
 
 .page-break {
     break-before: always;
@@ -28,5 +28,6 @@ main{
 }
 
 @page {
-  margin: 10px;
+    margin: 10px;
+    size: A4 portrait;
 }
