@@ -492,7 +492,8 @@
         </div>
        </td>
        <td colspan="3">
-        <input type="text" name="その他" size="30" class="ws" autocomplete="off" placeholder="「その他」の場合はここに入力" style="width: 100%;">
+        <input type="text" id="insured_job_etc" name="その他" size="30" class="ws" autocomplete="off" 
+          placeholder="「その他」の場合はここに入力" style="width: 100%;">
        </td>
       </tr>
       <tr>
@@ -516,7 +517,8 @@
          </select>
        </td>
        <td colspan="2">
-         <input type="text" name="その他" size="30" class="ws" autocomplete="off" placeholder="「その他」の場合はここに入力" style="width: 100%;">
+         <input type="text" id="insured_relationship_etc" name="その他" size="30" class="ws" autocomplete="off"
+           placeholder="「その他」の場合はここに入力" style="width: 100%;">
        </td>
       </tr>
      </table>  
@@ -550,7 +552,8 @@
          </div>
         </td>
         <td colspan="2">
-         <input type="text" name="その他" size="30" class="ws" autocomplete="off" placeholder="「その他」の場合はここに入力" style="width: 100%;">
+         <input type="text" id="beneficiary_relationship_etc" name="その他" size="30" class="ws" autocomplete="off"
+           placeholder="「その他」の場合はここに入力" style="width: 100%;">
         </td>
        </tr>
       </table>    
@@ -753,21 +756,48 @@
             
           </td>
         </tr>  
+        <tr>
+          <td>
+            <span style="font-weight: bold;">【6】被保険者</span><br>
+            <br>
+                        
+            <table class="ta2">
+              <tr>
+               <th>氏名</th>
+               <td style="width: 30%;"><span class="insured_nameLabel"></span>
+               <th>フリガナ</th>
+               <td><span class="insured_furiganaLabel"></span>
+              </tr>
+              <tr>
+               <th>性別</th>
+               <td><span class="insured_genderLabel"></span></td>
+               <th>生年月日</th>
+                <td>
+                  <span class="insured_birth_yearLabel"></span>　　年　
+                  <span class="insured_birth_monthLabel"></span>　　月　
+                  <span class="insured_birth_dayLabel"></span>　　日
+                </td>
+              </tr>
+              <tr>
+                <th>住所</th>
+                <td colspan="3" style="text-align: left; padding-left: 10px;"">
+                  〒<span class="insured_postal_codeLabel"></span>
+                  <span class="insured_addressLabel"></span>
+                </td>
+              </tr>
+              <tr>
+                <th>電話</th>
+                <td><span class="insured_telLabel"></span>
+                <th>メール</th>
+                <td><span class="insured_emailLabel"></span></td>
+              </tr>
+            </table><br>
+
+          </td>
+        </tr>
       </table><br>
 
-     <table class="ta2">  
-        <tr>
-          <th>被保険者・氏名</th><td><div class="insured_nameLabel"></div></td></tr>  
-        <tr><th>被保険者・フリガナ</th><td><div class="insured_furiganaLabel"></div></td></tr>  
-        <tr><th>被保険者・性別</th><td><div class="insured_genderLabel"></div></td></tr>  
-        <tr><th>被保険者・生年月日</th>
-          <td><span class="insured_birth_yearLabel"></span>年
-              <span class="insured_birth_monthLabel"></span>月
-              <span class="insured_birth_dayLabel"></span>日</td></tr>  
-        <tr><th>被保険者・郵便番号</th><td><div class="insured_postal_codeLabel"></div></td></tr>  
-        <tr><th>被保険者・住所</th><td><div class="insured_addressLabel"></div></td></tr>  
-        <tr><th>被保険者・電話番号</th><td><div class="insured_telLabel"></div></td></tr>  
-        <tr><th>被保険者・メール</th><td><div class="insured_emailLabel"></div></td></tr>  
+      <table>
         <tr><th>被保険者・職業</th><td><div class="insured_jobLabel"></div></td></tr>
         <tr><th>被保険者・勤務先</th><td><div class="insured_workplaceLabel"></div></td></tr>
         <tr><th>被保険者・続柄</th><td><div class="insured_relationshipLabel"></div></td></tr>
