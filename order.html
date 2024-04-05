@@ -67,13 +67,14 @@
 <td><input type="text" name="住所" size="30" class="p-region p-locality p-street-address p-extended-address wl" required="required" autocomplete="off"></td>
 </tr>
 <tr>
-<th>募集資材<br></th>
+<th rowspan="4">募集資材<br></th>
 <td>
-  きずなの死亡保険<br>
   <label class="CheckboxInput" for="order01">
   <input class="CheckboxInput-Input" type="checkbox" id="order01" name="パンフレット">
   <span class="CheckboxInput-DummyInput"></span>
   <span class="CheckboxInput-LabelText"><a href="pdf/pamphlet.pdf" target="_blank">パンフレット</a></span></label>
+</td>
+<td>
   <div class="select1">
     <select style="width: 100px;" name="パンフレット_部数">
      <option value="10">10</option>
@@ -88,10 +89,16 @@
      <option value="100">100</option>
    </select>
   </div>
+</td>
+</tr>
+<tr>
+  <td>  
   <label class="CheckboxInput" for="order02">
   <input class="CheckboxInput-Input" type="checkbox" id="order02" name="約款">
   <span class="CheckboxInput-DummyInput"></span>
   <span class="CheckboxInput-LabelText"><a href="pdf/insurance_clause.pdf" target="_blank">約款</a></span></label>
+  </td>
+  <td>
   <div class="select1">
     <select style="width: 100px;" name="約款_部数">
      <option value="10">10</option>
@@ -106,10 +113,16 @@
      <option value="100">100</option>
    </select>
   </div>
+  </td>
+</tr>
+<tr>
+  <td>
   <label class="CheckboxInput" for="order03">
   <input class="CheckboxInput-Input" type="checkbox" id="order03" name="重要事項説明書">
   <span class="CheckboxInput-DummyInput"></span>
   <span class="CheckboxInput-LabelText"><a href="pdf/important_matters.pdf" target="_blank">重要事項説明書</a></span></label>
+  </td>
+  <td>
   <div class="select1">
     <select style="width: 100px;" name="重要事項説明書_部数">
      <option value="10">10</option>
@@ -124,7 +137,10 @@
      <option value="100">100</option>
    </select>
   </div>
-  
+  </td>
+</tr>
+<tr>
+  <td>
   <label class="CheckboxInput" for="order04">
   <input class="CheckboxInput-Input" type="checkbox" id="order04" name="申込書">
   <span class="CheckboxInput-DummyInput"></span>
@@ -143,7 +159,6 @@
      <option value="100">100</option>
    </select>
   </div>
-
 </td>
 </tr>
 
