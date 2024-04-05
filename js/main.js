@@ -120,3 +120,12 @@ $(function(){
         $('#navigation').load('navigation.html'); 
         });
 
+window.onload = function() {
+    var pathname = window.location.pathname;
+    if (pathname.includes("quotation1.html") || pathname.includes("quotation2.html")) {
+        var checkbox = document.getElementById("ac-1");
+        if (checkbox) {
+            checkbox.checked = true;
+        }
+    }
+}
