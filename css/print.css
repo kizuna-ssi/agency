@@ -31,3 +31,9 @@ main{
 }
 	
 }
+
+@media all and (-ms-high-contrast: none){
+.page-break {
+      break-before: auto;
+}
+}
