@@ -876,7 +876,7 @@ main {
 	vertical-align: middle;
 }
 
-.pdf_icon:after {
+.pdf_icon a:after {
     content:" ";
     display: inline-block;
     width: 24px;
