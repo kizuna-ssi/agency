@@ -877,3 +877,13 @@ main {
 }
 
 
+.col_width {
+	width: 30%;
+}
+
+@media screen and (max-width:899px) {
+.col_width {
+	width: 50%;
+}
+	
+}	
