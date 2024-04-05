@@ -39,32 +39,32 @@
 <table class="ta1">
 <tr>
 <th>募集人コード</th>
-<td><input type="text" name="募集人コード" size="30" class="ws" required="required" autocomplete="on" placeholder="半角数字6桁" pattern="\d*"></td>
+<td colspan="2"><input type="text" name="募集人コード" size="30" class="ws" required="required" autocomplete="on" placeholder="半角数字6桁" pattern="\d*"></td>
 </tr>
 <tr>
 <th>代理店名</th>
-<td><input type="text" name="代理店名" size="30" class="ws" required="required" autocomplete="on"></td>
+<td colspan="2"><input type="text" name="代理店名" size="30" class="ws" required="required" autocomplete="on"></td>
 </tr>
 <tr>
 <th>募集人名</th>
-<td><input type="text" name="募集人名" size="30" class="ws" required="required" autocomplete="on"></td>
+<td colspan="2"><input type="text" name="募集人名" size="30" class="ws" required="required" autocomplete="on"></td>
 </tr>
 <tr>
 <th>電話番号</th>
-<td><input type="tel" name="電話番号" size="30" class="ws" required="required" autocomplete="off"></td>
+<td colspan="2"><input type="tel" name="電話番号" size="30" class="ws" required="required" autocomplete="off"></td>
 </tr>
 <tr>
 <th>メール<br class="br-sp">アドレス</th>
-<td><input type="email" name="メールアドレス" size="30" class="ws" required="required" autocomplete="off"></td>
+<td colspan="2"><input type="email" name="メールアドレス" size="30" class="ws" required="required" autocomplete="off"></td>
 </tr>
 <tr>
 <th>送付先-<br>郵便番号</th>
-<td><input type="text" name="郵便番号" size="30" class="p-postal-code ws" required="required" autocomplete="off"></td>
+<td colspan="2"><input type="text" name="郵便番号" size="30" class="p-postal-code ws" required="required" autocomplete="off"></td>
 </tr>
 <tr>
 <th>送付先-住所<br>
   <span style="font-size:70%;">（建物名含む）</span></th>
-<td><input type="text" name="住所" size="30" class="p-region p-locality p-street-address p-extended-address wl" required="required" autocomplete="off"></td>
+<td colspan="2"><input type="text" name="住所" size="30" class="p-region p-locality p-street-address p-extended-address wl" required="required" autocomplete="off"></td>
 </tr>
 <tr>
 <th rowspan="4">募集資材<br></th>
@@ -145,6 +145,8 @@
   <input class="CheckboxInput-Input" type="checkbox" id="order04" name="申込書">
   <span class="CheckboxInput-DummyInput"></span>
   <span class="CheckboxInput-LabelText"><a href="pdf/application_form.pdf" target="_blank">申込書</a></span></label>
+  </td>
+  <td>
   <div class="select1">
     <select style="width: 100px;" name="申込書_部数">
      <option value="10">10</option>
@@ -164,7 +166,7 @@
 
 <tr>
 <th>備考</th>
-<td><textarea name="備考" cols="30" rows="10" class="wl" required="required" autocomplete="off"></textarea></td>
+<td colspan="2"><textarea name="備考" cols="30" rows="10" class="wl" required="required" autocomplete="off"></textarea></td>
 </tr>
 
 </table>
