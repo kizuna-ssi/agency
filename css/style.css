@@ -876,10 +876,4 @@ main {
 	vertical-align: middle;
 }
 
-.pdf_icon a:after {
-    content:" ";
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background: url(images/pdf.png) no-repeat;
-}
+
