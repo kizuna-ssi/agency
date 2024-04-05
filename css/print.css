@@ -25,10 +25,9 @@ main{
     break-before: always;
 }
 
-}
-
 @page {
     size: A4 portrait;
     margin: 12.7mm 9.7mm;
 }
-
+	
+}
