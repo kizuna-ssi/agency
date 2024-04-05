@@ -32,19 +32,3 @@ main{
     size: A4 portrait;
 }
 
-
-/* IE10以上 */
-@media print and (-ms-high-contrast: none) {
-        /* @pageの指定いらないかも */
-    @page {
-        size: A4;
-        margin: 12.7mm 9.7mm;
-    }
-
-    body {
-        zoom: 1.8;
-        width: 1200px;
-        transform: scale(0.5);
-        transform-origin: 0 0;
-    }
-}
