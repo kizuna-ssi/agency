@@ -227,6 +227,19 @@
 <div class="no-print">
 <div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div></div>
 
+<script>
+function customCalculate() {
+    var selectedOption = document.querySelector('input[name="course"]:checked').value;
+    if (selectedOption === "amount_fixed") {
+        document.querySelector(".open1").style.display = "block";
+        document.querySelector(".open2").style.display = "none";
+    } else if (selectedOption === "premium_fixed") {
+        document.querySelector(".open1").style.display = "none";
+        document.querySelector(".open2").style.display = "block";
+    }
+}
+</script>
+
 <script src="js/calculate_age.js"></script>
 <script src="js/premium.js"></script>
  
