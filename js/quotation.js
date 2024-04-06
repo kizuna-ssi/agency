@@ -1,14 +1,11 @@
 function calculate() {
-    // 保険料・保険金額の計算
     var premium = calculatePremium();
     var amount = calculateAmount();
  
-    // 生年月日の取得
     var year = document.querySelector('.birthday-year').value;
     var month = document.querySelector('.birthday-month').value;
     var day = document.querySelector('.birthday-day').value;
 
-    // 性別の取得
     var gender;
     if (document.getElementById('male').checked) {
         gender = '男性';
@@ -16,7 +13,6 @@ function calculate() {
         gender = '女性';
     }
 
-    // 保険金額の取得
     var select_amount;
     if (document.getElementById('50').checked) {
         select_amount = '50万円';
@@ -28,7 +24,6 @@ function calculate() {
         select_amount = '300万円';
     }
 
-    // 払込回数の取得
     var premium_times;
     if (document.getElementById('month').checked) {
         premium_times = '月払';
@@ -36,7 +31,6 @@ function calculate() {
         premium_times = '年払';
     }
 
-    // 保険料の取得
     var select_premium;
     if (document.getElementById('1000').checked) {
         select_premium = '1,000円';
@@ -56,26 +50,37 @@ function calculate() {
         select_premium = '50,000円';
     }
 
-   // 払込回数の取得
-
     var amount_times;
     if (document.getElementById('1000').checked || 
         document.getElementById('2000').checked || 
         document.getElementById('3000').checked || 
         document.getElementById('5000').checked) {
-    amount_times = '月払';
-    } else if (document.getElementById('10000').checked || 
-               document.getElementById('20000').checked || 
-               document.getElementById('30000').checked || 
-               document.getElementById('50000').checked) {
-    amount_times = '年払';
+        amount_times = '月払';
+    } else if (
+        document.getElementById('10000').checked || 
+        document.getElementById('20000').checked || 
+        document.getElementById('30000').checked || 
+        document.getElementById('50000').checked) {
+        amount_times = '年払';
     }
+
+    var course ;
+    if (document.getElementById('amount_fixed').checked) {
+        course = '保険金額固定コース';
+    } else if (
+        document.getElementById('premium_fixed').checked) {
+        gender = '保険料定額コース';
+    }    
     
-    // 生年月日、性別、保険金額、払込回数を表示
     document.getElementById('birthdayLabel').innerText =  year + '年' + month + '月' + day + '日';
     document.getElementById('genderLabel').innerText =  gender;
     document.getElementById('select_amountLabel').innerText =  select_amount;
-    document.getElementById('timesLabel').innerText =  times;
+    document.getElementById('premium_timesLabel').innerText =  premium_times;
+    document.getElementById('select_premiumLabel').innerText =  select_premium;
+    document.getElementById('amount_timesLabel').innerText =  amount_times;
+    document.getElementById('courseLabel').innerText =  course;
+    document.getElementById('amountLabel').innerText =  amount;
+    document.getElementById('premiumLabel').innerText =  premium;
 }
 
 
