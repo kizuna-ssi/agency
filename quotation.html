@@ -59,8 +59,8 @@
       <th>加入コース</th>
       <td>
        <div class="select1">
-        <select id="amount_fixed" style="width: 100%; max-width: 300px;">
-         <option value="">選択してください</option>
+        <select id="course" style="width: 100%; max-width: 300px;">
+         <option value="none">選択してください</option>
          <option value="amount_fixed">保険金額固定コース</option>
          <option value="premium_fixed">保険料定額コース</option>
         </select>
@@ -230,6 +230,23 @@
 
 <script src="js/calculate_age.js"></script>
 <script src="js/premium.js"></script>
+
+<script>
+function calculate() {
+    var selectedOption = document.getElementById("course").value;
+    if (selectedOption === "none") {
+        document.querySelector(".open1").style.display = "none";
+        document.querySelector(".open2").style.display = "none";
+    } else if (selectedOption === "amount_fixed") {
+        document.querySelector(".open1").style.display = "block";
+        document.querySelector(".open2").style.display = "none";
+    } else if (selectedOption === "premium_fixed") {
+        document.querySelector(".open1").style.display = "none";
+        document.querySelector(".open2").style.display = "block";
+    }
+}
+</script>
+ 
  
 </body>
 </html>
