@@ -121,6 +121,7 @@ $(function(){
         });
 
 
+
 function calculate() {
     var selectedOption = document.querySelector('input[name="course"]:checked').value;
     if (selectedOption === "amount_fixed") {
@@ -131,3 +132,4 @@ function calculate() {
         document.querySelector(".open2").style.display = "block";
     }
 }
+
