@@ -233,6 +233,16 @@ function customCalculate() {
     }
 }
 </script>
+<script>
+function customCalculate() {
+    var selectedOption = document.querySelector('input[name="course"]:checked');
+    if (selectedOption) {
+        document.querySelector(".open3").style.display = "block";
+    } else {
+        document.querySelector(".open3").style.display = "none";
+    }
+}
+</script>
 
 
 <script src="js/calculate_age.js"></script>
