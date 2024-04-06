@@ -9,6 +9,22 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/print.css">
 <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+<style>
+/* 初期状態では全て非表示にする */
+.open1, .open2 {
+    display: none;
+}
+
+/* 加入コースが選択された場合に表示する */
+#course option[value="amount_fixed"]:checked ~ .open1 {
+    display: block;
+}
+
+#course option[value="premium_fixed"]:checked ~ .open2 {
+    display: block;
+}
+</style>
+
 </head>
 
 <body>
