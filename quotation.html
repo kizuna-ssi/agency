@@ -59,10 +59,11 @@
       <th>加入コース</th>
       <td>
        <div class="select1">
-        <input type="radio" id="amount_fixed" name="course" onchange="calculate()" value="1">
-        <label for="amount_fixed">保険金額固定コース</label>
-        <input type="radio" id="premium_fixed" name="course" onchange="calculate()" value="2">
-        <label for="female">保険料定額コース</label>
+        <select id="amount_fixed" style="width: 100%;">
+         <option value="">選択してください</option>
+         <option value="amount_fixed">保険金額固定コース</option>
+         <option value="premium_fixed">保険料定額コース</option>
+        </select>
        </div>
       </td>
     </tr>
