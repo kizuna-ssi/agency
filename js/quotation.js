@@ -1,11 +1,10 @@
 
 function calculatePremium() {
-    var a, b, c, d, e, f;
+    var a, b, c, d, f;
     a = calculateAge(); 
     b = document.querySelector('input[name="gender"]:checked').value;
     c = document.querySelector('input[name="select_amount"]:checked').value;
     d = document.querySelector('input[name="times"]:checked').value;
-    e = document.querySelector('input[name="select_premium"]:checked').value;
     f = document.querySelector('input[name="course"]:checked').value;
     
 
