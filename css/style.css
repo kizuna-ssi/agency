@@ -887,3 +887,7 @@ main {
 }
 	
 }	
+
+.open1 .open2 {
+	display: none;
+}
