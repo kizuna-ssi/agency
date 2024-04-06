@@ -29,7 +29,11 @@
 
 <section>
  <h2>見積り <span style="font-size: 0.7em; font-weight: bold; color: #94545B;">＜きずなの死亡保険＞</span></h2>
-
+ 
+ <div class="no^screen"> 
+   <p style="text-align: right;">見積日：<span id="datedisplay2"></span></p>
+  </div>
+ 
   <form class="form1">
    <div class="no-print">
    <table class="ta1">    
@@ -70,6 +74,7 @@
    </div>
 
   <div class="open1">
+   <div class="no-print"> 
    <table class="ta1">    
     <caption>
      ご希望の保険金額と払込回数を選択してください
@@ -95,9 +100,9 @@
       </td>
     </tr>
    </table>
+   </div>  
 
    <div class="no-screen">
-    <p style="text-align: right;">見積日：<span id="datedisplay2"></span></p>
     <table class="ta1">
     <caption>■ 選択内容</caption>
     <tr>       
@@ -110,7 +115,7 @@
     </tr>
     <tr>
      <th>保険金額</th><td><div id="select_amountLabel"></div></td>
-     <th>払込回数</th><td><div id="timesLabel"></div></td>
+     <th>払込回数</th><td><div id="premium_timesLabel"></div></td>
     </tr>
     </table><br>
    </div>
@@ -122,49 +127,7 @@
      <td><div style="display:none"><input id="premium" type="text" readonly=""></div>
          <div id="product" type="text" readonly="" style="font-weight: bold; font-size: 2.0em;"></div></td>     
     </tr>
-    <tr>
-     <th>契約年齢</th><td><span id="ageDisplay1"></span> 歳</td>
-    </tr>
    </table>
-
-        <p style="font-size: 0.8rem; text-indent: -2em; padding-left: 4em; margin: auto;">
-          ※1 契約年齢とは責任開始日時点の年齢をいいます。
-          <span style="font-weight: bold;">契約年齢が50歳から80歳まで</span>の方がお申込みいただけます。
-        </p>
-        <p style="font-size: 0.8rem; text-indent: -2em; padding-left: 4em; margin: auto;">
-          ※2 責任開始日は、申込受付完了が月初～15日の場合は<span style="font-weight: bold;">翌月の1日</span>、
-          16日～月末の場合は<span style="font-weight: bold;">翌々月の1日</span>となります。<br>
-          本日（<span id="datedisplay1"></span>）時点を申込受付完了とした場合、責任開始日は<span id="ageDisplay2" style="font-weight: bold;"></span>となります。
-        </p>
-        <p style="font-size: 0.8rem; text-indent: -2em; padding-left: 4em; margin: auto;">
-          ※3 表示された保険料は初年度の保険料です。次年度以降の保険料は、更新日時点の年齢を基準に計算されます。
-        </p>       
-        <p style="font-size: 0.8rem; text-indent: -2em; padding-left: 4em; margin: auto;">
-          ※4 引受不可と表示された場合、選択された条件でのお申し込みはできません。
-        </p>
-        <br>
-
-       <div class="no-print">
-        <div class="btn">
-          <a href="javascript:void(0)" onclick="window.print();return false;">見積結果を印刷する</a>
-        </div><br>
-   
-        <div class="btn">
-          <a href="pdf/list_premium.pdf" target="_blank">一覧で見る（PDF）</a>
-        </div><br>
-       </div>
-
-  <div class="no-screen">
-   <hr><br>
-   <p>
-    <span style="font-size: 130%; font-weight: bold;">株式会社きずな少額短期保険</span><br>
-    <span style="font-size: 100%;">〒460-0003 愛知県名古屋市中区錦二丁目13番30号 9階</span><br>
-    <span style="font-size: 100%;">TEL：052-228-1335</span><br>
-    <span style="font-size: 80%;">受付時間：10:00〜16:00（土・日・祝・年末年始を除く）</span>
-   </p>
-  </div>
-
-   
   </div>
 
   <div class="open2">
@@ -221,8 +184,12 @@
      <td><div style="display:none"><input id="amount" type="text" readonly=""></div>
          <div id="product2" type="text" readonly="" style="font-weight: bold; font-size: 2.0em;"></div></td>     
     </tr>
+   </table>
+  </div>
+   
+   <table class="ta1">
     <tr>
-     <th>契約年齢</th><td><span id="additionalAgeDisplay1"></span> 歳</td>
+     <th>契約年齢</th><td><span id="ageDisplay1"></span> 歳</td>
     </tr>
    </table>
 
@@ -236,7 +203,7 @@
           本日（<span id="datedisplay1"></span>）時点を申込受付完了とした場合、責任開始日は<span id="ageDisplay2" style="font-weight: bold;"></span>となります。
         </p>
         <p style="font-size: 0.8rem; text-indent: -2em; padding-left: 4em; margin: auto;">
-          ※3 表示された保険料は初年度の保険料です。次年度以降の保険料は、更新日時点の年齢を基準に計算されます。
+          ※3 表示された見積結果は初年度の金額です。次年度以降は、更新日時点の年齢を基準に計算されます。
         </p>       
         <p style="font-size: 0.8rem; text-indent: -2em; padding-left: 4em; margin: auto;">
           ※4 引受不可と表示された場合、選択された条件でのお申し込みはできません。
@@ -262,9 +229,8 @@
     <span style="font-size: 80%;">受付時間：10:00〜16:00（土・日・祝・年末年始を除く）</span>
    </p>
   </div>
+
    
-  </div>
-  
  </form>
 
 </section>
