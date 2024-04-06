@@ -147,7 +147,7 @@
    </table>
   </div>
 
- <div class="open1 open2">
+ <div class="open3>
         <p style="font-size: 0.8rem; text-indent: -2em; padding-left: 4em; margin: auto;">
          ※1 被保険者の方の契約年齢を <span id="ageDisplay1" style="font-weight: bold;"></span> 歳として計算しています。<br>
          <span style="font-weight: bold;">契約年齢が50歳から80歳まで</span>の方がお申込みいただけます。
@@ -226,9 +226,9 @@ function customCalculate() {
     var selectedOption = document.querySelector('input[name="course"]:checked').value;
     if (selectedOption === "amount_fixed") {
         document.querySelector(".open1").style.display = "block";
-        document.querySelector(".open2").style.display = document.querySelector('input[name="course"]:checked') ? "block" : "none";
+        document.querySelector(".open2").style.display = "none";
     } else if (selectedOption === "premium_fixed") {
-        document.querySelector(".open1").style.display = document.querySelector('input[name="course"]:checked') ? "block" : "none";
+        document.querySelector(".open1").style.display = "none";
         document.querySelector(".open2").style.display = "block";
     }
 }
