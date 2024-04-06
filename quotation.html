@@ -34,7 +34,7 @@
    <div class="no-print">
    <table class="ta1">    
     <caption>
-     被保険者となる方の生年月日と性別、ご希望の保険金額と払込回数を選択してください
+     被保険者となる方の生年月日と性別、ご希望の加入コースを選択してください
     </caption>
     <tr>
       <th>生年月日</th>
@@ -59,7 +59,7 @@
       <th>加入コース</th>
       <td>
        <div class="select1">
-        <select id="amount_fixed" style="width: 100%;">
+        <select id="amount_fixed" style="width: 100%; max-width="300px;">
          <option value="">選択してください</option>
          <option value="amount_fixed">保険金額固定コース</option>
          <option value="premium_fixed">保険料定額コース</option>
@@ -67,7 +67,12 @@
        </div>
       </td>
     </tr>
+   </table>
     
+   <table class="ta1">    
+    <caption>
+     ご希望の保険金額と払込回数を選択してください
+    </caption>
     <tr>
       <th>保険金額</th>
       <td>
