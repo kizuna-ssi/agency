@@ -120,9 +120,10 @@ $(function(){
         $('#navigation').load('navigation.html'); 
         });
 
-function calculate() {
-    var selectedOption = document.getElementById("amount_fixed").value;
-    if (selectedOption === "") {
+
+$(function calculate() {
+    var selectedOption = document.getElementById("course").value;
+    if (selectedOption === "none") {
         document.querySelector(".open1").style.display = "none";
         document.querySelector(".open2").style.display = "none";
     } else if (selectedOption === "amount_fixed") {
@@ -132,4 +133,5 @@ function calculate() {
         document.querySelector(".open1").style.display = "none";
         document.querySelector(".open2").style.display = "block";
     }
-}
+});
+
