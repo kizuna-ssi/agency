@@ -1,3 +1,8 @@
+function calculate() {
+    var premium = calculatePremium();
+    var amount = calculateAmount();
+}
+
 
 function calculatePremium() {
     var a, b, c, d;
