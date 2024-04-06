@@ -16,15 +16,15 @@ function calculate() {
     }
 
     // 保険金額の取得
-    var amount;
+    var select_amount;
     if (document.getElementById('50').checked) {
-        amount = '50万円';
+        select_amount = '50万円';
     } else if (document.getElementById('100').checked) {
-        amount = '100万円';
+        select_amount = '100万円';
     } else if (document.getElementById('200').checked) {
-        amount = '200万円';
+        select_amount = '200万円';
     } else if (document.getElementById('300').checked) {
-        amount = '300万円';
+        select_amount = '300万円';
     }
 
     // 払込回数の取得
@@ -38,16 +38,16 @@ function calculate() {
     // 生年月日、性別、保険金額、払込回数を表示
     document.getElementById('birthdayLabel').innerText =  year + '年' + month + '月' + day + '日';
     document.getElementById('genderLabel').innerText =  gender;
-    document.getElementById('amountLabel').innerText =  amount;
+    document.getElementById('select_amountLabel').innerText =  select_amount;
     document.getElementById('timesLabel').innerText =  times;
 }
 
 
-function calculateQuotation() {
+function calculatePremium() {
     var a, b, c, d;
     a = calculateAge(); 
     b = document.querySelector('input[name="gender"]:checked').value;
-    c = document.querySelector('input[name="amount"]:checked').value;
+    c = document.querySelector('input[name="select_amount"]:checked').value;
     d = document.querySelector('input[name="times"]:checked').value;
 
     if (a == 50 && b == 1 && c == 1 && d == 1) {
