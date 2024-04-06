@@ -122,7 +122,7 @@ $(function(){
 
 
 
-function calculate() {
+function customCalculate() {
     var selectedOption = document.querySelector('input[name="course"]:checked').value;
     if (selectedOption === "amount_fixed") {
         document.querySelector(".open1").style.display = "block";
