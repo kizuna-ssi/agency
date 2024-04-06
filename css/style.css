@@ -887,3 +887,15 @@ main {
 }
 	
 }	
+
+.open1, .open2 {
+    display: none;
+}
+
+#course option[value="amount_fixed"]:checked ~ .open1 {
+    display: block;
+}
+
+#course option[value="premium_fixed"]:checked ~ .open2 {
+    display: block;
+}
