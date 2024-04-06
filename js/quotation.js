@@ -2497,7 +2497,7 @@ function calculateAmount() {
     var a, b, c;
     a = calculateAge(); 
     b = document.querySelector('input[name="gender"]:checked').value;
-    c = document.querySelector('input[name="premium"]:checked').value;
+    c = document.querySelector('input[name="select_premium"]:checked').value;
 
    if (a == 50 && b == 1 && c == 1) {
       document.getElementById("amount").value = "1724140";
