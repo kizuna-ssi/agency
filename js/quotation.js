@@ -1,5 +1,5 @@
 
-function calculatePremium() {
+function calculateQuotation() {
     var a, b, c, d, f;
     a = calculateAge(); 
     b = document.querySelector('input[name="gender"]:checked').value;
