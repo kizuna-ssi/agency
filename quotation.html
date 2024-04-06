@@ -9,22 +9,6 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/print.css">
 <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-<style>
-/* 初期状態では全て非表示にする */
-.open1, .open2 {
-    display: none;
-}
-
-/* 加入コースが選択された場合に表示する */
-#course option[value="amount_fixed"]:checked ~ .open1 {
-    display: block;
-}
-
-#course option[value="premium_fixed"]:checked ~ .open2 {
-    display: block;
-}
-</style>
-
 </head>
 
 <body>
@@ -74,12 +58,9 @@
     <tr>
       <th>加入コース</th>
       <td>
-       <div class="select1">
-        <select id="course" style="width: 100%; max-width: 300px;">
-         <option value="none">選択してください</option>
-         <option value="amount_fixed">保険金額固定コース</option>
-         <option value="premium_fixed">保険料定額コース</option>
-        </select>
+       <div class="radio1">
+        <input type="radio" id="amount_fixed" name="course" onchange="calculate()" value="1"><label for="amount_fixed">保険金額固定コース</label>
+        <input type="radio" id="premium_fixed" name="course" onchange="calculate()" value="2"><label for="premium_fixed">保険料定額コース</label>
        </div>
       </td>
     </tr>
