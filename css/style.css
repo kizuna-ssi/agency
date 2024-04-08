@@ -889,6 +889,7 @@ main {
 }
 
 .application_print .ta3 th{
+	text-align: center;
 	width:50px;
 	background-color: #ccc;
 	padding: 2px;
