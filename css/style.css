@@ -883,6 +883,12 @@ main {
 	margin: auto;
 }
 
+.application_print .ta3 caption{
+	font-size: 0.8em;
+	padding: 1px;
+	margin: auto;
+}
+
 .application_print .ta3 tr{
 	border-top: 1px solid #666666;
 	border-bottom: 1px solid #666666;
