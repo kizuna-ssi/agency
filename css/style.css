@@ -914,7 +914,7 @@ main {
 }
 
 .application_print .ta4{
-	width: 95%;
+	width: 90%;
 	font-size: 0.8em;
 	padding: 1px;
 	margin: auto;
@@ -936,7 +936,6 @@ main {
 }
 
 .application_print .ta4 td{
-	font-size: 0.9em;
 	text-align: left;
 	padding: 10px;
 	margin: 1px;
