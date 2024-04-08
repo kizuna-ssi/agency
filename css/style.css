@@ -913,6 +913,29 @@ main {
 	vertical-align: middle;
 }
 
+.application_print .ta4{
+	width: 90%;
+	font-size: 0.8em;
+	padding: 1px;
+	margin: auto;
+}
+
+.application_print .ta4 tr{
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+}
+
+.application_print .ta4 th{
+	text-align: center;
+	height: 60px; 
+	width: 20px;
+	background-color: #ccc;
+	padding: 2px;
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;
+	vertical-align: middle;
+}
+
 .application_print .ta4 td{
 	text-align: left;
 	padding: 0px;
