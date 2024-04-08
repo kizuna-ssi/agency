@@ -885,7 +885,7 @@ main {
 
 .application_print .ta3 caption{
 	font-size: 0.8em;
-	padding: 1px;
+	padding: 1px 1px 1px 10px;
 	margin: auto;
 }
 
