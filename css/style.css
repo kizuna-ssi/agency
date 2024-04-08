@@ -927,8 +927,6 @@ main {
 
 .application_print .ta4 th{
 	text-align: center;
-	height: 60px; 
-	width: 20px;
 	background-color: #ccc;
 	padding: 2px;
 	border-left: 1px solid #666666;
