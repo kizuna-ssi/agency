@@ -936,6 +936,7 @@ main {
 }
 
 .application_print .ta4 td{
+	font-size: 0.9em;
 	text-align: left;
 	padding: 10px;
 	margin: 1px;
