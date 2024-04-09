@@ -840,23 +840,23 @@ main {
 	font-size: 0.8em;
 }
 
-.application_printul{
+.application_print ul{
     margin:1rem;
     padding:0rem;
     list-style-type:none;
     border-radius:5px;
 }
-.application_printul li{
+.application_print ul li{
     line-height:1.6;
     padding:6px 0;
     margin:5px 0px;
 }
-.application_printul li:not(:last-child){
+.application_print ul li:not(:last-child){
     border-bottom:1px dashed #5AA0D6;
     margin-bottom:0;
 }
-.application_printul li:before{
-    content:'◆';
+.application_print ul li:before{
+    content:'□';
     padding:10px;
     font-weight:900;
     color:#5AA0D6;
