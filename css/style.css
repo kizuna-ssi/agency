@@ -841,25 +841,20 @@ main {
 }
 
 .application_print ul{
-    margin:1rem;
-    padding:0rem;
+    margin: 0px;
+    padding: 10px 10px 10px 20px;
     list-style-type:none;
-    border-radius:5px;
+    text-indent: -30px;
+    font-size: 0.8em;
 }
-.application_print ul li{
-    line-height:1.6;
-    padding:6px 0;
-    margin:5px 0px;
-}
+
 .application_print ul li:not(:last-child){
-    border-bottom:1px dashed #5AA0D6;
     margin-bottom:0;
 }
 .application_print ul li:before{
     content:'□';
     padding:10px;
     font-weight:900;
-    color:#5AA0D6;
 }
 
 .application_print ol{
