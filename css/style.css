@@ -209,7 +209,7 @@ header #logo {
 }
 #menubar a {
 	display: block;text-decoration: none;
-	text-align: center;	/*テキストを中央に*/
+	text-align: left;	/*テキストを左に*/
 	padding: 2px 0px;	/*上下、左右への余白*/
 }
 
@@ -820,6 +820,7 @@ main {
 	background: #f7f7f7;
 	border: 0px solid #111;
 	opacity: 1;
+	padding: 0px 0px 0px 50px;
 }
 
 .application th{
