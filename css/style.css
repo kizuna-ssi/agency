@@ -841,10 +841,8 @@ main {
 }
 
 .application_print ul{
-	padding-top: 1px;
-	padding-bottom: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
+	padding: 1px;
+	margin: 1px;
 	font-size: 0.7em;
 }
 
