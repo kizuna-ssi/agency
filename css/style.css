@@ -844,6 +844,7 @@ main {
 	padding: 1px;
 	margin: 1px;
 	font-size: 0.7em;
+	list-style-type: box;
 }
 
 .application_print ol{
