@@ -985,6 +985,7 @@ main {
 	display: flex;
 	margin: 0 0 1em;
 	padding: 0;
+	background: #f7f7f7;
 }
 .cp_stepflow > li {
 	cursor: pointer;
