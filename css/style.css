@@ -1034,3 +1034,9 @@ main {
   text-align: center;
   margin: 30px auto; 
 }
+
+.fixed {
+  position: fixed;
+  top: 60px;
+  left: 0;
+}
