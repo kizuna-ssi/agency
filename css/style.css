@@ -976,3 +976,55 @@ main {
 .open1, .open2, .open3 {
 	display: none;
 }
+
+
+.cp_stepflow {
+	font-size: 80%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 0 0 1em;
+	padding: 0;
+}
+.cp_stepflow > li {
+	position: relative;
+	display: block;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	text-overflow: ellipsis;
+	color: #b0bec5;
+	 -ms-flex: 1;
+	-moz-flex: 1;
+	-webkit-box-flex: 1;
+	     flex: 1;
+}
+.cp_stepflow > li .bubble::after,
+.cp_stepflow > li .bubble::before {
+	position: absolute;
+	top: 0px;
+	right: 50%;
+	left: 50%;
+	display: block;
+	width: 90%;
+	height: 8px;
+	content: '';
+	transform: translateX(-50%);
+	background-color: #b0bec5;
+}
+.cp_stepflow > li .bubble + span {
+	display: block;
+	margin-top: 1em;
+}
+.cp_stepflow > li.active,
+.cp_stepflow > li.active .bubble {
+	font-weight: bold;
+	color: #f57c00;
+}
+.cp_stepflow > li.active .bubble,
+.cp_stepflow > li.active .bubble::after,
+.cp_stepflow > li.active .bubble::before {
+	background-color: #fb8c00;
+}
