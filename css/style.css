@@ -180,7 +180,7 @@ header #logo {
 #menubar.db {
 	position: fixed;overflow: auto;z-index: 100;
 	left: 0px;top: 0px;
-	width: 200px;		/*メニューブロックの幅*/
+	width: 220px;		/*メニューブロックの幅*/
 	height: 100%;
 	padding: 70px 0 0;	/*上、左右、下へのブロック内の余白*/
 	background: rgba(0,0,0,0.9);		/*背景色。0,0,0は黒の事で0.9は色が90%出た状態の事。*/
