@@ -99,6 +99,15 @@
 <!--ページの上部へ戻るボタン-->
 <div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
 
+
+<script>
+$(document).ready(function() {
+  $('.cp_stepflow li').click(function() {
+    var index = $(this).index() + 1;
+    $('.open' + index).show().siblings('[class^="open"]').hide();
+  });
+});
+</script>
 	
 <script src="js/training1.js"></script>
   
