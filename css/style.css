@@ -1042,3 +1042,31 @@ main {
   top: 0px;
   width: 80%;
 }
+
+.learning .ta1{
+	width: 90%;
+	font-size: 0.8em;
+	padding: 1px;
+	margin: auto;
+}
+
+.learning .ta1 tr{
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+}
+
+.learning .ta1 th{
+	background-color: #ccc;
+	padding: 2px;
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;
+	vertical-align: middle;
+}
+
+.learning .ta1 td{
+	text-align: center;
+	padding: 2px;
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;
+	vertical-align: middle;
+}
