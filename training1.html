@@ -248,10 +248,10 @@ $(document).ready(function() {
 
   $(window).scroll(function() {
     if ($(window).scrollTop() > offset) {
-      cpStepflow.addClass('fixed').css('margin-top', cpStepflowHeight + 'px');
+      cpStepflow.addClass('fixed').css('padding-top', cpStepflowHeight + 'px');
       placeholder.css('height', cpStepflowHeight + 'px');
     } else {
-      cpStepflow.removeClass('fixed').css('margin-top', 0);
+      cpStepflow.removeClass('fixed').css('padding-top', 0);
       placeholder.css('height', 0);
     }
   });
