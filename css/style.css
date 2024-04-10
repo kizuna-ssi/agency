@@ -1028,3 +1028,8 @@ main {
 .cp_stepflow > li.active .bubble::before {
 	background-color: #fb8c00;
 }
+
+.center{
+  text-align: center;
+  margin: 30px auto; 
+}
