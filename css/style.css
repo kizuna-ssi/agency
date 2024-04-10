@@ -1071,3 +1071,9 @@ main {
 	border-right: 0px solid #ccc;
 	vertical-align: middle;
 }
+
+.learning ul{
+	padding-left: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
