@@ -1045,9 +1045,9 @@ main {
 
 .learning .ta1{
 	width: 90%;
-	font-size: 0.8em;
-	padding: 1px;
-	margin: auto;
+	font-size: 1.0em;
+	padding: 10px;
+	table-layout: fixed;
 }
 
 .learning .ta1 tr{
@@ -1057,16 +1057,16 @@ main {
 
 .learning .ta1 th{
 	background-color: #ccc;
-	padding: 2px;
-	border-left: 1px solid #666666;
-	border-right: 1px solid #666666;
+	padding: 10px;
+	border-left: 0px solid #ccc;
+	border-right: 0px solid #ccc;
 	vertical-align: middle;
 }
 
 .learning .ta1 td{
-	text-align: center;
-	padding: 2px;
-	border-left: 1px solid #666666;
-	border-right: 1px solid #666666;
+	text-align: left;
+	padding: 10px;
+	border-left: 0px solid #ccc;
+	border-right: 0px solid #ccc;
 	vertical-align: middle;
 }
