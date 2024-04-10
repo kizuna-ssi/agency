@@ -107,6 +107,14 @@ $(document).ready(function() {
     $('.open' + index).show().siblings('[class^="open"]').hide();
   });
 });
+	
+$(document).ready(function() {
+  $('.cp_stepflow li').click(function() {
+    $(this).addClass('active').siblings().removeClass('active');
+    var index = $(this).index() + 1;
+    $('.open' + index).show().siblings('[class^="open"]').hide();
+  });
+});
 </script>
 	
 <script src="js/training1.js"></script>
