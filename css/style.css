@@ -1038,4 +1038,5 @@ main {
 .fixed {
   position: fixed;
   top: 80px;
+  width: 80%;
 }
