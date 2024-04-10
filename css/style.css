@@ -1037,7 +1037,7 @@ main {
 }
 
 .fixed {
-  position: sticky;
+  position: fixed;
   top: 60px;
   width: 80%;
 }
