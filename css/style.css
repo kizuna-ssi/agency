@@ -987,6 +987,7 @@ main {
 	padding: 0;
 }
 .cp_stepflow > li {
+	cursor: pointer;
 	position: relative;
 	display: block;
 	width: auto;
