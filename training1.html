@@ -240,12 +240,13 @@ $(document).ready(function() {
 $(document).ready(function() {
   var cpStepflow = $('.cp_stepflow');
   var offset = cpStepflow.offset().top; // cp_stepflowの初期位置を取得
+  var cpStepflowHeight = cpStepflow.outerHeight(); // cp_stepflowの高さを取得
 
   $(window).scroll(function() {
     if ($(window).scrollTop() > offset) {
-      cpStepflow.addClass('fixed');
+      cpStepflow.addClass('fixed').css('margin-top', cpStepflowHeight + 'px');
     } else {
-      cpStepflow.removeClass('fixed');
+      cpStepflow.removeClass('fixed').css('margin-top', 0);
     }
   });
 });
