@@ -236,6 +236,20 @@ $(document).ready(function() {
     $('.open' + index).show().siblings('[class^="open"]').hide();
   });
 });
+
+$(document).ready(function() {
+  var cpStepflow = $('.cp_stepflow');
+  var offset = cpStepflow.offset().top; // cp_stepflowの初期位置を取得
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > offset) {
+      cpStepflow.addClass('fixed');
+    } else {
+      cpStepflow.removeClass('fixed');
+    }
+  });
+});
+
 </script>
 	
 <script src="js/training1.js"></script>
