@@ -1020,6 +1020,7 @@ main {
 .cp_stepflow > li .bubble + span {
 	display: block;
 	margin-top: 1em;
+	margin-bottom: 0.5em;
 }
 .cp_stepflow > li.active,
 .cp_stepflow > li.active .bubble {
