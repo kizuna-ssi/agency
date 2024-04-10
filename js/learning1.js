@@ -1,3 +1,38 @@
+$(document).ready(function() {
+  $('.cp_stepflow li').click(function() {
+    var index = $(this).index() + 1;
+    $('.open' + index).show().siblings('[class^="open"]').hide();
+  });
+});
+	
+$(document).ready(function() {
+  $('.cp_stepflow li').click(function() {
+    $(this).addClass('active').siblings().removeClass('active');
+    var index = $(this).index() + 1;
+    $('.open' + index).show().siblings('[class^="open"]').hide();
+  });
+});
+
+$(document).ready(function() {
+  var cpStepflow = $('.cp_stepflow');
+  var offset = cpStepflow.offset().top; // cp_stepflowの初期位置を取得
+  var cpStepflowHeight = cpStepflow.outerHeight(); // cp_stepflowの高さを取得
+
+  // cp_stepflowの直下にプレースホルダーを追加
+  cpStepflow.after('<div class="cp_stepflow_placeholder"></div>');
+  var placeholder = $('.cp_stepflow_placeholder');
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > offset) {
+      cpStepflow.addClass('fixed').css('padding-top', cpStepflowHeight + 'px');
+      placeholder.css('height', cpStepflowHeight + 'px');
+    } else {
+      cpStepflow.removeClass('fixed').css('padding-top', 0);
+      placeholder.css('height', 0);
+    }
+  });
+});
+
 
 var qa = [
   ['「テトリス（ゲーム）」を開発したのは、日本人だ。', 2],
