@@ -4,7 +4,7 @@ $(document).ready(function() {
     $('.open' + index).show().siblings('[class^="open"]').hide();
     
     // ページの最上部にスクロールする
-    $('html, body').animate({ scrollTop: 0 }, 'slow');
+    $('html, body').animate({ scrollTop: 0 }, 'fast');
   });
   
   // 以下の処理は一度だけ記述すれば十分です
@@ -14,7 +14,7 @@ $(document).ready(function() {
     $('.open' + index).show().siblings('[class^="open"]').hide();
     
     // ページの最上部にスクロールする
-    $('html, body').animate({ scrollTop: 0 }, 'slow');
+    $('html, body').animate({ scrollTop: 0 }, 'fast');
   });
 });
 
