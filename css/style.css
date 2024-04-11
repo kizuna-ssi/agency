@@ -979,6 +979,7 @@ main {
 
 
 .cp_stepflow {
+	max-width: 800px;
 	font-size: 100%;
 	display: -webkit-box;
 	display: -ms-flexbox;
