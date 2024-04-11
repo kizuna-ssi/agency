@@ -1080,33 +1080,8 @@ main {
 }
 
 .learning h3 {
-  position: relative;
-  padding: 1.5rem 2rem;
-  border: 3px solid #d8d8d8;
-  border-radius: 10px;
-  background: #f9f9f9;
-}
-
-.learning h3:before {
-  position: absolute;
-  bottom: -14px;
-  left: 1em;
-  width: 0;
-  height: 0;
-  content: '';
-  border-width: 14px 12px 0 12px;
-  border-style: solid;
-  border-color: #d8d8d8 transparent transparent transparent;
-}
-
-.learning h3:after {
-  position: absolute;
-  bottom: -10px;
-  left: 1em;
-  width: 0;
-  height: 0;
-  content: '';
-  border-width: 14px 12px 0 12px;
-  border-style: solid;
-  border-color: #f9f9f9 transparent transparent transparent;
+  padding: 0.5em;/*文字周りの余白*/
+  color: #494949;/*文字色*/
+  background: #fffaf4;/*背景色*/
+  border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
 }
