@@ -22,19 +22,12 @@ $(document).ready(function() {
 $(document).ready(function() {
   var cpStepflow = $('.cp_stepflow');
   var offset = cpStepflow.offset().top; // cp_stepflowの初期位置を取得
-  var cpStepflowHeight = cpStepflow.outerHeight(); // cp_stepflowの高さを取得
-
-  // cp_stepflowの直下にプレースホルダーを追加
-  cpStepflow.after('<div class="cp_stepflow_placeholder"></div>');
-  var placeholder = $('.cp_stepflow_placeholder');
 
   $(window).scroll(function() {
     if ($(window).scrollTop() > offset) {
-      cpStepflow.addClass('fixed').css('padding-top', cpStepflowHeight + 'px');
-      placeholder.css('height', cpStepflowHeight + 'px');
+      cpStepflow.addClass('fixed').css('padding-top', '40px');
     } else {
       cpStepflow.removeClass('fixed').css('padding-top', 0);
-      placeholder.css('height', 0);
     }
   });
 });
