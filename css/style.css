@@ -1075,6 +1075,7 @@ main {
 
 .learning .ta2{
 	width: 100%;
+	max-width: 800px;
 	font-size: 1.0em;
 	padding: 10px;
 	table-layout: fixed;
