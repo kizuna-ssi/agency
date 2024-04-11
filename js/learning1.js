@@ -60,6 +60,16 @@ function showQuestion() {
   question.innerHTML = (count + 1) + '問目：' + qa[count][0];
   var correctDisplay = document.getElementById('correctNum');
   correctDisplay.innerHTML = '正解数：' + correctNum;
+
+  // 最後の問題の場合は、回答ボタンを非表示にし、最初に戻るボタンを表示
+  if (count == 9) {
+    var answerButtons = document.getElementsByClassName('answer-btn');
+    for (var i = 0; i < answerButtons.length; i++) {
+      answerButtons[i].style.display = 'none';
+    }
+    var restartButton = document.getElementById('restartButton');
+    restartButton.style.display = 'block';
+  }
 }
 
 // クリック時の答え判定
@@ -78,5 +88,20 @@ function hantei(btnNo) {
   // 次の問題表示
   count++;
   showQuestion();
+}
+
+// 最初に戻るボタンをクリックしたときの処理
+function restartQuiz() {
+  count = 0;
+  correctNum = 0;
+  showQuestion();
+
+  // 回答ボタンを再表示し、最初に戻るボタンを非表示にする
+  var answerButtons = document.getElementsByClassName('answer-btn');
+  for (var i = 0; i < answerButtons.length; i++) {
+    answerButtons[i].style.display = 'inline-block';
+  }
+  var restartButton = document.getElementById('restartButton');
+  restartButton.style.display = 'none';
 }
 
