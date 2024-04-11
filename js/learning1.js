@@ -50,10 +50,17 @@ var count = 0;
 var correctNum = 0;
 
 window.onload = function() {
-  // 最初の問題を表示
+  // 最初の問題と正解数を表示
+  showQuestion();
+};
+
+// 問題を表示する関数
+function showQuestion() {
   var question = document.getElementById('question');
   question.innerHTML = (count + 1) + '問目：' + qa[count][0];
-};
+  var correctDisplay = document.getElementById('correctNum');
+  correctDisplay.innerHTML = '正解数：' + correctNum;
+}
 
 // クリック時の答え判定
 function hantei(btnNo) {
@@ -62,11 +69,14 @@ function hantei(btnNo) {
   }
 
   if (count == 9) {
-    alert('あなたの正解数は' + correctNum + '問です！');
+    // 最後の問題の場合は、正解数を表示するだけで終了
+    var question = document.getElementById('question');
+    question.innerHTML = '正解数は' + correctNum + '問です！';
+    return;
   }
 
   // 次の問題表示
   count++;
-  var question = document.getElementById('question');
-  question.innerHTML = (count + 1) + '問目：' + qa[count][0];
+  showQuestion();
 }
+
