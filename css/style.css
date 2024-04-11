@@ -1071,7 +1071,7 @@ main {
 	border-left: 0px solid #ccc;
 	border-right: 0px solid #ccc;
 	vertical-align: middle;
-	background-color: #fff;
+	background-color: #f7f7f7;
 }
 
 .learning ul{
@@ -1084,7 +1084,7 @@ main {
   padding: 0.5em;/*文字周りの余白*/
   font-weight: bold;
   color: #494949;/*文字色*/
-  background: #fff;/*背景色*/
+  background: #eee;/*背景色*/
   border-left: solid 5px #666;/*左線（実線 太さ 色）*/
   max-width: 800px;
 }
