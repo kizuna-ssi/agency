@@ -1079,32 +1079,32 @@ main {
 	margin-bottom: 0px;
 }
 
-.flow_design09 {
+.flow_design {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.flow09 {
+.flow {
   padding-left: 0;
   border-bottom: solid 1px #E1E8ED;
 }
 
-.flow09 > li {
+.flow > li {
   list-style-type: none;
   display: flex;
   padding: 20px 0;
   border-top: solid 1px #E1E8ED;
 }
 
-.flow09 > li dl dt {
+.flow > li dl dt {
   font-size: 1.2em;
   line-height: 2;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.flow09 > li .icon09 {
+.flow > li .icon {
   line-height: 1;
   font-size: 2em;
   font-weight: bold;
@@ -1115,15 +1115,14 @@ main {
   margin-top: 0;
 }
 
-.flow09 > li .icon09::before {
-  content: 'STEP';
+.flow > li .icon::before {
   font-size: 0.3em;
   display: block;
   margin-bottom: 3px;
   letter-spacing: 1px;
 }
 
-.flow09 > li .icon09::after {
+.flow > li .icon::after {
   content: "";
   display: block;
   width: 1px;
@@ -1136,11 +1135,11 @@ main {
   margin: auto;
 }
 
-.flow09 > li dl dd {
+.flow > li dl dd {
   margin: 0;
 }
 
-.flow09 > li dl {
+.flow > li dl {
   width: calc(100% - 70px);
   margin-top: 0.8em;
 }
