@@ -1071,7 +1071,36 @@ main {
 	border-left: 0px solid #ccc;
 	border-right: 0px solid #ccc;
 	vertical-align: middle;
-	background-color: #f7f7f7;
+}
+
+.learning .ta2{
+	width: 100%;
+	font-size: 1.0em;
+	padding: 10px;
+	table-layout: fixed;
+}
+
+.learning .ta2 tr{
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+}
+
+.learning .ta2 th{
+	width: 25%;
+	background-color: #ccc;
+	padding: 10px;
+	border-left: 0px solid #ccc;
+	border-right: 0px solid #ccc;
+	vertical-align: middle;
+}
+
+.learning .ta2 td{
+	text-align: left;
+	padding: 10px;
+	border-left: 0px solid #ccc;
+	border-right: 0px solid #ccc;
+	vertical-align: middle;
+	background-color: #fff;
 }
 
 .learning ul{
