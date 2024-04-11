@@ -1084,7 +1084,7 @@ main {
   padding: 0.5em;/*文字周りの余白*/
   font-weight: bold;
   color: #494949;/*文字色*/
-  background: #eee;/*背景色*/
+  background: #fff;/*背景色*/
   border-left: solid 5px #666;/*左線（実線 太さ 色）*/
   max-width: 800px;
 }
