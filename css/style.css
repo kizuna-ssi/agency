@@ -1121,17 +1121,15 @@ main {
 }
 
 .learning .button {
-	display: block;
-	text-align: center;
-	vertical-align: middle;
-	text-decoration: none;
+	display: inline-block;
 	width: 120px;
 	margin: auto;
-	padding: 1rem 4rem;
 	font-weight: bold;
 	border: 2px solid #27acd9;
 	color: #27acd9;
 	transition: 0.5s;
+	font-size: 2.0em;
+	background-color: #fff;
 }
 
 .learning .button:hover {
