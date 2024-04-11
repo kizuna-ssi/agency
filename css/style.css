@@ -1120,7 +1120,7 @@ main {
         max-width: 800px;
 }
 
-.learning .button {
+.learning .answer-btn {
 	display: inline-block;
 	width: 120px;
 	margin: auto;
@@ -1132,7 +1132,7 @@ main {
 	background-color: #fff;
 }
 
-.learning .button:hover {
+.learning .answer-btn:hover {
 	color: #fff;
 	background: #27acd9;
 }	
