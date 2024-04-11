@@ -57,7 +57,7 @@ window.onload = function() {
 // 問題を表示する関数
 function showQuestion() {
   var question = document.getElementById('question');
-  question.innerHTML = (count + 1) + '問目：' + qa[count][0];
+  question.innerHTML = qa[count][0];
   var correctDisplay = document.getElementById('correctNum');
   correctDisplay.innerHTML = '正解数：' + correctNum;
 
