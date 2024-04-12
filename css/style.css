@@ -1121,11 +1121,7 @@ main {
 }
 
 .learning .btn1{
-	float: left;	
 	width: 100%;	
-}
-
-.learning .btn1 label{
 	display: block;
 	float: left;
 	cursor: pointer;
@@ -1140,14 +1136,7 @@ main {
 	transition: .2s;
 }
 
-.learning .btn1 label:first-of-type{
-}
-
-.learning .btn1 label:last-of-type{
-	border-right: 0px;
-}
-
-.radio1 input[type="button"]:checked + label {
+.radio1 input[type="button"]:checked {
 	background-color: #666666;
 	color: #fff;
 }
