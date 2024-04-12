@@ -101,7 +101,7 @@ header #logo img {display: block;}
 header #logo {
 	margin: 0 0 0 50px;	/*上、右、下、左へ空けるスペース*/
 	order: 1;		/*表示させる順番。「#menubar_hdr」「#logo」「#header-icon」それぞれに指定しており、数字の「小さな順」に左から並びます。*/
-	width: 200px;	/*画像の幅*/
+	width: 270px;	/*画像の幅*/
 }
 
 
