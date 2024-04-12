@@ -1121,7 +1121,7 @@ main {
 }
 
 .answer-btn, #restartButton {
-	display: block;
+	border: 1px solid #e5e5e5;
 	float: left;
 	cursor: pointer;
 	width: 120px;
