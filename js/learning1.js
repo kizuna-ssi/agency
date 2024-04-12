@@ -60,7 +60,7 @@ function showQuestion() {
   var question = document.getElementById('question');
   question.innerHTML = qa[count][0];
   var correctDisplay = document.getElementById('correctNum');
-  correctDisplay.innerHTML = '正解数：' + correctNum;
+  correctDisplay.innerHTML = '現在の正解数：' + correctNum;
 
   // 最後の問題の場合は、回答ボタンを非表示にし、最初に戻るボタンを表示
   if (count == 9) {
