@@ -1036,7 +1036,8 @@ main {
 
 .center{
   text-align: center;
-  margin: 30px auto; 
+  margin: auto;
+  padding: 30px;
 }
 
 .fixed {
