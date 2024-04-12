@@ -1156,7 +1156,7 @@ main {
 	float: left;
 	cursor: pointer;
 	width: 120px;
-	margin: 10px 3px 0;
+	margin: auto;
 	padding: 1.4% 0 1.5% 0;
 	background: #e5e5e5;
 	color: #555e64;
@@ -1175,7 +1175,7 @@ main {
 	float: left;
 	cursor: pointer;
 	width: 120px;
-	margin: 10px 3px 0;
+	margin: auto;
 	padding: 1.4% 0 1.5% 0;
 	background: #facda0;
 	color: #555e64;
