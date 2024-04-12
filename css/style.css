@@ -1119,24 +1119,3 @@ main {
         border-left: solid 5px #666;/*左線（実線 太さ 色）*/
         max-width: 800px;
 }
-
-.learning .btn1{
-	width: 100%;	
-	display: block;
-	float: left;
-	cursor: pointer;
-	width: 120px;
-	margin: 10px 3px 0;
-	padding: 1.4% 0 1.5% 0;
-	border-right: 1px solid #d7d7d7;
-	background: #e5e5e5;
-	color: #555e64;
-	font-size: 14px;
-	text-align: center;
-	transition: .2s;
-}
-
-.radio1 input[type="button"]:checked {
-	background-color: #666666;
-	color: #fff;
-}
