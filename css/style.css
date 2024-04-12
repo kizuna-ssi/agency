@@ -1134,6 +1134,7 @@ main {
 }
 
 .answer-btn, #restartButton:hover {
+	display: block;
         background: #666;
         color: #fff;
 }
