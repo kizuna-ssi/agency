@@ -1120,7 +1120,7 @@ main {
         max-width: 800px;
 }
 
-.answer-btn, #restartButton {
+.answer-btn {
 	border: 1px solid #e5e5e5;
 	float: left;
 	cursor: pointer;
@@ -1139,8 +1139,21 @@ main {
         color: #fff;
 }
 
+#restartButton {
+	border: 1px solid #facda0;
+	float: left;
+	cursor: pointer;
+	width: 120px;
+	margin: 10px 3px 0;
+	padding: 1.4% 0 1.5% 0;
+	background: #facda0;
+	color: #555e64;
+	font-size: 14px;
+	text-align: center;	
+}
+
 #restartButton:hover{
 	display: block;
-        background: #666;
+        background: #f57c00;
         color: #fff;
 }
