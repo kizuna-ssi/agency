@@ -1133,7 +1133,7 @@ main {
 	text-align: center;	
 }
 
-.answer-btn, #restartButton:hover {
+.answer-btn:hover{
 	display: block;
         background: #666;
         color: #fff;
