@@ -113,3 +113,21 @@ function restartQuiz() {
   restartButton.style.display = 'none';
 }
 
+// ランダムにqa配列をシャッフルする関数
+function shuffleArray(array) {
+  for (var i = array.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+  }
+  return array;
+}
+
+// ページが読み込まれたときに初期化
+window.onload = function() {
+  // qa配列をシャッフルする
+  qa = shuffleArray(qa);
+  // 最初の問題と正解数を表示
+  showQuestion();
+};
