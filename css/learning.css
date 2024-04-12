@@ -151,10 +151,11 @@
 .learning .ta3 td{
 	text-align: left;
 	padding: 10px;
-	border-left: 1px solid #ccc;
-	border-right: 1px solid #ccc;
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;
 	vertical-align: middle;
 	background-color: #fff;
+	height: 300px;
 }
 
 .learning ul{
