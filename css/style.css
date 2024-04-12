@@ -1120,16 +1120,16 @@ main {
         max-width: 800px;
 }
 
-.learning .answer-btn{
+.learning .btn1{
 	float: left;	
 	width: 100%;	
 }
 
-.learning .answer-btn input{
+.learning .btn1 input{
 	display: none;
 }
 
-.learning .answer-btn label{
+.learning .btn1 label{
 	display: block;
 	float: left;
 	cursor: pointer;
@@ -1144,14 +1144,14 @@ main {
 	transition: .2s;
 }
 
-.learning .answer-btn label:first-of-type{
+.learning .btn1 label:first-of-type{
 }
 
-.learning .answer-btn label:last-of-type{
+.learning .btn1 label:last-of-type{
 	border-right: 0px;
 }
 
-.radio1 input[type="radio"]:checked + label {
+.radio1 input[type="button"]:checked + label {
 	background-color: #666666;
 	color: #fff;
 }
