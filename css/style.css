@@ -1135,8 +1135,3 @@ main {
 	transition: .2s;	
 }
 
-.answer-btn, #restartButton:hover{
-	background: #666666;
-	-webkit-transition: all .3s;
-	transition: all .3s;
-}
