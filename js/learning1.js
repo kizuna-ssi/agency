@@ -63,7 +63,7 @@ function showQuestion() {
   correctDisplay.innerHTML = '現在の正解数：' + correctNum;
 
   // 最後の問題の場合は、回答ボタンを非表示にし、最初に戻るボタンを表示
-  if (count == 9) {
+  if (count == 10) {
     var answerButtons = document.getElementsByClassName('answer-btn');
     for (var i = 0; i < answerButtons.length; i++) {
       answerButtons[i].style.display = 'none';
@@ -79,7 +79,7 @@ function hantei(btnNo) {
     correctNum++;
   }
 
-  if (count == 9) {
+  if (count == 10) {
     // 最後の問題の場合は、正解数を表示するだけで終了
     var question = document.getElementById('question');
     question.innerHTML = '正解数は' + correctNum + '問です！';
