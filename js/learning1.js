@@ -85,12 +85,7 @@ function hantei(btnNo) {
     correctNum++;
   }
 
-  if (count == 10) {
-    // 最後の問題の場合は、正解数を表示するだけで終了
-    var question = document.getElementById('question');
-    question.innerHTML = '正解数は' + correctNum + '問です！';
-    return;
-  }
+
 
   // 次の問題表示
   count++;
