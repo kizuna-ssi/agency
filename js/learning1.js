@@ -25,7 +25,7 @@ $(document).ready(function() {
 
   $(window).scroll(function() {
     if ($(window).scrollTop() > offset) {
-      cpStepflow.addClass('fixed').css('padding-top', '40px');
+      cpStepflow.addClass('fixed').css('padding-top', '50px');
     } else {
       cpStepflow.removeClass('fixed').css('padding-top', 0);
     }
