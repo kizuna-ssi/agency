@@ -9,6 +9,7 @@
 	background: #f7f7f7;
 	z-index: 10;
 }
+
 .cp_stepflow > li {
 	cursor: pointer;
 	position: relative;
@@ -25,6 +26,7 @@
 	-webkit-box-flex: 1;
 	     flex: 1;
 }
+
 .cp_stepflow > li .bubble::after,
 .cp_stepflow > li .bubble::before {
 	position: absolute;
@@ -38,16 +40,19 @@
 	transform: translateX(-50%);
 	background-color: #b0bec5;
 }
+
 .cp_stepflow > li .bubble + span {
 	display: block;
 	margin-top: 1em;
 	margin-bottom: 0.5em;
 }
+
 .cp_stepflow > li.active,
 .cp_stepflow > li.active .bubble {
 	font-weight: bold;
 	color: #f57c00;
 }
+
 .cp_stepflow > li.active .bubble,
 .cp_stepflow > li.active .bubble::after,
 .cp_stepflow > li.active .bubble::before {
