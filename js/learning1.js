@@ -63,15 +63,17 @@ function showQuestion() {
   correctDisplay.innerHTML = '現在の正解数：' + correctNum + ' /10';
 
   // 最後の問題の場合は、回答ボタンを非表示にし、最初に戻るボタンを表示
-  if (count == 10) {
+  if (count === 10) {
     var answerButtons = document.getElementsByClassName('answer-btn');
     for (var i = 0; i < answerButtons.length; i++) {
       answerButtons[i].style.display = 'none';
     }
     var restartButton = document.getElementById('restartButton');
     restartButton.style.display = 'block';
+    return; // 最後の問題であれば、以降の処理をスキップして終了
   }
 }
+
 
 // クリック時の答え判定
 function hantei(btnNo) {
