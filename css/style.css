@@ -129,8 +129,8 @@ header #logo {
 	right: 10px;			/*左からの配置場所指定*/
 	top: 3px;			/*上からの配置場所指定*/
 	padding: 10px 8px;	/*ブロック内の余白*/
-	width: 40px;		/*幅（３本バーが出ている場合の幅になります）*/
-	height: 40px;		/*高さ*/
+	width: 25px;		/*幅（３本バーが出ている場合の幅になります）*/
+	height: 20px;		/*高さ*/
 	display: flex;					/*flexボックスを使う指定*/
 	flex-direction: column;			/*子要素（３本バー）を縦並びにする*/
 	justify-content: space-between;	/*並びかたの種類の指定*/
