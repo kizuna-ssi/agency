@@ -127,10 +127,11 @@
 }
 
 .learning .ta3{
-	width: 100%;
+	width: 90%;
 	max-width: 800px;
 	font-size: 1.0em;
 	padding: 10px;
+	margin: auto;
 }
 
 .learning .ta3 tr{
