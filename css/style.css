@@ -1125,10 +1125,6 @@ main {
 	width: 100%;	
 }
 
-.learning .btn1 input{
-	display: none;
-}
-
 .learning .btn1 label{
 	display: block;
 	float: left;
