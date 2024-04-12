@@ -58,12 +58,12 @@ window.onload = function() {
 // 問題を表示する関数
 function showQuestion() {
   var question = document.getElementById('question');
-  question.innerHTML = qa[count][0];
   var correctDisplay = document.getElementById('correctNum');
-  correctDisplay.innerHTML = '現在の正解数：' + correctNum + ' /10';
 
   // 最後の問題の場合は、回答ボタンを非表示にし、最初に戻るボタンを表示
-  if (count === 10) {
+  if (count === qa.length - 1) {
+    question.innerHTML = '正解数は' + correctNum + '問です！';
+    correctDisplay.innerHTML = '';
     var answerButtons = document.getElementsByClassName('answer-btn');
     for (var i = 0; i < answerButtons.length; i++) {
       answerButtons[i].style.display = 'none';
@@ -72,7 +72,12 @@ function showQuestion() {
     restartButton.style.display = 'block';
     return; // 最後の問題であれば、以降の処理をスキップして終了
   }
+
+  // 問題を表示
+  question.innerHTML = qa[count][0];
+  correctDisplay.innerHTML = '現在の正解数：' + correctNum + ' /10';
 }
+
 
 
 // クリック時の答え判定
