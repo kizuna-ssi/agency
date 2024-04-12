@@ -1105,6 +1105,37 @@ main {
 	background-color: #fff;
 }
 
+.learning .ta3{
+	width: 100%;
+	max-width: 800px;
+	font-size: 1.0em;
+	padding: 10px;
+}
+
+.learning .ta3 tr{
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+}
+
+.learning .ta3 th{
+	width: 25%;
+	background-color: #ccc;
+	padding: 10px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	vertical-align: middle;
+}
+
+.learning .ta3 td{
+	text-align: left;
+	padding: 10px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	vertical-align: middle;
+	background-color: #ccc;
+	color: #fff;
+}
+
 .learning ul{
 	padding-left: 20px;
 	margin-top: 0px;
