@@ -1127,11 +1127,9 @@ main {
 	width: 120px;
 	margin: 10px 3px 0;
 	padding: 1.4% 0 1.5% 0;
-	border-right: 1px solid #d7d7d7;
 	background: #e5e5e5;
 	color: #555e64;
 	font-size: 14px;
-	text-align: center;
-	transition: .2s;	
+	text-align: center;	
 }
 
