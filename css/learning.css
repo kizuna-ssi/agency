@@ -190,16 +190,16 @@
 	width: 25%;
 	background-color: #ccc;
 	padding: 10px;
-	border-left: 0px solid #ccc;
-	border-right: 0px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
 	vertical-align: middle;
 }
 
 .learning .ta4 td{
 	text-align: left;
 	padding: 10px;
-	border-left: 0px solid #ccc;
-	border-right: 0px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
 	vertical-align: middle;
 	background-color: #fff;
 }
