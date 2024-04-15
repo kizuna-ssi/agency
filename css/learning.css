@@ -182,8 +182,8 @@
 }
 
 .learning .ta4 tr{
-	border-top: 1px solid #fff;
-	border-bottom: 1px solid #fff;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
 }
 
 .learning .ta4 th{
@@ -202,6 +202,7 @@
 	border-right: 1px solid #ccc;
 	vertical-align: middle;
 	background-color: #fff;
+	text-align: center;
 }
 
 .learning h4 {
