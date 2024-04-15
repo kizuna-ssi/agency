@@ -984,8 +984,7 @@ main {
 .learning .box{
 	width: 90%;
 	border: 1px solid #666666;
-	padding: 10px;
-	margin: auto;
+	padding: 20px;
 	vertical-align: middle;
 }
 
