@@ -273,6 +273,6 @@
         margin-bottom: 30px;
 }
 
-.learning ol li::before{
+.learning ol li:before{
         font-weight: bold;
 }
