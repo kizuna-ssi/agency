@@ -58,6 +58,7 @@ function saveScore(score) {
 // Window.localStorage プロパティを使用して最後の点数をロードする関数
 function loadLastScore() {
   var lastScore = localStorage.getItem('lastScore');
+  console.log("最後のスコア: ", lastScore); // デバッグ用。コンソールに最後のスコアを出力
   if (lastScore !== null) {
     return parseInt(lastScore);
   }
