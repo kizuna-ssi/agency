@@ -71,7 +71,10 @@ window.onload = function() {
 
   // ページが読み込まれたときに、最後の点数をロードして表示
   var lastScore = loadLastScore();
-  console.log("最後の点数: " + lastScore); // デバッグ用。必要なら削除してください。
+  var loadLastScoreElement = document.getElementById('loadLastScore');
+  if (loadLastScoreElement !== null) {
+    loadLastScoreElement.innerHTML = "最後の点数: " + lastScore;
+  }
 };
 
 
