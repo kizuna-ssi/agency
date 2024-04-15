@@ -94,13 +94,14 @@ function hantei(btnNo) {
     correctNum++;
   }
   
-  if (count === qa.length - 1) {
-    saveScore(correctNum);
-  }
-
   // 次の問題表示
   count++;
-  showQuestion();
+  if (count === qa.length) { // 最後の問題まで到達した場合
+    saveScore(correctNum); // 最後のスコアを保存
+    showQuestion(); // 最後の結果を表示
+  } else {
+    showQuestion(); // 次の問題を表示
+  }
 }
 
 // 最初に戻るボタンをクリックしたときの処理
