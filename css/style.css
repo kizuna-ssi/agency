@@ -977,6 +977,14 @@ main {
 }
 
 .center{
-  text-align: center;
-  margin: auto;
+       text-align: center;
+       margin: auto;
+}
+
+.learning .box{
+	width: 90%;
+	border: 1px solid #666666;
+	padding: 10px;
+	margin: auto;
+	vertical-align: middle;
 }
