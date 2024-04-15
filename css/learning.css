@@ -187,12 +187,13 @@
 }
 
 .learning .ta4 th{
-	width: 25%;
-	background-color: #ccc;
+	text-align: left;
 	padding: 10px;
 	border-left: 1px solid #ccc;
 	border-right: 1px solid #ccc;
 	vertical-align: middle;
+	background-color: #f7f7f7;
+	text-align: center;
 }
 
 .learning .ta4 td{
