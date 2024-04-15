@@ -281,6 +281,6 @@
         margin-bottom: 30px;
 }
 
-.learning ol li:before{
+.learning ol li::marker{
         font-weight: bold;
 }
