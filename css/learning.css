@@ -173,6 +173,37 @@
         max-width: 800px;
 }
 
+.learning .ta4{
+	width: 100%;
+	max-width: 800px;
+	font-size: 1.0em;
+	padding: 10px;
+	table-layout: fixed;
+}
+
+.learning .ta4 tr{
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.learning .ta4 th{
+	width: 25%;
+	background-color: #ccc;
+	padding: 10px;
+	border-left: 0px solid #ccc;
+	border-right: 0px solid #ccc;
+	vertical-align: middle;
+}
+
+.learning .ta4 td{
+	text-align: left;
+	padding: 10px;
+	border-left: 0px solid #ccc;
+	border-right: 0px solid #ccc;
+	vertical-align: middle;
+	background-color: #fff;
+}
+
 .learning h4 {
 	position: relative;
 	padding-bottom: 10px;
