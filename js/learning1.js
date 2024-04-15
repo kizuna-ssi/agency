@@ -64,20 +64,6 @@ function loadLastScore() {
   return 0; // デフォルトは0点
 }
 
-
-window.onload = function() {
-  // 最初の問題と正解数を表示
-  showQuestion();
-
-  // ページが読み込まれたときに、最後の点数をロードして表示
-  var lastScore = loadLastScore();
-  var loadLastScoreElement = document.getElementById('loadLastScore');
-  if (loadLastScoreElement !== null) {
-    loadLastScoreElement.innerHTML = "最後の点数: " + lastScore;
-  }
-};
-
-
 // 問題を表示する関数
 function showQuestion() {
   var question = document.getElementById('question');
@@ -100,8 +86,6 @@ function showQuestion() {
   question.innerHTML = qa[count][0];
   correctDisplay.innerHTML = '現在の正解数：' + correctNum + ' /10';
 }
-
-
 
 // クリック時の答え判定
 function hantei(btnNo) {
@@ -150,4 +134,11 @@ window.onload = function() {
   qa = shuffleArray(qa);
   // 最初の問題と正解数を表示
   showQuestion();
+  
+  // ページが読み込まれたときに、最後の点数をロードして表示
+  var lastScore = loadLastScore();
+  var loadLastScoreElement = document.getElementById('loadLastScore');
+  if (loadLastScoreElement !== null) {
+    loadLastScoreElement.innerHTML = "最後の点数: " + lastScore;
+  }
 };
