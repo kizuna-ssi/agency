@@ -50,10 +50,30 @@ var qa = [
 var count = 0;
 var correctNum = 0;
 
+// Window.localStorage プロパティを使用して最後の点数を保存する関数
+function saveScore(score) {
+  localStorage.setItem('lastScore', score);
+}
+
+// Window.localStorage プロパティを使用して最後の点数をロードする関数
+function loadLastScore() {
+  var lastScore = localStorage.getItem('lastScore');
+  if (lastScore !== null) {
+    return parseInt(lastScore);
+  }
+  return 0; // デフォルトは0点
+}
+
+
 window.onload = function() {
   // 最初の問題と正解数を表示
   showQuestion();
+
+  // ページが読み込まれたときに、最後の点数をロードして表示
+  var lastScore = loadLastScore();
+  console.log("最後の点数: " + lastScore); // デバッグ用。必要なら削除してください。
 };
+
 
 // 問題を表示する関数
 function showQuestion() {
@@ -85,8 +105,10 @@ function hantei(btnNo) {
   if (qa[count][1] == btnNo) {
     correctNum++;
   }
-
-
+  
+  if (count === qa.length - 1) {
+    saveScore(correctNum);
+  }
 
   // 次の問題表示
   count++;
