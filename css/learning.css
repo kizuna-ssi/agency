@@ -209,7 +209,7 @@
 .learning .ta4 .diagonal{
 	background-image: linear-gradient
 		(to right top, transparent calc(50% - 0.5px), 
-		#999 50%, #999 calc(50% + 0.5px), transparent calc(50% + 1px))
+		#999 50%, #999 calc(50% + 0.5px), transparent calc(50% + 1px));
 }
 
 .learning h4 {
