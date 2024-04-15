@@ -995,3 +995,7 @@ main {
 .learning ol li{
         margin-bottom: 30px;
 }
+
+.learning ol li::before{
+        font-weight: bold;
+}
