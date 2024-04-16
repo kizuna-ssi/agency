@@ -65,7 +65,7 @@
   <input class="CheckboxInput-Input" type="checkbox" required="required">
   <span class="CheckboxInput-DummyInput"></span>
   <span class="CheckboxInput-LabelText">
-    <a href="https://kizuna-ssi.net/policy/privacy.html" target="_blank">プライバシーポリシー</a>を確認のうえ、同意する</span>
+    <span class="modal" style="text-decoration:underline;">プライバシーポリシー</span>を確認のうえ、同意する</span>
 </label>
 </td>
 </tr>
@@ -83,6 +83,29 @@
 </main>
 
 
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-content-left">
+      <img src="http://placehold.jp/1080x1440.png">
+    </div>
+    <div class="modal-content-right">
+      <div class="modal-header">
+        <p>モーダルの見出し</p>
+        <span class="modalClose">×</span>
+      </div>
+<!-- modalInner -->
+      <div class="modal-body">
+        <p>Windowsでコンピューターの世界が広がります。1234567890Windowsでコンピューターの世界が広がります。1234567890Windowsでコンピューターの世界が広がります。1234567890Windowsでコンピューターの世界が広がります。12345</p>
+        <p>Windowsでコンピューターの世界が広がります。1234567890Windowsでコンピューターの世界が広がります。1234567890Windowsでコンピューターの世界が広がります。1234567890Windowsでコンピューターの世界が広がります。12345</p>
+      </div>
+<!-- modalInner -->
+    </div>
+  </div>
+</div>
+
+  
 <footer>
 <small>Copyright 2024 KIZUNA Small Amount and Short Term Insurance Co., Ltd.</small>
 <span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
@@ -103,5 +126,29 @@
 <script src="js/recruitcode.js"></script>
 <script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script>
 
+<script>
+const modal = document.querySelector("#myModal");
+const btn = document.querySelectorAll(".modal");
+const closeModal = document.getElementsByClassName("modalClose")[0];
+
+for (let i = 0; i < btn.length; i++) {
+  btn[i].addEventListener("click", function () {
+    modal.style.display = "block";
+  });
+}
+btn.onclick = function () {
+  modal.style.display = "block";
+};
+closeModal.onclick = function () {
+  modal.style.display = "none";
+};
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}; 
+</script>
+
+  
 </body>
 </html>
