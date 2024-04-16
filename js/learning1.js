@@ -94,10 +94,18 @@ function hantei(btnNo) {
     correctNum++;
   }
   
+  // 最後の問題まで到達した場合、最後のスコアを保存して表示
+  if (count === qa.length - 1) {
+    saveScore(correctNum); // 最後のスコアを保存
+    var lastScoreElement = document.getElementById('lastScore');
+    if (lastScoreElement !== null) {
+      lastScoreElement.innerHTML = "最後のスコア: " + correctNum;
+    }
+  }
+
   // 次の問題表示
   count++;
   if (count === qa.length) { // 最後の問題まで到達した場合
-    saveScore(correctNum); // 最後のスコアを保存
     showQuestion(); // 最後の結果を表示
   } else {
     showQuestion(); // 次の問題を表示
@@ -110,24 +118,15 @@ function restartQuiz() {
   correctNum = 0;
   showQuestion();
 
-  // 回答ボタンを再表示し、最初に戻るボタンを非表示にする
-  var answerButtons = document.getElementsByClassName('answer-btn');
-  for (var i = 0; i < answerButtons.length; i++) {
-    answerButtons[i].style.display = 'inline-block';
-  }
+  // 最初に戻るボタンを非表示にする
   var restartButton = document.getElementById('restartButton');
   restartButton.style.display = 'none';
-}
 
-// ランダムにqa配列をシャッフルする関数
-function shuffleArray(array) {
-  for (var i = array.length - 1; i > 0; i--) {
-    var j = Math.floor(Math.random() * (i + 1));
-    var temp = array[i];
-    array[i] = array[j];
-    array[j] = temp;
+  // 最後のスコア表示を削除する
+  var lastScoreElement = document.getElementById('lastScore');
+  if (lastScoreElement !== null) {
+    lastScoreElement.innerHTML = '';
   }
-  return array;
 }
 
 // ページが読み込まれたときに初期化
@@ -136,11 +135,9 @@ window.onload = function() {
   qa = shuffleArray(qa);
   // 最初の問題と正解数を表示
   showQuestion();
-  
-  // ページが読み込まれたときに、最後の点数をロードして表示
-  var lastScore = loadLastScore();
-  var loadLastScoreElement = document.getElementById('loadLastScore');
-  if (loadLastScoreElement !== null) {
-    loadLastScoreElement.innerHTML = "最後の点数: " + lastScore;
-  }
 };
+
+// Window.localStorage プロパティを使用して最後の点数を保存する関数
+function saveScore(score) {
+  localStorage.setItem('lastScore', score);
+}
