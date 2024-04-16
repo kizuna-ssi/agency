@@ -28,9 +28,9 @@
  <!--/#menubar-->
   
 <main>
-    <section>
-      <div class="application">
-        <form class="form1">
+ <section>
+  <div class="application">
+   <form class="form1">
           
   <h2>web申込案内 <span style="font-size: 0.7em; font-weight: bold; color: #94545B;">＜きずなの死亡保険＞</span></h2> 
     <p><span style="font-weight: bold;">【ご利用にあたってのご注意】</span><br>
@@ -58,20 +58,18 @@
       <tr>
        <th>送信先メール</th>        
        <td>
-         <input id="insured_email" type="text" name="メール" size="30" class="ws" autocomplete="off" style="width: 100%;">
+         <input id="insured_email" type="text" name="メール" size="30" class="ws" autocomplete="off" style="width: 90%;">
        </td>
       </tr>
     </table>
-
-     <div class="btn">
-      <a href="javascript:void(0)" onclick="window.print();return false;" class="btns">印刷する</a>
-     </div><br>
-
-      </div>
-     </form>
-    </div>
-  </section>  
-  
+     <p class="btn">
+       <input type="submit" value="送信する" data-callback="onSubmit" data-action="submit">
+     </p>
+   </div>
+          
+    </form>
+   </div>
+  </section>   
 </main>
 
 <footer>
