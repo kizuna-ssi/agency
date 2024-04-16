@@ -35,3 +35,14 @@ $(document).ready(function(){
     }
   });
 });
+
+$(document).ready(function() {
+    // recruitcodeが入力された時の処理
+    $('#recruitcode').on('input', function() {
+        // recruitcodeの値を取得
+        var recruitCode = $(this).val();
+        // insured_urlにURLをセット
+        var url = 'https://kizuna-ssi.net/?recruitcode=' + recruitCode;
+        $('#insured_url').val(url);
+    });
+});
