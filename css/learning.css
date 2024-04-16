@@ -279,3 +279,11 @@
 .learning ol li::marker{
         font-weight: bold;
 }
+
+.learning ul{
+        padding-right: 20px;
+}
+
+.learning ul li{
+        margin-bottom: 0px;
+}
