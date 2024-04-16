@@ -59,7 +59,7 @@ function saveScore(score) {
 function loadLastScore() {
   var lastScore = localStorage.getItem('lastScore');
   console.log("最後のスコア: ", lastScore); // デバッグ用。コンソールに最後のスコアを出力
-  if (lastScore !== null && lastScore !== undefined) {
+  if (lastScore !== null && lastScore !== undefined && !isNaN(lastScore)) {
     return parseInt(lastScore);
   }
   return 0; // デフォルトは0点
