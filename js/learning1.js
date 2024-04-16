@@ -50,20 +50,10 @@ var qa = [
 var count = 0;
 var correctNum = 0;
 
-// Window.localStorage プロパティを使用して最後の点数を保存する関数
-function saveScore(score) {
-  localStorage.setItem('lastScore', score);
-}
-
-// Window.localStorage プロパティを使用して最後の点数をロードする関数
-function loadLastScore() {
-  var lastScore = localStorage.getItem('lastScore');
-  console.log("最後のスコア: ", lastScore); // デバッグ用。コンソールに最後のスコアを出力
-  if (lastScore !== null && lastScore !== undefined && !isNaN(lastScore)) {
-    return parseInt(lastScore);
-  }
-  return 0; // デフォルトは0点
-}
+window.onload = function() {
+  // 最初の問題と正解数を表示
+  showQuestion();
+};
 
 // 問題を表示する関数
 function showQuestion() {
@@ -88,28 +78,19 @@ function showQuestion() {
   correctDisplay.innerHTML = '現在の正解数：' + correctNum + ' /10';
 }
 
+
+
 // クリック時の答え判定
 function hantei(btnNo) {
   if (qa[count][1] == btnNo) {
     correctNum++;
   }
-  
-  // 最後の問題まで到達した場合、最後のスコアを保存して表示
-  if (count === qa.length - 1) {
-    saveScore(correctNum); // 最後のスコアを保存
-    var lastScoreElement = document.getElementById('lastScore');
-    if (lastScoreElement !== null) {
-      lastScoreElement.innerHTML = "最後のスコア: " + correctNum;
-    }
-  }
+
+
 
   // 次の問題表示
   count++;
-  if (count === qa.length) { // 最後の問題まで到達した場合
-    showQuestion(); // 最後の結果を表示
-  } else {
-    showQuestion(); // 次の問題を表示
-  }
+  showQuestion();
 }
 
 // 最初に戻るボタンをクリックしたときの処理
@@ -118,15 +99,24 @@ function restartQuiz() {
   correctNum = 0;
   showQuestion();
 
-  // 最初に戻るボタンを非表示にする
+  // 回答ボタンを再表示し、最初に戻るボタンを非表示にする
+  var answerButtons = document.getElementsByClassName('answer-btn');
+  for (var i = 0; i < answerButtons.length; i++) {
+    answerButtons[i].style.display = 'inline-block';
+  }
   var restartButton = document.getElementById('restartButton');
   restartButton.style.display = 'none';
+}
 
-  // 最後のスコア表示を削除する
-  var lastScoreElement = document.getElementById('lastScore');
-  if (lastScoreElement !== null) {
-    lastScoreElement.innerHTML = '';
+// ランダムにqa配列をシャッフルする関数
+function shuffleArray(array) {
+  for (var i = array.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
   }
+  return array;
 }
 
 // ページが読み込まれたときに初期化
@@ -135,9 +125,4 @@ window.onload = function() {
   qa = shuffleArray(qa);
   // 最初の問題と正解数を表示
   showQuestion();
-};
-
-// Window.localStorage プロパティを使用して最後の点数を保存する関数
-function saveScore(score) {
-  localStorage.setItem('lastScore', score);
 }
