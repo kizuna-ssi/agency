@@ -63,7 +63,7 @@ function showQuestion() {
   // 最後の問題の場合は、回答ボタンを非表示にし、最初に戻るボタンを表示
   if (count === qa.length - 1) {
     question.innerHTML = '終了！　正解数は' + correctNum + '問です！';
-    correctDisplay.innerHTML = '';
+    correctDisplay.innerHTML = '現在の正解数：' + correctNum + ' /10';
     var answerButtons = document.getElementsByClassName('answer-btn');
     for (var i = 0; i < answerButtons.length; i++) {
       answerButtons[i].style.display = 'none';
