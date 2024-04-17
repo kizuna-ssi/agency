@@ -981,7 +981,7 @@ main {
        margin: auto;
 }
 
-.pdf-icon::after {
+.pdf_icon::after {
     content:" ";
     display: inline-block;
     width: 24px;
