@@ -980,3 +980,11 @@ main {
        text-align: center;
        margin: auto;
 }
+
+.format a:after {
+    content:" ";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(img/pdf.png) no-repeat;
+}
