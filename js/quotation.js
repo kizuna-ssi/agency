@@ -16,6 +16,10 @@ function customCalculate() {
 function calculate() {
     var premium = calculatePremium();
     var amount = calculateAmount();
+    var premium1 = calculatePremiumYearLater();
+    var amount1 = calculateAmountYearLater();
+    var premium2 = calculatePremiumYearLater();
+    var amount2 = calculateAmountYearLater();
 }
 
 
