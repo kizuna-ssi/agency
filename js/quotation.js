@@ -26,18 +26,12 @@ function calculatePremium() {
     c = document.querySelector('input[name="select_amount"]:checked').value;
     d = document.querySelector('input[name="times"]:checked').value;
 
-    document.getElementById("premium").value = premium;
-    document.getElementById("product").innerText = premium + "円/月";
-}
-
     if (a == 50 && b == 1 && c == 1 && d == 1) {
       document.getElementById("premium").value = "580";
-      document.getElementById("premium1").value = "620";
-      document.getElementById("premium2").value = "670";
+      document.getElementById("product").innerText = "580円/月";
     } else if (a == 51 && b == 1 && c == 1 && d == 1) {
       document.getElementById("premium").value = "620";
-      document.getElementById("premium1").value = "670";
-      document.getElementById("premium2").value = "710";
+      document.getElementById("product").innerText = "620円/月";
     } else if (a == 52 && b == 1 && c == 1 && d == 1) {
       document.getElementById("premium").value = "670";
       document.getElementById("product").innerText = "670円/月";
@@ -4437,4 +4431,3 @@ function calculateAmount() {
       document.getElementById("product2").innerText = "引受不可";
     }
   }
-
