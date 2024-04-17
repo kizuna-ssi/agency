@@ -48,7 +48,7 @@ function calculateAge() {
 
 
 
-userBirthdayYear.innerHTML = '<option value="1925">1925</option>';
+userBirthdayYear.innerHTML = '<option value="-">-</option>';
 userBirthdayMonth.innerHTML = '<option value="1">1</option>';
 userBirthdayDay.innerHTML = '<option value="1">1</option>';
 
