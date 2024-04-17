@@ -981,7 +981,7 @@ main {
        margin: auto;
 }
 
-.format a:after {
+.format1 a:after {
     content:" ";
     display: inline-block;
     width: 24px;
