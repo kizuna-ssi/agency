@@ -28,7 +28,8 @@ function calculatePremium() {
 
     if (a == 50 && b == 1 && c == 1 && d == 1) {
       document.getElementById("premium").value = "580";
-      document.getElementById("product").innerText = "580円/月";
+      document.getElementById("premium1").value = "620";
+      document.getElementById("premium2").value = "670";
     } else if (a == 51 && b == 1 && c == 1 && d == 1) {
       document.getElementById("premium").value = "620";
       document.getElementById("product").innerText = "620円/月";
