@@ -25,11 +25,10 @@ function calculatePremium() {
     b = document.querySelector('input[name="gender"]:checked').value;
     c = document.querySelector('input[name="select_amount"]:checked').value;
     d = document.querySelector('input[name="times"]:checked').value;
-
+    
     if (a == 50 && b == 1 && c == 1 && d == 1) {
       document.getElementById("premium").value = "580";
-      document.getElementById("premium1").value = "620";
-      document.getElementById("premium2").value = "670";
+      document.getElementById("product").innerText = "580円/月";
     } else if (a == 51 && b == 1 && c == 1 && d == 1) {
       document.getElementById("premium").value = "620";
       document.getElementById("product").innerText = "620円/月";
@@ -4431,4 +4430,20 @@ function calculateAmount() {
       document.getElementById("amount").value = "引受不可";
       document.getElementById("product2").innerText = "引受不可";
     }
+  }
+
+function calculatePremiumYearLater() {
+    var premium1YearLater = calculatePremium(a + 1, b, c, d);
+    var premium2YearsLater = calculatePremium(a + 2, b, c, d);
+
+    document.getElementById("premium1").value = premium1YearLater;
+    document.getElementById("premium2").value = premium2YearsLater;
+  }
+
+function calculateAmountYearLater() {
+    var amount1YearLater = calculateAmount(a + 1, b, c, d);
+    var amount2YearsLater = calculateAmount(a + 2, b, c, d);
+
+    document.getElementById("amount1").value = amount1YearLater;
+    document.getElementById("amount2").value = amount2YearsLater;
   }
