@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>きずな少額短期保険</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+<meta name="description" content="">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/print.css">
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+
+<div id="container">
+
+<div class="no-print"> 
+<header>
+<h1 id="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+<div id="menubar_hdr">
+<span></span><span></span><span></span>
+</div>
+<!--/#menubar_hdr-->
+</header>
+</div>
+
+<div class="no-print"> 
+<div id="menubar">
+<div id="navigation"></div>
+</div>
+</div>
+ 
+<main>
+
+<section>
+ <h2>見積り <span style="font-size: 0.7em; font-weight: bold; color: #94545B;">＜きずなの死亡保険＞</span></h2>
+ 
+ <div class="no-screen"> 
+   <p style="text-align: right;">見積日：<span id="datedisplay2"></span></p>
+  </div>
+ 
+  <form class="form1">
+    <span style="font-weight: bold;">
+     <div class="no-print">■ 被保険者となる方の契約年齢と性別、ご希望の加入コースを選択してください</div>
+     <div class="no-screen">■ 選択内容①</div></span>
+   <table class="ta1">    
+    <tr>
+      <th>契約年齢</th>
+       <td>
+        <div class="select1">
+         <select class="birthday-year" style="width: 90px;" onchange="calculate()"></select>年
+         <select class="birthday-month" style="width: 50px;" onchange="calculate()"></select>月
+         <select class="birthday-day" style="width: 50px;" onchange="calculate()"></select>日
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <th>性別</th>
+      <td>
+       <div class="radio1">
+        <div style="display:none">
+         <input type="radio" id="genderless" name="gender" onchange="calculate()" value="0" checked="checked">
+         <label for="genderless">未選択</label>
+        </div>
+        <input type="radio" id="male" name="gender" onchange="calculate()" value="1"><label for="male">男性</label>
+        <input type="radio" id="female" name="gender" onchange="calculate()" value="2"><label for="female">女性</label>
+       </div>
+      </td>
+    </tr>
+    <tr>
+      <th>加入コース</th>
+      <td>
+       <div class="radio1">
+        <input type="radio" id="amount_fixed" name="course" onchange="customCalculate()" value="amount_fixed">
+        <label for="amount_fixed" style="width: 200px;">保険金額固定コース</label>
+        <input type="radio" id="premium_fixed" name="course" onchange="customCalculate()" value="premium_fixed">
+        <label for="premium_fixed" style="width: 200px;">保険料定額コース</label>
+       </div>
+      </td>
+    </tr>
+   </table>
+
+
+  <div class="open1">
+    <span style="font-weight: bold;">
+     <div class="no-print">■ ご希望の保険金額と払込回数を選択してください</div>
+     <div class="no-screen">■ 選択内容②</div></span>
+   <table class="ta1">
+    <tr>
+      <th>保険金額</th>
+      <td>
+       <div class="radio1">
+        <input type="radio" id="50" name="select_amount" onchange="calculate()" value="0" checked="checked"><label for="50">50万円</label>
+        <input type="radio" id="100" name="select_amount" onchange="calculate()" value="1"><label for="100">100万円</label>
+        <input type="radio" id="200" name="select_amount" onchange="calculate()" value="2"><label for="200">200万円</label>
+       <input type="radio" id="300" name="select_amount" onchange="calculate()" value="3"><label for="300">300万円</label>
+       </div>
+     </td>
+    </tr>
+    <tr>
+      <th>払込回数</th>
+      <td>
+       <div class="radio1">
+        <input type="radio" id="month" name="times" onchange="calculate()" value="1" checked="checked"><label for="month">月払</label>
+        <input type="radio" id="year" name="times" onchange="calculate()" value="2"><label for="year">年払</label>
+       </div>
+      </td>
+    </tr>
+   </table>
+
+   <table class="ta1">                      
+    <caption>■ 見積結果</caption>
+    <tr>   
+     <th>保険料</th>
+     <td><div style="display:none"><input id="premium" type="text" readonly=""></div>
+         <div id="product" type="text" readonly="" style="font-weight: bold; font-size: 2.0em;"></div>
+     </td>     
+    </tr>
+   </table>
+  </div>
+
+  <div class="open2">
+    <span style="font-weight: bold;">
+     <div class="no-print">■ ご希望の保険料を選択してください</div>
+     <div class="no-screen">■ 選択内容②</div></span>
+   <table class="ta1">    
+     <tr>
+      <th rowspan="2">保険料</th>
+      <td>
+        <div class="radio1">
+          <input type="radio" id="1000" name="select_premium" onchange="calculate()" value="1" checked="checked"><label for="1000">1,000円/月</label>
+          <input type="radio" id="2000" name="select_premium" onchange="calculate()" value="2"><label for="2000">2,000円/月</label>
+          <input type="radio" id="3000" name="select_premium" onchange="calculate()" value="3"><label for="3000">3,000円/月</label>
+          <input type="radio" id="5000" name="select_premium" onchange="calculate()" value="4"><label for="5000">5,000円/月</label>
+         </div>
+       </td>
+    </tr>
+    <tr>
+     <td>
+      <div class="radio1">
+          <input type="radio" id="10000" name="select_premium" onchange="calculate()" value="5"><label for="10000">10,000円/年</label>
+          <input type="radio" id="20000" name="select_premium" onchange="calculate()" value="6"><label for="20000">20,000円/年</label>
+          <input type="radio" id="30000" name="select_premium" onchange="calculate()" value="7"><label for="30000">30,000円/年</label>
+          <input type="radio" id="50000" name="select_premium" onchange="calculate()" value="8"><label for="50000">50,000円/年</label>
+        </div>
+     </td>
+    </tr>
+   </table>
+   
+   <table class="ta1">                      
+    <caption>■ 見積結果</caption>
+    <tr>   
+     <th>保険金額</th>
+     <td><div style="display:none"><input id="amount" type="text" readonly=""></div>
+         <div id="product2" type="text" readonly="" style="font-weight: bold; font-size: 2.0em;"></div>
+     </td>     
+    </tr>
+   </table>
+  </div>
+
+ <div class="open3">
+        <p style="font-size: 0.8rem; text-indent: -2em; padding-left: 4em; margin: auto;">
+         ※1 契約年齢とは責任開始日時点の年齢をいいます。
+        </p>
+        <p style="font-size: 0.8rem; text-indent: -2em; padding-left: 4em; margin: auto;">
+         ※2 責任開始日は、申込受付完了が月初～15日の場合は<span style="font-weight: bold;">翌月の1日</span>、
+          16日～月末の場合は<span style="font-weight: bold;">翌々月の1日</span>となります。<br>
+        </p>
+        <p style="font-size: 0.8rem; text-indent: -2em; padding-left: 4em; margin: auto;">
+          ※3 表示された見積結果は初年度の金額です。次年度以降は、更新日時点の年齢を基準に計算されます。
+        </p>       
+        <p style="font-size: 0.8rem; text-indent: -2em; padding-left: 4em; margin: auto;">
+          ※4 引受不可と表示された場合、選択された条件でのお申し込みはできません。
+        </p>
+        <br>
+
+       <div class="no-print">
+        <div class="btn">
+          <a href="javascript:void(0)" onclick="window.print();return false;">見積結果を印刷する</a>
+        </div><br>
+   
+        <div class="btn">
+          <a href="pdf/list_premium_amount.pdf" target="_blank">一覧で見る（PDF）</a>
+        </div><br>
+       </div>
+  
+ </div>
+
+  <div class="no-screen">
+   <br>
+  <p>
+    <span style="font-size: 130%; font-weight: bold;">株式会社きずな少額短期保険</span><br>
+    <span style="font-size: 100%;">〒460-0003 愛知県名古屋市中区錦二丁目13番30号 9階</span><br>
+    <span style="font-size: 100%;">TEL：052-228-1335</span>
+    <span style="font-size: 80%;">受付時間：10:00〜16:00（土・日・祝・年末年始を除く）</span>
+  </p>
+  </div>
+
+   
+ </form>
+
+</section>
+  
+</main>
+
+
+
+<div class="no-print"> 
+<footer>
+<small>Copyright 2024 KIZUNA Small Amount and Short Term Insurance Co., Ltd.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</footer>
+</div>
+
+</div>
+<!--/#container-->
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="js/main.js"></script>
+
+<!--ページの上部へ戻るボタン-->
+<div class="no-print">
+<div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div></div>
+
+
+<script src="js/calculate_age.js"></script>
+<script src="js/quotation.js"></script>
+ 
+</body>
+</html>
