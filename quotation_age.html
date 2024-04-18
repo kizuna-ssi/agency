@@ -276,8 +276,29 @@
 <div class="no-print">
 <div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div></div>
 
-
 <script src="js/quotation_age.js"></script>
+<script>
+ setInterval(function(){
+    var y = new Date().getFullYear();
+    var m = new Date().getMonth() + 1;
+    var d = new Date().getDate();
+    var w = new Date().getDay();
+    var wd = ["日","月","火","水","木","金","土"];
+    var youbi = wd[w];
+    var h = new Date().getHours();
+    var min = new Date().getMinutes();
+    var s = new Date().getSeconds();
+    
+    // 日付を表示する要素のIDを配列で持つ
+    var dateDisplayIds = ["datedisplay1", "datedisplay2", "datedisplay3", "datedisplay4"];
+    
+    // 各要素に日付を表示する
+    dateDisplayIds.forEach(function(id) {
+        $("#" + id).html(y + "年" + m + "月" + d + "日" );
+    });
+    
+},1000);
+</script>
  
 </body>
 </html>
