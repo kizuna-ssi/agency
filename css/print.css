@@ -6,7 +6,6 @@
 
 @media print{
  *{
-     -webkit-print-color-adjust: exact;
     zoom: 1.00;
  }
 	
