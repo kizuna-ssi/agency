@@ -7,6 +7,7 @@
 @media print{
  *{
     zoom: 1.00;
+    background-color: #fff;
  }
 	
 .no-print{
