@@ -22,9 +22,6 @@ function calculate() {
 function calculatePremium() {
     var a, b, c, d;
     a = calculateAge(); 
-    if (!a) {
-        a = document.querySelector('select[name="contractor_age"]').value;
-    }
     b = document.querySelector('input[name="gender"]:checked').value;
     c = document.querySelector('input[name="select_amount"]:checked').value;
     d = document.querySelector('input[name="times"]:checked').value;
@@ -2439,9 +2436,6 @@ function calculatePremium() {
 function calculateAmount() {
     var a, b, c;
     a = calculateAge(); 
-    if (!a) {
-        a = document.querySelector('select[name="contractor_age"]').value;
-    }
     b = document.querySelector('input[name="gender"]:checked').value;
     e = document.querySelector('input[name="select_premium"]:checked').value;
 
