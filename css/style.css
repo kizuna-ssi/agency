@@ -981,34 +981,42 @@ main {
        margin: auto;
 }
 
-.hatena_button {
-      background-color: #aaaaaa;
-      color: #fff;
-      border-radius: 100%;
-      margin-left: 20px;
+.tooltip2{
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
 }
 
-.help_message {
-    margin-left: 10px;
-    width: 10%;
+.tooltip2 p{
+    margin:0;
+    padding:0;
+}
+
+.description2 {
     display: none;
     position: absolute;
-    word-wrap: break-word;
-    margin-top: -2.5em;
-    border: 1px solid #aaaaaa;
-    padding: 4px;
-    font-size: 0.5em;
-  }
+    padding: 10px;
+    font-size: 12px;
+    line-height: 1.6em;
+    color: #fff;
+    border-radius: 5px;
+    background: #000;
+    width: 100px;
+}
 
-  .help_message:after {
-    border:10px solid transparent;
-    border-right-color:#aaaaaa;
-    border-left-width:0;
-    width:0;
-    left:-10px;
-    content:"";
-    display:block;
-    top:20px;
-    position:absolute;
-    margin-top: 1em;
-  }
+.description2:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    right: 95%;
+    border: 15px solid transparent;
+    border-top: 15px solid #000;
+    margin-left: -15px;
+    transform: rotateZ(90deg);
+}
+
+.tooltip2:hover .description2{
+    display: inline-block;
+    top: 0px;
+    left: 80px;
+}
