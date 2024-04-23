@@ -1018,19 +1018,19 @@ main {
 .tooltip:hover .description{
     display: inline-block;
     top: 0px;
-    left: 40px;
+    left: 60px;
 }
 
 .helpbutton:after{
-  content: "?";
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 1.4;
-  color: black;
-  border: solid;
-  font-weight: bold;
+    content: "?";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.4;
+    color: black;
+    border: solid;
+    font-weight: bold;
 }
 
