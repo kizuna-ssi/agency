@@ -1034,3 +1034,6 @@ main {
     font-weight: bold;
 }
 
+.helpbutton:hover {
+    cursor: pointer;
+}
