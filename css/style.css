@@ -988,7 +988,7 @@ main {
 }
 
 .tooltip label{
-    margin:0;
+    margin: 0px 0px 0px 15px;
     padding:0;
 }
 
@@ -1018,7 +1018,7 @@ main {
 .tooltip:hover .description{
     display: inline-block;
     top: 0px;
-    left: 80px;
+    left: 40px;
 }
 
 .helpbutton:after{
