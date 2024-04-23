@@ -981,18 +981,18 @@ main {
        margin: auto;
 }
 
-.tooltip2{
+.tooltip{
     position: relative;
     cursor: pointer;
     display: inline-block;
 }
 
-.tooltip2 p{
+.tooltip label{
     margin:0;
     padding:0;
 }
 
-.description2 {
+.description {
     display: none;
     position: absolute;
     padding: 10px;
@@ -1004,7 +1004,7 @@ main {
     width: 200px;
 }
 
-.description2:before {
+.description:before {
     content: "";
     position: absolute;
     top: 0%;
@@ -1015,8 +1015,25 @@ main {
     transform: rotateZ(90deg);
 }
 
-.tooltip2:hover .description2{
+.tooltip:hover .description2{
     display: inline-block;
     top: 0px;
     left: 80px;
+}
+
+.helpbutton:after{
+  content: "?";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.4;
+  color: black;
+  border: solid;
+  font-weight: bold;
+}
+
+.helpbutton:hover {
+  cursor: pointer;
 }
