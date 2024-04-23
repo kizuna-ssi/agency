@@ -980,3 +980,10 @@ main {
        text-align: center;
        margin: auto;
 }
+
+.hatena_button {
+      background-color: #aaaaaa;
+      color: #fff;
+      border-radius: 100%;
+      margin-left: 20px;
+}
