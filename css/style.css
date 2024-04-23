@@ -1015,7 +1015,7 @@ main {
     transform: rotateZ(90deg);
 }
 
-.tooltip:hover .description2{
+.tooltip:hover .description{
     display: inline-block;
     top: 0px;
     left: 80px;
@@ -1034,6 +1034,3 @@ main {
   font-weight: bold;
 }
 
-.helpbutton:hover {
-  cursor: pointer;
-}
