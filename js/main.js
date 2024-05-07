@@ -121,5 +121,5 @@ $(function(){
         });
 
 <!--
-if (!document.referrer){top.location.href="https://kizuna-ssi.github.io/inside_company/";}
+if (!document.referrer){top.location.href="https://kizuna-ssi.net";}
 //-->
