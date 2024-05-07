@@ -121,5 +121,5 @@ $(function(){
         });
 
 <!--
-if (!document.referrer){top.location.href="https://kizuna-ssi.net";}
+if (!document.referrer){top.location.href="https://kizuna-ssi.net/login.html";}
 //-->
