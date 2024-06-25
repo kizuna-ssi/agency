@@ -273,7 +273,7 @@
 }
 
 .learning ol li{
-        margin-bottom: 30px;
+        margin-bottom: 0px;
 }
 
 .learning ol li::marker{
