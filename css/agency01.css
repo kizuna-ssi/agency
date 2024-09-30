@@ -395,6 +395,7 @@ footer {
 	padding: 2em;
 	border-radius: 30px;
 	background-color: #caddaf;
+	width: 80%;
 }
 
 /*テキストブロック*/
@@ -404,7 +405,7 @@ footer {
 
 /*画像ブロック*/
 .list-use figure {
-	width: 25%;	/*幅。お好みで。*/
+	width: 30%;	/*幅。お好みで。*/
 }
 
 /*h4見出し*/
