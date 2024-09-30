@@ -341,6 +341,7 @@ footer {
 /*説明テキスト*/
 .list-normal p {
 	margin: 0;	
+	font-weight: bold;
 }
 
 
