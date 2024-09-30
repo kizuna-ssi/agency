@@ -513,6 +513,15 @@ footer {
 .dn {display: none !important;}
 .block {display: block !important;}
 
+.reference{
+    list-style: none;
+    padding-left: 1.5em;
+    margin-left: 0.5em;
+}
+.reference li{
+    text-indent: -1.5em;
+}
+
 /*画面幅900px以上の追加指定*/
 @media screen and (min-width:900px) {
 
