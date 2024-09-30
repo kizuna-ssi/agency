@@ -114,8 +114,6 @@ a:hover {
 ---------------------------------------------------------------------------*/
 /*headerブロック*/
 header {
-	padding-top: var(--global-space);		/*上側の余白。css冒頭で指定しているglobal-spaceを読み込みます。*/
-	padding-bottom: var(--global-space);	/*下側の余白。css冒頭で指定しているglobal-spaceを読み込みます。*/
 	text-align: center;		/*中のテキストをセンタリング*/
 }
 
