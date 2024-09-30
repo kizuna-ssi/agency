@@ -350,7 +350,7 @@ footer {
 ---------------------------------------------------------------------------*/
 /*ボックス１個あたり*/
 .list-premium .list {
-	display: inline-flex;		/*直接の子要素を横並びにする*/
+	display: flex;		/*直接の子要素を横並びにする*/
 	gap: 2vw;			/*左右の間のマージン的なスペース*/
 	margin-bottom: var(--global-space);	/*ボックスの下に空けるスペース。css冒頭で指定しているglobal-spaceを読み込みます。*/
 	margin-right: var(--global-space);	/*ボックスの右に空けるスペース。css冒頭で指定しているglobal-spaceを読み込みます。*/
@@ -358,7 +358,6 @@ footer {
 	padding: 2em;
 	border-radius: 30px;
 	background-color: #fff;
-	width: 40%;
 }
 
 /*テキストブロック*/
@@ -368,7 +367,7 @@ footer {
 
 /*画像ブロック*/
 .list-premium figure {
-	width: 40%;	/*幅。お好みで。*/
+	width: 55%;	/*幅。お好みで。*/
 }
 
 /*h4見出し*/
