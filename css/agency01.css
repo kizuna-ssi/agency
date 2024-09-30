@@ -311,13 +311,14 @@ footer {
 ---------------------------------------------------------------------------*/
 /*ボックス１個あたり*/
 .list-normal .list {
-	display: flex;		/*直接の子要素を横並びにする*/
+	display: inline-flex;		/*直接の子要素を横並びにする*/
 	gap: 2vw;			/*左右の間のマージン的なスペース*/
 	margin-bottom: var(--global-space);	/*ボックスの下に空けるスペース。css冒頭で指定しているglobal-spaceを読み込みます。*/
 	line-height: 2;		/*行間を少し狭く*/
 	padding: 2em;
 	border-radius: 30px;
 	background-color: #eebba0;
+	width: 40%;
 }
 
 /*テキストブロック*/
