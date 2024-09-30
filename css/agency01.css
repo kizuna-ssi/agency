@@ -383,6 +383,44 @@ footer {
 	font-weight: bold;
 }
 
+/*list-use
+---------------------------------------------------------------------------*/
+/*ボックス１個あたり*/
+.list-use .list {
+	display: flex;	
+	gap: 2vw;			/*左右の間のマージン的なスペース*/
+	margin-bottom: var(--global-space);	/*ボックスの下に空けるスペース。css冒頭で指定しているglobal-spaceを読み込みます。*/
+	margin-right: var(--global-space);	/*ボックスの右に空けるスペース。css冒頭で指定しているglobal-spaceを読み込みます。*/
+	line-height: 2;		/*行間を少し狭く*/
+	padding: 2em;
+	border-radius: 30px;
+	background-color: #fff;
+}
+
+/*テキストブロック*/
+.list-use .text {
+	flex: 1;
+}
+
+/*画像ブロック*/
+.list-use figure {
+	width: 50%;	/*幅。お好みで。*/
+}
+
+/*h4見出し*/
+.list-use h4 {
+	margin: 0;
+	margin-bottom: 0.5rem;	/*下に少しスペースをとる*/
+	font-size: 1.4rem;	/*文字サイズを120%に*/
+	color:#a21e2e;
+}
+
+/*説明テキスト*/
+.list-use p {
+	margin: 0;	
+	font-weight: bold;
+}
+
 /*FAQ
 ---------------------------------------------------------------------------*/
 .openclose {cursor: pointer;}
