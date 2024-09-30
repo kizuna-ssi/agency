@@ -439,11 +439,31 @@ footer {
 .dn {display: none !important;}
 .block {display: block !important;}
 
-	/*画面幅900px以上の追加指定*/
-	@media screen and (min-width:900px) {
+/*画面幅900px以上の追加指定*/
+@media screen and (min-width:900px) {
 
 	.ws {width: 48%;display: inline;}
 	.sh {display: none;}
 	.pc {display: block;}
+	.sp-br {display: none;}
 
-	}/*追加指定ここまで*/
+}/*追加指定ここまで*/
+
+
+/*画面幅899px以下の追加指定*/
+@media screen and (max-width:899px) {
+.list-normal .list {
+	display: flex;		/*直接の子要素を横並びにする*/
+	gap: 2vw;			/*左右の間のマージン的なスペース*/
+	margin-bottom: var(--global-space);	/*ボックスの下に空けるスペース。css冒頭で指定しているglobal-spaceを読み込みます。*/
+	margin-right: var(--global-space);	/*ボックスの右に空けるスペース。css冒頭で指定しているglobal-spaceを読み込みます。*/
+	line-height: 2;		/*行間を少し狭く*/
+	padding: 2em;
+	border-radius: 30px;
+	background-color: #eebba0;
+	width: 95%;
+}
+.sp-br {
+	display: inline-block;
+}	
+}
