@@ -340,6 +340,35 @@ footer {
 }
 
 
+/*listブロック
+---------------------------------------------------------------------------*/
+/*listブロック全体を囲むブロック*/
+.list-container {
+	display: flex;		/*flexボックスを使う指定*/
+	flex-wrap: wrap;	/*折り返す指定*/
+	justify-content: center;
+}
+
+/*１個あたりのボックス設定*/
+.list-container .list {
+	display: flex;					/*flexボックスを使う指定*/
+	justify-content: space-between;	/*並びかたの種類の指定*/
+	flex-direction: column;			/*子要素を縦並びにする*/
+	width: 25%;						/*幅。３列になります。*/
+	margin-right: 2%;
+}
+
+.list-container .list:nth-of-type(3n) {
+	margin-right: 0;
+}
+
+/*ボックス内のtextブロック*/
+.list-container .list .text {
+	flex: 1;
+}
+
+
+
 /*FAQ
 ---------------------------------------------------------------------------*/
 .openclose {cursor: pointer;}
