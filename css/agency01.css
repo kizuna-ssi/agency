@@ -349,7 +349,7 @@ footer {
 ---------------------------------------------------------------------------*/
 /*ボックス１個あたり*/
 .list-premium .list {
-	display: block;	
+	display: flex;	
 	gap: 2vw;			/*左右の間のマージン的なスペース*/
 	margin-bottom: var(--global-space);	/*ボックスの下に空けるスペース。css冒頭で指定しているglobal-spaceを読み込みます。*/
 	margin-right: var(--global-space);	/*ボックスの右に空けるスペース。css冒頭で指定しているglobal-spaceを読み込みます。*/
@@ -504,5 +504,8 @@ footer {
 }
 .list-premium figure {
 	width: 100%;	/*幅。お好みで。*/
+}
+.list-premium .list {
+	display: block;	
 }
 }
