@@ -529,6 +529,8 @@ footer {
 table.CF7_table{
 	width:80%;
 	border: 1px solid var(--primary-inverse-color);
+	border-left: none;
+	border-right: none;
 }
 
 table.CF7_table tr{
@@ -544,7 +546,8 @@ table.CF7_table tr{
 
 /*入力欄*/
 .CF7_table input, .CF7_table textarea {
-	border: 1px solid #d8d8d8;
+	border: 0px solid #d8d8d8;
+	padding: 15px;
 }
 
 .CF7_table ::placeholder {
