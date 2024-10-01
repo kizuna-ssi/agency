@@ -464,8 +464,10 @@ footer {
 /*ta1テーブルブロック設定*/
 .ta1 {
 	table-layout: fixed;
-	width: 100%;				/*幅*/
+	width: 950%;				/*幅*/
+	background-color: #fff;
 }
+
 
 .ta1, .ta1 td, .ta1 th {
 	border: 1px solid var(--primary-inverse-color);	/*テーブルの枠線の幅、線種、varは色のことでcss冒頭で指定しているprimary-inverse-colorを読み込みます。*/
