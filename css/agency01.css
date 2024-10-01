@@ -556,6 +556,9 @@ footer {
 .list-premium .list {
 	display: block;	
 }
+.list-use figure {
+	width: 90%;	/*幅。お好みで。*/
+}
 .list-use .list {
 	display: block;	
 }
