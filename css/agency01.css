@@ -495,7 +495,7 @@ footer {
 /*ta2テーブルブロック設定*/
 .ta2 {
 	table-layout: fixed;				/*幅*/
-	background-color: #fff;
+	background-color: #fff4e4;
 	max-width: 800px;
 }
 
@@ -506,12 +506,13 @@ footer {
 	word-break: break-all;	/*英語などのテキストを改行で自動的に折り返す設定。これがないと、テーブルを突き抜けて表示される場合があります。*/
 	line-height: 1.6em;
 	font-weight: bold;
+	border-right: none;
+	border-left: none;
 }
 
 /*th（左側）のみの設定*/
 .ta2 th {
 	text-align: left;	/*左よせにする*/
-	width: 45%;
 	background-color: #eeeeee;
 	padding: 15px;
 }
@@ -519,7 +520,7 @@ footer {
 .ta2 caption {
         padding: 5px 15px;
 	font-weight: bold;
-	background: #eee;
+	background: #fff4e4;
 	margin-bottom: 15px;
 }
 
