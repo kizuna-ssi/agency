@@ -407,9 +407,6 @@ footer {
 .list-use figure {
 	width: 30%;	/*幅。お好みで。*/
 }
-.list-use .list2 figure {
-	width: 35%;
-}
 
 /*h4見出し*/
 .list-use h4 {
@@ -566,7 +563,5 @@ footer {
 	display: block;	
 	width: 95%;
 }
-.list-use .list2 figure {
-	width: 45%;
-}
+
 }
