@@ -524,6 +524,14 @@ footer {
 	margin-bottom: 15px;
 }
 
+.ta2 ws {
+        width: 48%;
+        display: inline;
+        height: 40px;
+        background-color: #f2d5d5;
+        border: none;
+        padding: 10px;
+}
 
 /*PAGE TOP（↑）設定
 ---------------------------------------------------------------------------*/
