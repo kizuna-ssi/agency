@@ -561,4 +561,5 @@ footer {
 }
 .list-use .list {
 	display: block;	
+	width: 100%;
 }
