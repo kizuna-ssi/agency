@@ -466,6 +466,7 @@ footer {
 	table-layout: fixed;
 	width: 95%;				/*幅*/
 	background-color: #fff;
+	max-width: 800px;
 }
 
 
