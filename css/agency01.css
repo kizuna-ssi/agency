@@ -528,11 +528,11 @@ footer {
 /*ContactForm7カスタマイズ*/
 table.CF7_table{
 	width:80%;
-	border: 1px solid var(--primary-inverse-color)
+	border: 1px solid var(--primary-inverse-color);
 }
 
 table.CF7_table tr{
-	border: 1px solid var(--primary-inverse-color)
+	border: 1px solid var(--primary-inverse-color);
 	border-left: none;
 	border-right: none;
 }
