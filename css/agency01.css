@@ -524,14 +524,16 @@ footer {
 	margin-bottom: 15px;
 }
 
-.ta2 ws {
-        width: 48%;
-        display: inline;
-        height: 40px;
-        background-color: #f2d5d5;
-        border: none;
-        padding: 10px;
+
+/*Contact form 7 設定
+---------------------------------------------------------------------------*/
+.wpcf7 input[type=”text”]:focus
+{
+background: #FFC0CB;
+border: 2px solid #FF1493;
+outline: 0;
 }
+
 
 /*PAGE TOP（↑）設定
 ---------------------------------------------------------------------------*/
