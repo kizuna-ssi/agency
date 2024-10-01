@@ -463,8 +463,7 @@ footer {
 ---------------------------------------------------------------------------*/
 /*ta1テーブルブロック設定*/
 .ta1 {
-	table-layout: fixed;
-	width: 95%;				/*幅*/
+	table-layout: fixed;				/*幅*/
 	background-color: #fff;
 	max-width: 800px;
 }
