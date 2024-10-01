@@ -531,6 +531,7 @@ footer {
 	.ws {width: 48%;display: inline;}
 	.sh {display: none;}
 	.pc {display: block;}
+	.sp {display: none;}
 	.sp-br {display: none;}
 
 }/*追加指定ここまで*/
@@ -565,5 +566,6 @@ footer {
 	display: block;	
 	width: 95%;
 }
-
+.pc {display: none;}
+.sp {display: block;}
 }
