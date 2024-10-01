@@ -406,7 +406,6 @@ footer {
 /*画像ブロック*/
 .list-use figure {
 	width: 30%;	/*幅。お好みで。*/
-	margin: auto;
 }
 
 /*h4見出し*/
@@ -423,9 +422,7 @@ footer {
 	font-weight: bold;
 }
 
-.list-use .sp-img {
-	width: 100%;
-}
+
 
 /*FAQ
 ---------------------------------------------------------------------------*/
@@ -568,7 +565,5 @@ footer {
 	display: block;	
 	width: 95%;
 }
-.list-use .sp-img {
-	width: 60%;
-}
+
 }
