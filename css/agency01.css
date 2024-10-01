@@ -406,6 +406,7 @@ footer {
 /*画像ブロック*/
 .list-use figure {
 	width: 30%;	/*幅。お好みで。*/
+	margin: auto;
 }
 
 /*h4見出し*/
