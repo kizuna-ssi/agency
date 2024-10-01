@@ -464,20 +464,19 @@ footer {
 /*ta1テーブルブロック設定*/
 .ta1 {
 	table-layout: fixed;
-	width: 950%;				/*幅*/
+	width: 95%;				/*幅*/
 	background-color: #fff;
 }
 
 
 .ta1, .ta1 td, .ta1 th {
 	border: 1px solid var(--primary-inverse-color);	/*テーブルの枠線の幅、線種、varは色のことでcss冒頭で指定しているprimary-inverse-colorを読み込みます。*/
-	padding: 1rem;			/*ボックス内の余白*/
+	padding: 0.8rem;			/*ボックス内の余白*/
 	word-break: break-all;	/*英語などのテキストを改行で自動的に折り返す設定。これがないと、テーブルを突き抜けて表示される場合があります。*/
 }
 
 /*th（左側）のみの設定*/
 .ta1 th {
-	width: 25%;			/*幅*/
 	text-align: left;	/*左よせにする*/
 }
 
