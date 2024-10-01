@@ -528,12 +528,13 @@ footer {
 /*ContactForm7カスタマイズ*/
 table.CF7_table{
 	width:80%;
-	margin:0 auto;
-	border: 3px solid #e5e5e5;
+	border: 1px solid var(--primary-inverse-color)
 }
 
 table.CF7_table tr{
-	border-top: 1px solid #e5e5e5;
+	border: 1px solid var(--primary-inverse-color)
+	border-left: none;
+	border-right: none;
 }
 
 .single .entry-content table.CF7_table,
@@ -573,8 +574,10 @@ table.CF7_table tr{
 /* タイトル列 */
 @media screen and (min-width: 768px){
 	.CF7_table th{
-	width:30%;/*横幅*/
-	background-color:#ebedf5;/*ブルーグレー*/
+	width: 30%;
+        background-color: #fff4e4;
+        text-align: left;
+        padding-left: 15px;
 	}
 }
 
