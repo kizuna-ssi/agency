@@ -715,6 +715,7 @@ span.wpcf7-list-item-label {
 }
 .list-use figure {
 	width: 80%;	/*幅。お好みで。*/
+	margin: auto;
 }
 .list-use .list {
 	display: block;	
