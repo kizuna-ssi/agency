@@ -715,6 +715,11 @@ span.wpcf7-list-item-label {
 .pc {display: none;}
 .sp {display: block;}
 
+h2 {
+	margin-top: 15px;
+	text-align: center;
+}
+	
 h3 {
 	text-align: center;
 }
