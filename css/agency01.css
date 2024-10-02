@@ -714,4 +714,8 @@ span.wpcf7-list-item-label {
 }
 .pc {display: none;}
 .sp {display: block;}
+
+h3 {
+	text-align: center;
+}
 }
