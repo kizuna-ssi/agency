@@ -498,7 +498,7 @@ footer {
 .ta2 {
 	table-layout: fixed;				/*幅*/
 	background-color: #fff4e4;
-	max-width: 800px;
+	width: 90%;
 }
 
 
@@ -517,6 +517,7 @@ footer {
 	text-align: left;	/*左よせにする*/
 	background-color: #fff4e4;
 	padding: 15px;
+	width: 25%;
 }
 
 .ta2 caption {
