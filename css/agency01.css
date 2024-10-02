@@ -751,6 +751,81 @@ span.wpcf7-list-item-label {
 	display: none;
 }
 
+.button1 a {
+    background: #eb6100;
+    border-radius: 9999px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 250px;
+    padding: 20px 30px;
+    font-family: "Noto Sans Japanese";
+    line-height: 1.8;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    border-bottom: solid 5px #b65511;
+    transition: 0.3s ease-in-out;
+}
+.button1 a:before {
+    content: "\f15c";
+    position: relative;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 12px;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+.button1 a:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  right: 2rem;
+  font-size: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.3s;
+  width: 6px;
+  height: 6px;
+  border-top: solid 2px currentColor;
+  border-right: solid 2px currentColor;
+  transform: translateY(-50%) rotate(45deg);
+}
+.button1 a:hover:after {
+  right: 1.4rem;
+}
+.button1 a:hover {
+  background: #ee8134;
+  color: #FFF;
+  border-bottom: solid 2px #999;
+  transform: translateY(3px);
+}
+.button1 a:hover:before {
+    color: #fff;
+}
+.tooltip1 {
+  font-family: "Noto Sans Japanese";
+  font-size: 100%;
+  font-weight: 500;
+  position: relative;
+  margin-bottom: .5rem;
+  text-align: center;
+  color: #eb6100;
+}
+
+.tooltip1:before {
+  margin-right: 1rem;
+  content: '＼';
+}
+
+.tooltip1:after {
+  margin-left: 1rem;
+  content: '／';
+}
 
 /*画面幅900px以上の追加指定*/
 @media screen and (min-width:900px) {
