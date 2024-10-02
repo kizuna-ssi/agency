@@ -194,6 +194,44 @@ main h2 {
 #menubar li a {
 	padding-left: 1rem;	/*左側の余白*/
 }
+#menubar li1 {
+	border-bottom: 1px solid var(--primary-inverse-color);	/*下線の幅、線種、varは色の事でcss冒頭で指定しているprimary-inverse-colorを読み込みます*/
+	background-color: #eb6100;
+	color: #fff;
+}
+#menubar li1 a {
+	padding-left: 1rem;	/*左側の余白*/
+}
+#menubar li1 a:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  right: 2rem;
+  font-size: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.3s;
+  width: 6px;
+  height: 6px;
+  border-top: solid 2px currentColor;
+  border-right: solid 2px currentColor;
+  transform: translateY(-50%) rotate(45deg);
+}
+#menubar li1 a:hover:after {
+  right: 1.4rem;
+}
+#menubar li1 a:hover {
+  background: #ee8134;
+  color: #FFF;
+  border-bottom: solid 2px #999;
+  transform: translateY(3px);
+}
+#menubar li1 a:hover:before {
+    color: #fff;
+}
+
 
 /*h3見出し*/
 #menubar h3 {
@@ -751,53 +789,6 @@ span.wpcf7-list-item-label {
 	display: none;
 }
 
-.button1 a {
-    background: #eb6100;
-    border-radius: 9999px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 500px;
-    padding: 20px 30px;
-    font-family: "Noto Sans Japanese";
-    line-height: 1.8;
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    border-bottom: solid 5px #b65511;
-    transition: 0.3s ease-in-out;
-}
-.button1 a:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  bottom: 0;
-  right: 2rem;
-  font-size: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: right 0.3s;
-  width: 6px;
-  height: 6px;
-  border-top: solid 2px currentColor;
-  border-right: solid 2px currentColor;
-  transform: translateY(-50%) rotate(45deg);
-}
-.button1 a:hover:after {
-  right: 1.4rem;
-}
-.button1 a:hover {
-  background: #ee8134;
-  color: #FFF;
-  border-bottom: solid 2px #999;
-  transform: translateY(3px);
-}
-.button1 a:hover:before {
-    color: #fff;
-}
 
 
 /*画面幅900px以上の追加指定*/
