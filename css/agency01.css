@@ -792,18 +792,18 @@ span.wpcf7-list-item-label {
 
 /* モーダルを開くボタン */
 .modal-open{
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  font-size: 16px;
-  font-weight: bold;
-  width: 300px;
-  height: 60px;
-  color: #fff;
-  background: #000;
-  border: none;
-  cursor: pointer;
-  translate: -50% -50%;
+    position: fixed;
+    bottom: 20px;
+    left: 150px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 250px;
+    height: 60px;
+    color: #fff;
+    background: #171c60;
+    border: none;
+    cursor: pointer;
+    translate: -50% -50%;
 }
 
 /* モーダルと背景の指定 */
