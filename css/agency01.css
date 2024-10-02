@@ -429,6 +429,7 @@ footer {
 /*FAQ全体を囲むボックス*/
 .faq {
 	line-height: 2.5;	/*行間を少しせまくする*/
+	width: 70%;
 }
 
 /*質問*/
@@ -439,11 +440,13 @@ footer {
 	padding-right: 1rem;	/*ボックス内の右側の余白*/
 	margin-bottom: 1rem;	/*ボックスの外（下）に空けるスペース*/
 	border-radius: 5px;		/*角を少しだけ丸くする*/
+	background-color: var(--primary-inverse-color);
+	color: #fff;
 }
 
 /*「Q」のテキスト*/
 .faq dt::before {
-	content: "Q.";			/*このテキストを表示させます*/
+	content: "▶";			/*このテキストを表示させます*/
 	position: absolute;
 	left: 0;
 	top: 0;
