@@ -738,9 +738,18 @@ span.wpcf7-list-item-label {
     cursor: pointer;
 }
 
-.open1, .open2, .open3, {
+.open1 {
 	display: none;
 }
+
+.open2 {
+	display: none;
+}
+
+.open3 {
+	display: none;
+}
+
 
 /*画面幅900px以上の追加指定*/
 @media screen and (min-width:900px) {
