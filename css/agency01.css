@@ -194,15 +194,15 @@ main h2 {
 #menubar li a {
 	padding-left: 1rem;	/*左側の余白*/
 }
-#menubar li1 {
+#menubar .li1 {
 	border-bottom: 1px solid var(--primary-inverse-color);	/*下線の幅、線種、varは色の事でcss冒頭で指定しているprimary-inverse-colorを読み込みます*/
 	background-color: #eb6100;
 	color: #fff;
 }
-#menubar li1 a {
+#menubar .li1 a {
 	padding-left: 1rem;	/*左側の余白*/
 }
-#menubar li1 a:after {
+#menubar .li1 a:after {
   content: "";
   position: absolute;
   top: 50%;
@@ -219,16 +219,16 @@ main h2 {
   border-right: solid 2px currentColor;
   transform: translateY(-50%) rotate(45deg);
 }
-#menubar li1 a:hover:after {
+#menubar .li1 a:hover:after {
   right: 1.4rem;
 }
-#menubar li1 a:hover {
+#menubar .li1 a:hover {
   background: #ee8134;
   color: #FFF;
   border-bottom: solid 2px #999;
   transform: translateY(3px);
 }
-#menubar li1 a:hover:before {
+#menubar .li1 a:hover:before {
     color: #fff;
 }
 
