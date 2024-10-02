@@ -909,6 +909,44 @@ span.wpcf7-list-item-label {
    width: 150px;
 }
 
+/*radioブロック*/
+.radio1{
+	float: left;	
+	width: 100%;	
+}
+
+.radio1 input{
+	display: none;
+}
+
+.radio1 label{
+	display: block;
+	float: left;
+	cursor: pointer;
+	width: 120px;
+	margin: 10px 3px 0;
+	padding: 1.4% 0 1.5% 0;
+	border-right: 1px solid #d7d7d7;
+	background: #e5e5e5;
+	color: #555e64;
+	font-size: 14px;
+	text-align: center;
+	transition: .2s;
+}
+
+.radio1 label:first-of-type{
+}
+
+.radio1 label:last-of-type{
+	border-right: 0px;
+}
+
+.radio1 input[type="radio"]:checked + label {
+	background-color: #666666;
+	color: #fff;
+}
+
+
 /*画面幅900px以上の追加指定*/
 @media screen and (min-width:900px) {
 
