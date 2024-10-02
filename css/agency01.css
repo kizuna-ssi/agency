@@ -577,11 +577,9 @@ table.CF7_table tr{
 /* タイトル列 */
 @media screen and (min-width: 900px){
 	.CF7_table th {
-        width: 35%;
         background-color: #fff4e4;
         text-align: left;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 20px;
     }
 }
 
