@@ -576,12 +576,13 @@ table.CF7_table tr{
 
 /* タイトル列 */
 @media screen and (min-width: 900px){
-	.CF7_table th{
-	width: 30%;
+	.CF7_table th {
+        width: 35%;
         background-color: #fff4e4;
         text-align: left;
         padding-left: 15px;
-	}
+        padding-right: 15px;
+    }
 }
 
 /* レスポンシブ */
@@ -592,10 +593,13 @@ table.CF7_table tr{
 	.CF7_table tr, .CF7_table td, .CF7_table th{
 	display: block;
 	width: 100%;
-	line-height:2.5em;
+	line-height: 0.5em;
+	padding-bottom: 10px;
 	}
 	.CF7_table th{
-	background-color:#ebedf5;
+	background-color: #fff4e4;
+	text-align: left;
+	padding-top: 10px;
 	}
 }
 
@@ -619,37 +623,8 @@ table.CF7_table tr{
 	margin:0;
 }
 
-.CF7_radio{
-	float: left;	
-	width: 100%;	
-}
-.CF7_radio input{
-	display: none;
-}
-.CF7_radio label{
-	display: block;
-	float: left;
-	cursor: pointer;
-	width: 120px;
-	margin: 10px 3px 0;
-	padding: 1.4% 0 1.5% 0;
-	border-right: 1px solid #d7d7d7;
-	background: #e5e5e5;
-	color: #555e64;
-	font-size: 14px;
-	text-align: center;
-	transition: .2s;
-}
-.CF7_radio label:first-of-type{
-}
-
-.CF7_radio label:last-of-type{
-	border-right: 0px;
-}
-
-.CF7_radio input[type="radio"]:checked + label {
-	background-color: #f79034;
-	color: #fff;
+span.wpcf7-list-item-label {
+    padding: 0px 25px 0px 0px;;
 }
 
 
