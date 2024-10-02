@@ -198,6 +198,7 @@ main h2 {
 	border-bottom: 1px solid var(--primary-inverse-color);	/*下線の幅、線種、varは色の事でcss冒頭で指定しているprimary-inverse-colorを読み込みます*/
 	background-color: #a21e2e;
 	color: #fff;
+	font-weight: bold;
 }
 #menubar .li1 a {
 	padding-left: 1rem;	/*左側の余白*/
