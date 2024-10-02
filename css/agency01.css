@@ -429,7 +429,7 @@ footer {
 /*FAQ全体を囲むボックス*/
 .faq {
 	line-height: 2.5;	/*行間を少しせまくする*/
-	width: 70%;
+	width: 80%;
 }
 
 /*質問*/
