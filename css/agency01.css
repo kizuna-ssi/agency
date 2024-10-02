@@ -681,6 +681,63 @@ span.wpcf7-list-item-label {
     text-indent: -1.5em;
 }
 
+.tooltip{
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.tooltip label{
+    margin: 0px 0px 0px 15px;
+    padding:0;
+}
+
+.description {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 1.6em;
+    color: #fff;
+    border-radius: 5px;
+    background: #000;
+    width: 200px;
+}
+
+.description:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    right: 95%;
+    border: 15px solid transparent;
+    border-top: 15px solid #000;
+    margin-left: -15px;
+    transform: rotateZ(90deg);
+}
+
+.tooltip:hover .description{
+    display: inline-block;
+    top: 0px;
+    left: 60px;
+}
+
+.helpbutton:after{
+    content: "?";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.4;
+    color: black;
+    border: solid;
+    font-weight: bold;
+}
+
+.helpbutton:hover {
+    cursor: pointer;
+}
+
 /*画面幅900px以上の追加指定*/
 @media screen and (min-width:900px) {
 
