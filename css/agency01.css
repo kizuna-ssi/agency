@@ -801,6 +801,7 @@ span.wpcf7-list-item-label {
     border: none;
     cursor: pointer;
     translate: 0px 30px;
+    z-index: 102;
 }
 
 /* モーダルと背景の指定 */
@@ -818,6 +819,7 @@ span.wpcf7-list-item-label {
   visibility: hidden;
   transition: .3s;
   box-sizing: border-box;
+  z-index: 103;
 }
 
 /* モーダルの擬似要素の指定 */
@@ -842,6 +844,7 @@ span.wpcf7-list-item-label {
   vertical-align: middle;
   max-width: 900px;
   width: 90%;
+  z-index: 104;
 }
 
 /* モーダルを閉じるボタンの指定 */
@@ -858,6 +861,7 @@ span.wpcf7-list-item-label {
   background: #000;
   border-radius: 50%;
   cursor: pointer;
+  z-index: 105;
 }
 
 /* モーダルのコンテンツ部分の指定 */
