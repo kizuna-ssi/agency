@@ -609,16 +609,17 @@ table.CF7_table tr{
 
 /* 「送信する」ボタン */
 .wpcf7 input.wpcf7-submit {
-	background-color:#f79034;/* オレンジ*/
-	border:0;
-	color:#fff;
-	font-size:1.2em;
-	font-weight:bold;
-	margin:0 auto;
+	background-color: #f79034;
+	border: 0;
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 10px 10px 10px 20px;
+	padding: 10px 20px 10px 20px;
 }
 
 .CF7_btn{
-	text-align:center;
+	text-align:left;
 	margin-top:20px;
 }
 
