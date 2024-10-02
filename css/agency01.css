@@ -436,11 +436,11 @@ footer {
 .faq dt {
 	position: relative;
 	padding-left: 3rem; 	/*下の「回答」と数字部分を合わせる*/
-	border: 1px solid var(--primary-inverse-color);	/*枠線の幅、線種、varは色の事でcss冒頭で指定しているprimary-inverse-colorを読み込みます*/
+	border: 1px solid #a21e2e;	/*枠線の幅、線種、色*/
 	padding-right: 1rem;	/*ボックス内の右側の余白*/
 	margin-bottom: 1rem;	/*ボックスの外（下）に空けるスペース*/
 	border-radius: 5px;		/*角を少しだけ丸くする*/
-	background-color: var(--primary-inverse-color);
+	background-color: #a21e2e;
 	color: #fff;
 }
 
@@ -567,7 +567,7 @@ table.CF7_table tr{
 .CF7_req{
 	font-size:.9em;
 	padding: 5px;
-	background: #f79034;/*オレンジ*/
+	background: #a21e2e;
 	color: #fff;
 	border-radius: 3px;
 	margin-right:1em;
