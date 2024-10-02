@@ -436,11 +436,11 @@ footer {
 .faq dt {
 	position: relative;
 	padding-left: 3rem; 	/*下の「回答」と数字部分を合わせる*/
-	border: 1px solid #a21e2e;	/*枠線の幅、線種、色*/
+	border: 0px solid #a21e2e;	/*枠線の幅、線種、色*/
 	padding-right: 1rem;	/*ボックス内の右側の余白*/
 	margin-bottom: 1rem;	/*ボックスの外（下）に空けるスペース*/
 	border-radius: 5px;		/*角を少しだけ丸くする*/
-	background-color: #a21e2e;
+	background-color: var(--primary-inverse-color);
 	color: #fff;
 }
 
