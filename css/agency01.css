@@ -873,6 +873,42 @@ span.wpcf7-list-item-label {
   margin: 1em 0;
 }
 
+/*selectブロック*/
+.select1{
+   display: flex;
+   width: 100%;
+   align-items: center;
+}
+
+.select1 > select{
+   padding: 8px 4px;
+   margin: 5px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   font-size: 17px;
+   color: #666666;
+   text-align: center;
+   background-color:#fff;	
+}
+
+.select2{
+   display: flex;
+   width: 100%;
+   align-items: center;
+}
+
+.select2 > select{
+   padding: 8px 4px;
+   margin: 5px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   font-size: 17px;
+   color: #666666;
+   text-align: center;
+   background-color:#fff;
+   width: 150px;
+}
+
 /*画面幅900px以上の追加指定*/
 @media screen and (min-width:900px) {
 
