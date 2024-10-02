@@ -575,7 +575,7 @@ table.CF7_table tr{
 }
 
 /* タイトル列 */
-@media screen and (min-width: 768px){
+@media screen and (min-width: 900px){
 	.CF7_table th{
 	width: 30%;
         background-color: #fff4e4;
@@ -585,7 +585,7 @@ table.CF7_table tr{
 }
 
 /* レスポンシブ */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 899px){
 	table.CF7_table{
 	width:95%;
 	}
@@ -617,6 +617,39 @@ table.CF7_table tr{
 .wpcf7-spinner{
 	width:0;
 	margin:0;
+}
+
+.CF7_radio{
+	float: left;	
+	width: 100%;	
+}
+.CF7_radio input{
+	display: none;
+}
+.CF7_radio label{
+	display: block;
+	float: left;
+	cursor: pointer;
+	width: 120px;
+	margin: 10px 3px 0;
+	padding: 1.4% 0 1.5% 0;
+	border-right: 1px solid #d7d7d7;
+	background: #e5e5e5;
+	color: #555e64;
+	font-size: 14px;
+	text-align: center;
+	transition: .2s;
+}
+.CF7_radio label:first-of-type{
+}
+
+.CF7_radio label:last-of-type{
+	border-right: 0px;
+}
+
+.CF7_radio input[type="radio"]:checked + label {
+	background-color: #f79034;
+	color: #fff;
 }
 
 
