@@ -994,7 +994,8 @@ span.wpcf7-list-item-label {
 	width: 100%;	/*幅。お好みで。*/
 }
 .list-premium .list {
-	display: block;	
+	display: block;
+	width: 95%;
 }
 .list-use figure {
 	width: 80%;	/*幅。お好みで。*/
