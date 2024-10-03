@@ -805,6 +805,12 @@ span.wpcf7-list-item-label {
     z-index: 102;
 }
 
+.modal-open:hover {
+	color: #a21e2e;
+	background: #fff;
+}
+
+	
 /* モーダルと背景の指定 */
 .modal{
   position: fixed;
