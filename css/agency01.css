@@ -660,17 +660,19 @@ table.CF7_table tr{
 	font-weight: bold;
 	margin: 10px 10px 10px 20px;
 	padding: 10px 100px 10px 100px;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.wpcf7 input.wpcf7-submit:hover {
+	color: #a21e2e;
+	background: #fff;
+	border: 1px solid #a21e2e;
 }
 
 .CF7_btn{
 	text-align:center;
 	margin-top:20px;
-}
-
-.CF7_btn:hover {
-	color: #a21e2e;
-	background: #fff;
-	border: 1px solid #a21e2e;
 }
 
 .wpcf7-spinner{
