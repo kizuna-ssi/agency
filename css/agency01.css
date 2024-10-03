@@ -966,6 +966,18 @@ ul.asterisk li::marker{
   content: "※";
 }
 
+.button1 {
+    font-size: 16px;
+    font-weight: bold;
+    width: 230px;
+    height: 60px;
+    color: #fff;
+    background: #171c60;
+    border: none;
+    cursor: pointer;
+    translate: 0px 30px;
+
+	
 
 /*画面幅900px以上の追加指定*/
 @media screen and (min-width:900px) {
