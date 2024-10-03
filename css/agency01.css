@@ -780,7 +780,7 @@ span.wpcf7-list-item-label {
 }
 
 .open1 {
-	display: none;
+	display: block;
 }
 
 .open2 {
