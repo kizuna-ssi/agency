@@ -803,11 +803,13 @@ span.wpcf7-list-item-label {
     cursor: pointer;
     translate: 0px 30px;
     z-index: 102;
+    transition: .3s;
 }
 
 .modal-open:hover {
 	color: #a21e2e;
 	background: #fff;
+	border: 1px solid #a21e2e;
 }
 
 	
@@ -982,8 +984,15 @@ ul.asterisk li::marker{
     border: none;
     cursor: pointer;
     translate: 0px 30px;
+    transition: .3s;
 }
-	
+
+.button1:hover {
+	color: #171c60;
+	background: #fff;
+	border: 1px solid #171c60;
+}
+
 
 /*画面幅900px以上の追加指定*/
 @media screen and (min-width:900px) {
