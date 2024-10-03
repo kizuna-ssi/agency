@@ -962,6 +962,11 @@ span.wpcf7-list-item-label {
     /* 追加のスタイルが必要ならここに */
 }
 
+ul.asterisk li::marker{
+  content: "※";
+}
+
+
 /*画面幅900px以上の追加指定*/
 @media screen and (min-width:900px) {
 
