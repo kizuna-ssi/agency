@@ -950,12 +950,16 @@ span.wpcf7-list-item-label {
 	color: #fff;
 }
 
-.sticky-nav {
+.sticky-container {
     position: -webkit-sticky; /* Safari用 */
     position: sticky;
     top: 0; /* スクロール時に画面上部に固定される位置 */
-    z-index: 98; /* 他の要素の上に表示されるように */
+    z-index: 1000; /* 他の要素の上に表示されるように */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* スクロール時の影 */
+}
+
+.sticky-nav {
+    /* 追加のスタイルが必要ならここに */
 }
 
 /*画面幅900px以上の追加指定*/
