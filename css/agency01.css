@@ -667,6 +667,12 @@ table.CF7_table tr{
 	margin-top:20px;
 }
 
+.CF7_btn:hover {
+	color: #a21e2e;
+	background: #fff;
+	border: 1px solid #a21e2e;
+}
+
 .wpcf7-spinner{
 	width:0;
 	margin:0;
