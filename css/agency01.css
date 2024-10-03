@@ -537,7 +537,7 @@ footer {
 .ta2 {
 	table-layout: fixed;				/*幅*/
 	background-color: #fff4e4;
-	width: 90%;
+	width: 100%;
 }
 
 
@@ -869,7 +869,7 @@ span.wpcf7-list-item-label {
   background: #fff;
   text-align: left;
   line-height: 1.8;
-  padding: 20px;
+  padding: 50px;
 }
 
 /* モーダルのコンテンツ部分のテキストの指定 */
