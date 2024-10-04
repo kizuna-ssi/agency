@@ -595,7 +595,7 @@ table.CF7_table tr{
 }
 
 . wpcf7-textarea{
-	width: 100%;
+	width: 90%;
 }
 
 
@@ -633,11 +633,11 @@ table.CF7_table tr{
 /* レスポンシブ */
 @media screen and (max-width: 899px){
 	table.CF7_table{
-	width:95%;
+	width:90%;
 	}
 	.CF7_table tr, .CF7_table td, .CF7_table th{
 	display: block;
-	width: 100%;
+	width: 90%;
 	line-height: 0.5em;
 	padding-bottom: 10px;
 	}
