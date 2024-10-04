@@ -1094,7 +1094,7 @@ ul.asterisk li::marker{
 .sp-br {
 	display: inline-block;
 }
-.list-nomal .list {
+.list-normal .list {
 	display: block;
 	width: 95%;
 	margin: 5%;
