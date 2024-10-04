@@ -636,7 +636,7 @@ table.CF7_table tr{
 	}
 	.CF7_table tr, .CF7_table td, .CF7_table th{
 	display: block;
-	width: 100%;
+	width: 950%;
 	line-height: 0.5em;
 	padding-bottom: 10px;
 	}
@@ -823,11 +823,6 @@ span.wpcf7-list-item-label {
     left: 60px;
 }
 
-.helpbuttom2 {
-	background: #fff4e4;
-	text-align: left;
-	margin-left: 15px;"
-}
 
 .helpbutton2:after{
     content: "?";
@@ -1110,11 +1105,18 @@ ul.asterisk li::marker{
 h2 {
 	padding-top: 50px;
 	text-align: center;
+	width: 95%;
 }
 	
 h3 {
 	text-align: center;
+	width: 95%;
 }
 .faq {
-    width: 95%;
+	width: 95%;
+}
+.p{
+	width: 95%;
+}
+	
 }
