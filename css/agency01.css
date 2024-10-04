@@ -679,7 +679,8 @@ table.CF7_table tr{
 }
 
 span.wpcf7-list-item-label {
-    padding: 0px 5px 0px 0px;
+	padding: 0px 5px 0px 0px;
+	display: block;}
 }
 
 
@@ -1151,4 +1152,8 @@ section + section {
 .ta2 th {
 	text-align: center;
 	width: 30%;
+}
+	
+span.wpcf7-list-item {
+	display: block;
 }
