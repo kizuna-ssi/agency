@@ -749,6 +749,7 @@ span.wpcf7-list-item-label {
     border-radius: 5px;
     background: #000;
     width: 200px;
+    text-align: left;
 }
 
 .description1:before {
@@ -806,6 +807,7 @@ span.wpcf7-list-item-label {
     border-radius: 5px;
     background: #000;
     width: 200px;
+    text-align: left;
 }
 
 .description2:before {
