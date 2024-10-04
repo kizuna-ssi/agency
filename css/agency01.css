@@ -1118,14 +1118,14 @@ ul.asterisk li::marker{
 	display: block;
 }
 h2 {
-	padding-top: 50px;
+	padding-top: 30px;
 	text-align: center;
 }
 h3 {
 	text-align: center;
 }
 .faq {
-    width: 95%;
+	width: 95%;
 }
 .nav-buttom{
 	margin: 0% 0% 0% 15%;
@@ -1134,15 +1134,15 @@ section + section {
 	width: 95%;
 }
 .modal-container {
-    width: 95%;
+	width: 98%;
 }
 .modal-content {
-    padding: 10px;
+	padding: 10px;
 }
 .tooltip2 {
-    position: relative;
+	position: relative;
 }
 .ta2 th {
-    text-align: center;
-    width: 30%;
+	text-align: center;
+	width: 30%;
 }
