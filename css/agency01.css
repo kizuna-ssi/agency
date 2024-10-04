@@ -1096,7 +1096,7 @@ ul.asterisk li::marker{
 }
 .list-normal .list {
 	display: block;
-	width: 95%;
+	width: 90%;
 	margin: 5%;
 }
 .list-premium figure {
