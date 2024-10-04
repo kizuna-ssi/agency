@@ -1060,6 +1060,9 @@ ul.asterisk li::marker{
 	border: 1px solid #171c60;
 }
 
+.nav-buttom{
+	margin: 0%;
+}
 
 /*画面幅900px以上の追加指定*/
 @media screen and (min-width:900px) {
