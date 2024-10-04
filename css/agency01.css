@@ -1137,7 +1137,4 @@ section + section {
 .tooltip2 {
     position: relative;
 }
-.tooltip1:hover .description1 {
-   top: 30px;
-    left: -60px;
-}
+
