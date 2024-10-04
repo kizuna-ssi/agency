@@ -1100,6 +1100,7 @@ ul.asterisk li::marker{
 .list-premium .list {
 	display: block;
 	width: 95%;
+	margin: 5%;
 }
 .list-use figure {
 	width: 80%;	/*幅。お好みで。*/
@@ -1108,6 +1109,7 @@ ul.asterisk li::marker{
 .list-use .list {
 	display: block;	
 	width: 95%;
+	margin: 5%;
 }
 .pc {
 	display: none;
