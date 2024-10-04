@@ -1095,6 +1095,7 @@ ul.asterisk li::marker{
 }
 .list-premium figure {
 	width: 100%;	/*幅。お好みで。*/
+	text-align: center;
 }
 .list-premium .list {
 	display: block;
