@@ -587,7 +587,7 @@ table.CF7_table tr{
 /*入力欄*/
 .CF7_table input, .CF7_table textarea {
 	border: 0px solid #d8d8d8;
-	padding: 15px;
+	padding: 10px;
 }
 
 .CF7_table ::placeholder {
@@ -637,7 +637,7 @@ table.CF7_table tr{
 	}
 	.CF7_table tr, .CF7_table td, .CF7_table th{
 	display: block;
-	width: 90%;
+	width: 100%;
 	line-height: 0.5em;
 	padding-bottom: 10px;
 	}
