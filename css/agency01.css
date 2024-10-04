@@ -1109,9 +1109,12 @@ ul.asterisk li::marker{
 	display: block;	
 	width: 95%;
 }
-.pc {display: none;}
-.sp {display: block;}
-
+.pc {
+	display: none;
+}
+.sp {
+	display: block;
+}
 h2 {
 	padding-top: 50px;
 	text-align: center;
@@ -1137,4 +1140,7 @@ section + section {
 .tooltip2 {
     position: relative;
 }
-
+.ta2 th {
+    text-align: center;
+    width: 30%;
+}
