@@ -594,7 +594,7 @@ table.CF7_table tr{
 	color:#797979;
 }
 
-.wpcf7-email .wpcf7-text .wpcf7-textarea{
+.wpcf7-email, .wpcf7-text, .wpcf7-textarea{
 	width: 90%;
 }
 
@@ -678,7 +678,7 @@ table.CF7_table tr{
 }
 
 span.wpcf7-list-item-label {
-    padding: 0px 0px 0px 0px;
+    padding: 0px 5px 0px 0px;
 }
 
 
