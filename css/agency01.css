@@ -594,7 +594,10 @@ table.CF7_table tr{
 	color:#797979;
 }
 
-. wpcf7-textarea{
+.wpcf7-textarea{
+	width: 90%;
+}
+.wpcf7-email{
 	width: 90%;
 }
 
