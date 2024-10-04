@@ -1093,6 +1093,11 @@ ul.asterisk li::marker{
 .sp-br {
 	display: inline-block;
 }
+.list-nomal .list {
+	display: block;
+	width: 95%;
+	margin: 5%;
+}
 .list-premium figure {
 	width: 100%;	/*幅。お好みで。*/
 	text-align: center;
