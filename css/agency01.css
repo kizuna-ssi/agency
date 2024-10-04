@@ -588,6 +588,7 @@ table.CF7_table tr{
 .CF7_table input, .CF7_table textarea {
 	border: 0px solid #d8d8d8;
 	padding: 10px;
+	vertical-align: -0.2em;
 }
 
 .CF7_table ::placeholder {
