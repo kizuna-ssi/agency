@@ -260,7 +260,7 @@ main h2 {
 	left: 0px;top: 0px;
 	width: 100%;
 	height: 100%;
-	padding-top: 100px;	/*上に空ける余白。ハンバーガーアイコンと重ならない為の指定ですのでお好みで変更OK。*/
+	padding-top: 10%;	/*上に空ける余白。ハンバーガーアイコンと重ならない為の指定ですのでお好みで変更OK。*/
 	color: var(--primary-inverse-color);	/*文字色。css冒頭で指定しているprimary-inverse-colorを読み込みます*/
 	background: var(--primary-color);		/*背景色。css冒頭で指定しているprimary-colorを読み込みます*/
 	animation: animation1 0.2s both;
@@ -273,7 +273,7 @@ main h2 {
 	border-radius: 5px;		/*角を丸くする指定*/
 }
 .small-screen #menubar a {
-	padding: 1rem 3rem;		/*メニュー内の余白。上下、左右へ。*/
+	padding: 1rem 1rem;		/*メニュー内の余白。上下、左右へ。*/
 }
 
 
