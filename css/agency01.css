@@ -1128,3 +1128,16 @@ h3 {
 section + section {
 	width: 95%;
 }
+.modal-container {
+    width: 95%;
+}
+.modal-content {
+    padding: 10px;
+}
+.tooltip2 {
+    position: relative;
+}
+.tooltip1:hover .description1 {
+   top: 30px;
+    left: -60px;
+}
