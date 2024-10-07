@@ -84,7 +84,6 @@ iframe {width: 100%;}
 /*sectionが続く場合*/
 section + section {
 	margin-top: 8vw;	/*sectionの上に空けるスペース*/
-	width: 100%;
 }
 
 
@@ -1140,7 +1139,7 @@ h3 {
 	margin: 0% 0% 0% 15%;
 }
 section + section {
-	width: 95%;
+	width: 100%;
 }
 .modal-container {
 	width: 98%;
