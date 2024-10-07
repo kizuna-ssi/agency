@@ -1138,9 +1138,7 @@ h3 {
 .nav-buttom{
 	margin: 0% 0% 0% 15%;
 }
-section + section {
-	width: 100%;
-}
+
 .modal-container {
 	width: 98%;
 }
@@ -1153,4 +1151,7 @@ section + section {
 .ta2 th {
 	text-align: center;
 	width: 30%;
+}
+section {
+	width: 95%;
 }
