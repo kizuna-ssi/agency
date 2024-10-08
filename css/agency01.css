@@ -687,8 +687,9 @@ span.wpcf7-list-item-label {
    border: 1px solid #f00;
    color: #f00;
    margin: 5% 10% 0% 0%;
-   padding: 5% 5% 5% 5%;
+   padding: 0% 5% 0% 5%;
    display: block;
+   font-weight: bold;
 }
 
 /* エラーメッセージの上部を消去 */
@@ -1167,4 +1168,7 @@ h3 {
 }
 section {
 	width: 95%;
+}
+.wpcf7-not-valid-tip{
+   padding: 5% 5% 5% 5%;
 }
