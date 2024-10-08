@@ -697,7 +697,7 @@ div.screen-reader-response{
 	font-weight: bold;
 }
 
-div.wpcf7-response-output {
+div.wpcf7-response-output, .screen-reader-response ul, .screen-reader-response li, {
 	display: none;
 }
 
