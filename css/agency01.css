@@ -692,9 +692,13 @@ span.wpcf7-list-item-label {
    font-weight: bold;
 }
 
-div.screen-reader-response{
-	border: 2px solid #F78181;
+.screen-reader-response{
+	color: #F78181;
 	font-weight: bold;
+}
+.screen-reader-response p{
+	padding: 0% 0% 0% 5%;
+	line-height: 1.5;
 }
 
 .wpcf7-response-output {
