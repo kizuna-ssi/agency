@@ -692,14 +692,13 @@ span.wpcf7-list-item-label {
    font-weight: bold;
 }
 
-/* エラーメッセージの上部を消去 */
 div.screen-reader-response{
-  display: none;
+	border: 2px solid #F78181;
+	font-weight: bold;
 }
 
-/* 送信NG時の枠の色  */
 div.wpcf7-response-output {
-	border: 1px solid #F78181; //色を指定
+	display: none;
 }
 
 
