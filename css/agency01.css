@@ -728,6 +728,13 @@ span.wpcf7-list-item-label {
 	line-height: 60px;	/*高さ*/
 }
 
+#pageTop-sp {
+	display:none;
+}
+
+.sp {
+	display:none;
+}
 
 /*その他
 ---------------------------------------------------------------------------*/
@@ -1186,4 +1193,62 @@ section {
 }
 .wpcf7-not-valid-tip{
    padding: 5% 5% 5% 5%;
+}
+	
+.sp{
+	display:block;
+}
+	
+#pageTop-sp {
+	display: flex;
+	position: fixed;
+	z-index: 1000001;
+	transition: all .4s;
+	bottom: -100px;
+	right: 0;
+	background:rgba(0, 0, 0, .8);
+	width:100%;
+	padding:10px;
+	box-sizing:border-box;
+}
+#pageTop-sp.slideUp {
+	bottom:0;
+}
+#pageTop-sp.flex.c01 > * {
+	width:49%;
+	line-height:1;
+}
+#pageTop-sp li a:before {
+	/* content: ""; */
+	content: none;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	vertical-align: middle;
+	margin:-2px 3px 0 0;
+	background-size:contain !important;
+}
+#pageTop-sp li.tel a {
+	background: #058fd3;
+}
+#pageTop-sp li.tel a:before {
+	background:url(/wp/wp-content/uploads/2018/10/h-contact-tel-02.png) no-repeat 50% 50%;
+	}
+#pageTop-sp li.support a {
+	background: #28bbde;
+	/* color:#e87336; */
+}
+#pageTop-sp li.support a:before {
+	background:url(/wp/wp-content/uploads/2018/10/h-contact-tel-01.png) no-repeat 50% 50%;
+}
+#pageTop-sp li a {
+	background: #000;
+	width: 100%;
+	font-size: 1.3rem;
+	letter-spacing: .5px;
+	padding: 15px 0;
+	color: #fff;
+	display: block;
+	text-align: center;
+	font-weight: normal;
 }
