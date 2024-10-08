@@ -691,7 +691,10 @@ span.wpcf7-list-item-label {
    display: block;
 }
 
-
+/* エラーメッセージの上部を消去 */
+div.screen-reader-response{
+  display: none;
+}
 
 /*PAGE TOP（↑）設定
 ---------------------------------------------------------------------------*/
