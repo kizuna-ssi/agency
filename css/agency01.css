@@ -697,6 +697,12 @@ div.screen-reader-response{
   display: none;
 }
 
+/* 送信NG時の枠の色  */
+div.wpcf7-response-output {
+	border: 1px solid #F78181; //色を指定
+}
+
+
 /*PAGE TOP（↑）設定
 ---------------------------------------------------------------------------*/
 .pagetop-show {display: block;}
