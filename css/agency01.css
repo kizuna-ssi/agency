@@ -697,13 +697,13 @@ div.screen-reader-response{
 	font-weight: bold;
 }
 
-div.wpcf7-response-output {
+.wpcf7-response-output {
 	display: none;
 }
-div.screen-reader-response ul {
+.screen-reader-response ul {
 	display: none;
 }
-div.screen-reader-response li,{
+.screen-reader-response li,{
 	display: none;
 }
 
