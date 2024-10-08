@@ -682,6 +682,19 @@ span.wpcf7-list-item-label {
 	padding: 0px 5px 0px 0px;
 }
 
+.wpcf7-not-valid-tip{
+   box-sizing: border-box;
+   border: 1px solid #f00;
+   color: #f00;
+   margin-top: 10px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 45px;
+   padding-right: 15px;
+   text-indent: -30px;
+}
+
+
 
 /*PAGE TOP（↑）設定
 ---------------------------------------------------------------------------*/
