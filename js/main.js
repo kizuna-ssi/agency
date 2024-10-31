@@ -120,6 +120,4 @@ $(function(){
         $('#navigation').load('navigation.html'); 
         });
 
-<!--
-if (!document.referrer){top.location.href="https://kizuna-ssi.net/login.html";}
-//-->
+
